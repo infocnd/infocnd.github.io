@@ -11,10 +11,10 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="w3-sidenav w3-light-grey w3-card-2" style="width:160px;">
-        <a href="#"><img src="medias/img/logoCND.png"></a>
+    <nav class="w3-sidenav w3-light-grey w3-card-2" style="width:360px; display:none">
+        <a href="#" onclick="w3_close()"><center><img src="medias/img/logoCND.png"></center></a>
         <!-- 9e -->
-        <div class="w3-accordion">
+        <div class="w3-accordion w3-padding-small">
             <a onclick="neu()" href="#">
       9e<i class="fa fa-caret-down"></i>
     </a>
@@ -30,7 +30,7 @@
             </div>
         </div>
         <!-- 10e -->
-        <div class="w3-accordion">
+        <div class="w3-accordion w3-padding-small">
             <a onclick="dix()" href="#">
       10e<i class="fa fa-caret-down"></i>
     </a>
@@ -46,7 +46,7 @@
             </div>
         </div>
         <!-- 11e -->
-        <div class="w3-accordion">
+        <div class="w3-accordion w3-padding-small">
             <a onclick="onz()" href="#">
       11e<i class="fa fa-caret-down"></i>
     </a>
@@ -62,7 +62,7 @@
             </div>
         </div>
         <!-- 12e -->
-        <div class="w3-accordion">
+        <div class="w3-accordion w3-padding-small">
             <a onclick="dou()" href="#">
       12e<i class="fa fa-caret-down"></i>
     </a>
@@ -79,7 +79,8 @@
         </div>
     </nav>
     <!-- Contenu -->
-    <div class="w3-container" style="margin-left: 160px">
+    <div class="w3-container">
+        <span class="w3-opennav w3-xlarge" onclick="w3_open()">&#9776;</span>
         <h2>InfoCND</h2>
         <h4>La ressource de l'alouette</h4>
         <p></p>
@@ -101,6 +102,12 @@ function onz() {
 function dou() {
     document.getElementById("dou").classList.toggle("w3-show");
     document.getElementById("dou").previousElementSibling.classList.toggle("w3-red");
+}
+function w3_open() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+}
+function w3_close() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
 }
     </script>
 
