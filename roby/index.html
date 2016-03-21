@@ -17,10 +17,10 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft","Roboto",sans-serif;}
 <body>
 
 <nav class="w3-sidenav w3-collapse w3-white w3-animate-left w3-card-2" style="z-index:5;width:250px;">
-  <a href="#" class="w3-border-bottom w3-large"><img src="logoCND-petit.png" style="width:80%;"></a>
+  <a href="#" onclick="openCours('cnd')" class="w3-border-bottom w3-large"><img src="logoCND-petit.png" style="width:80%;"></a>
   <a href="javascript:void(0)" onclick="w3_close()" 
   class="w3-text-blue w3-hide-large w3-closenav w3-large">Fermé &times;</a>
-  <a href="#" class="w3-light-grey w3-medium">CNDInfo</a>		
+  <a href="#" onclick="openCours('cnd')"class="w3-light-grey w3-medium">CNDInfo</a>		
 
    <!--  9e  -->
  <div class="w3-accordion">
@@ -34,7 +34,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft","Roboto",sans-serif;}
                 
 				<a onclick="myFunc('maths9')" href="javascript:void(0)">Mathématiques<i class="fa fa-caret-down"></i></a>
 					<div id="maths9" class="w3-accordion-content w3-animate-left w3-padding">
-						<a href="#">MFM1P</a>
+						<a href="#" onclick="openCours('mfm1p')">MFM1P</a>
 						<a href="#">MPM1D</a>
 						<a href="#">MPM1DD</a>
                 	</div>
@@ -58,7 +58,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft","Roboto",sans-serif;}
                 
 				<a onclick="myFunc('maths10')" href="javascript:void(0)">Mathématiques<i class="fa fa-caret-down"></i></a>
 					<div id="maths10" class="w3-accordion-content w3-animate-left w3-padding">
-						<a href="#">MFM2P</a>
+						<a href="#" onclick="openCours('mfm2p')">MFM2P</a>
 						<a href="#">MPM2D</a>
 						<a href="#">MPM2DD</a>
                 	</div>
@@ -128,6 +128,10 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft","Roboto",sans-serif;}
 </header>
 
 <div class="w3-container w3-padding-jumbo">
+
+
+
+<div id="cnd" class="cours">
   <h1 class="w3-text-blue">CNDInfo</h1>
   <h5>BlaBlaBla BlaBlaBla BlaBlaBla BlaBlaBla </h5>
   <ul class="w3-leftbar w3-theme-border" style="list-style-type:none">
@@ -139,8 +143,25 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft","Roboto",sans-serif;}
    <li>BLa Bla BLa Bla BLa Bla BLa Bla BLa Bla BLa Bla BLa Bla BLa Bla BLa Bla BLa Bla </li>
   </ul>
   <br>
+</div>
+
+<div id="mfm1p" class="cours">
+  <h2>MFM1P</h2>
+  <p>mathématiques 9e</p>
+</div>
+
+
+<div id="mfm2p" class="cours">
+  <h2>MFM2P</h2>
+  <p>mathématiques 10e</p>
+</div>
+
+
+
+
   
   
+</div>
 
 
 <footer <footer class="w3-container w3-theme w3-padding-jumbo">
@@ -148,7 +169,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft","Roboto",sans-serif;}
   <p> BLa Bla BLa Bla BLa Bla BLa Bla</p>
 </footer>
      
-</div>
+
 
 <script>
 function w3_open() {
@@ -179,7 +200,17 @@ function myFunc(id) {
     document.getElementById(id).previousElementSibling.classList.toggle("w3-theme");
 }
 </script>
-
+<script>
+openCours("cnd")
+function openCours(nomcours) {
+    var i;
+    var x = document.getElementsByClassName("cours");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    document.getElementById(nomcours).style.display = "block"; 
+}
+</script>
      
 </body>
 </html> 
