@@ -34,7 +34,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft","Roboto",sans-serif;}
                 
 				<a onclick="myFunc('maths9')" href="javascript:void(0)">Mathématiques<i class="fa fa-caret-down"></i></a>
 					<div id="maths9" class="w3-accordion-content w3-animate-left w3-padding">
-						<a href="#" onclick="w3_close();openCours('mfm1p')">MFM1P</a>
+						<a href="#" onclick="w3_close();openCours('mfm1p');myFunchide('maths9');myFunchide('neu')">MFM1P</a>
 						<a href="#">MPM1D</a>
 						<a href="#">MPM1DD</a>
                 	</div>
@@ -58,7 +58,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft","Roboto",sans-serif;}
                 
 				<a onclick="myFunc('maths10')" href="javascript:void(0)">Mathématiques<i class="fa fa-caret-down"></i></a>
 					<div id="maths10" class="w3-accordion-content w3-animate-left w3-padding">
-						<a href="#" onclick="w3_close();onclick="openCours('mfm2p');myFunchide('maths10');myFunchide('dix')">MFM2P</a>
+						<a href="#" onclick="w3_close();openCours('mfm2p');myFunchide('maths10');myFunchide('dix')">MFM2P</a>
 						<a href="#">MPM2D</a>
 						<a href="#">MPM2DD</a>
                 	</div>
@@ -130,9 +130,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft","Roboto",sans-serif;}
 
 
 <div id="cnd" class="cours">
-<header class="w3-container w3-theme w3-padding-small">
-  <center><h1 class="w3-xxxlarge w3-padding-small">CNDInfo</h1></center>
-</header>
+
 
   <h1 class="w3-text-blue">CNDInfo</h1>
   <h5>BlaBlaBla BlaBlaBla BlaBlaBla BlaBlaBla </h5>
@@ -148,7 +146,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft","Roboto",sans-serif;}
 </div>
 
 <div id="mfm1p" class="cours">
-  <h2>MFM1P</h2>
+
+<h2>MFM1P</h2>
   <p>mathématiques 9e</p>
 </div>
 
@@ -165,7 +164,11 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft","Roboto",sans-serif;}
   
 </div>
 
-
+<style> 
+.cours {
+padding-top :25px;
+}
+</style>
 <footer <footer class="w3-container w3-theme w3-padding-small">
   <h5>Info</h5>
   
