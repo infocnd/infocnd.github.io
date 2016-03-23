@@ -164,9 +164,24 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft","Roboto",sans-serif;}
   <h1 class="w3-text-blue">Courriels</h1>
   <h5>Personnels enseignants </h5>
   <ul class="w3-leftbar w3-theme-border" style="list-style-type:none">
-   <li><a href=mailto:roby.desrochers@nouvelon.ca>Roby Desrochers</a></li>
-   <li><a href=mailto:denise.desrochers@nouvelon.ca>Denise Desrochers</a></li>
-  
+   <li>
+<script language=JavaScript>
+<!--
+var host = "nouvelon.ca";
+
+var user = "Roby Desrochers";
+var courriel ="roby.desrochers";
+document.write("<a hre" + "f=ma" + "ilto:" + courriel + "@" + host + ">" + user + "</a>");
+document.write("<br>")
+
+var user = "Denise Desrochers";
+var courriel ="denise.desrochers";
+document.write("<a hre" + "f=ma" + "ilto:" + courriel + "@" + host + ">" + user + "</a>");
+document.write("<br>")
+
+//--> </script> 
+
+ 
   </ul>
   <br>
 </div>
@@ -192,8 +207,14 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft","Roboto",sans-serif;}
 
 <style> 
 .cours {
-padding-top :40px;
+ padding-top :40px;
 }
+
+.reverse {
+ unicode-bidi: bidi-override;
+ direction: rtl;
+  }
+
 </style>
 
      
