@@ -1,4 +1,4 @@
-﻿/* W3.CSS 2.1 by Jan Egil and Borge Refsnes. Do not remove this line. */
+/* W3.CSS 2.1 by Jan Egil and Borge Refsnes. Do not remove this line. */
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
@@ -173,7 +173,7 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-col.l12{width:99.99999%}}
 .w3-content{max-width:980px;margin:auto}
 .w3-rest{overflow:hidden}
-.w3-hide{display:none !important}.w3-show-block,.w3-show{display:block !important; visibility: visible}.w3-show-inline-block{display:inline-block !important}
+.w3-hide{display:none !important}.w3-show-block,.w3-show{display:block !important}.w3-show-inline-block{display:inline-block !important}
 @media (max-width:601px){.w3-modal-content{margin:50px 10px 10px 10px;width:auto !important}}
 @media (max-width:768px){.w3-modal-content{width:500px}}
 @media (min-width:992px){.w3-modal-content{width:900px}}
