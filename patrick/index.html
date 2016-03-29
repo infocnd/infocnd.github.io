@@ -432,10 +432,16 @@ function goMail(prenom, nom) {
                 function w3_open() {
     document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
     document.getElementsByClassName("w3-overlay")[0].style.display = "block";
+    //Android 2.3 Fallback
+    document.getElementsByClassName("w3-sidenav")[0].style.visibility = "visible";
+    document.getElementsByClassName("w3-overlay")[0].style.visibility = "visible";
 }
 function w3_close() {
     document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
     document.getElementsByClassName("w3-overlay")[0].style.display = "none";
+    //Android 2.3 Fallback
+    document.getElementsByClassName("w3-sidenav")[0].style.visibility = "hidden";
+    document.getElementsByClassName("w3-overlay")[0].style.visibility = "hidden";
 }
             </script>
 
@@ -464,9 +470,13 @@ function openCours(nomcours) {
     var i;
     var x = document.getElementsByClassName("cours");
     for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
+        x[i].style.display = "none";
+        //Android 2.3 Fallback
+        x[i].style.visibility = "hidden";
     }
-    document.getElementById(nomcours).style.display = "block"; 
+    document.getElementById(nomcours).style.display = "block";
+    //Android 2.3 Fallback
+    document.getElementById(nomcours).style.visibility = "visible";
 }
             </script>
 
