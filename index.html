@@ -184,7 +184,9 @@
                             </ol>
                             <br> N.B. Une petite flèche est visible à la droite de l'onglet s'il y a de l'information supplémentaire.
                             N'oubliez pas d'ajouter le site à vos favoris pour ne pas perdre le lien.
-                            <a href="#" onclick="return add_favorite(this);">Add to Favorites</a></li>
+                            <!--<a href="#" onclick="return add_favorite(this);">Add to Favorites</a></li>-->
+                            <!-- http://stackoverflow.com/questions/18457572/how-to-add-to-favorites-bookmark-for-all-browser-in-javascript -->
+                             <a href="javascript:CreateBookmarkLink();">Add to Favorites/Bookmark</a>
                     </ul>
                     <br>
                 </div>
@@ -506,7 +508,7 @@ function openCours(nomcours) {
     //Android 2.3 Fallback
     //document.getElementById(nomcours).style.visibility = "visible";
 }
-function add_favorite( a ) { 
+/*function add_favorite( a ) { 
   title = document.title; 
   url = document.location; 
   try { 
@@ -533,7 +535,25 @@ function add_favorite( a ) {
     } 
   } 
   return false; 
-}
+}*/
+function CreateBookmarkLink(){
+        var title = document.title;
+        var url = document.location.href;
+
+        if(window.sidebar){
+            /* Mozilla Firefox Bookmark */
+            window.sidebar.addPanel(title, url, "");
+        }else if(window.external){
+            /* IE Favorite */
+            window.external.AddFavorite(url, title);
+        }else if(window.opera && window.print) {
+            /* Opera Hotlist */
+            alert("Press Control + D to bookmark");
+            return true;
+        }else{
+            /* Other */
+            alert("Press Control + D to bookmark");
+        }
             </script>
 
     </body>
