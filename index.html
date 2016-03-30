@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -28,14 +28,11 @@
         
         </head>
     </style>
-
     <body>
-
         <nav class="w3-sidenav w3-collapse w3-white w3-animate-left w3-card-2" style="z-index:5;width:250px;">
             <a href="#" onclick="openCours('cnd');w3_close()" class="w3-border-bottom w3-large"><img src="img/logoCND-petit.png" style="width:80%;"></a>
             <a href="javascript:void(0)" onclick="w3_close()" class="w3-text-blue w3-hide-large w3-closenav w3-large">Fermé &times;</a>
             <a href="#" onclick="openCours('cnd');w3_close()" class="w3-light-grey w3-medium">InfoCND</a>
-
             <!--  9e  -->
             <div class="w3-accordion">
                 <a onclick="myFunc('neu')" href="javascript:void(0)">9e<i class="fa fa-caret-down"></i></a>
@@ -45,17 +42,14 @@
                     <a href="#">English</a>
                     <a href="#">Français</a>
                     <a href="#">Enseignement religieux</a>
-
                     <a onclick="myFunc('maths9')" href="javascript:void(0)">Mathématiques<i class="fa fa-caret-down"></i></a>
                     <div id="maths9" class="w3-accordion-content w3-animate-left w3-padding">
                         <a href="#" onclick="w3_close();openCours('mfm1p');myFunc('maths9');myFunc('neu')">MFM1P</a>
                         <a href="#">MPM1D</a>
                         <a href="#">MPM1DD</a>
                     </div>
-
                     <a href="#">Éducation physique et santé</a>
                     <a href="#">Sciences</a>
-
                 </div>
             </div>
             <!--  10e  -->
@@ -69,18 +63,15 @@
                     <a href="#">Français</a>
                     <a href="#">Orientation et formation au cheminement de carrière</a>
                     <a href="#">Études informatiques</a>
-
                     <a onclick="myFunc('maths10')" href="javascript:void(0)">Mathématiques<i class="fa fa-caret-down"></i></a>
                     <div id="maths10" class="w3-accordion-content w3-animate-left w3-padding">
                         <a href="#" onclick="w3_close();openCours('mfm2p');myFunc('maths10');myFunc('dix')">MFM2P</a>
                         <a href="#">MPM2D</a>
                         <a href="#">MPM2DD</a>
                     </div>
-
                     <a href="#">Éducation physique et santé</a>
                     <a href="#">Sciences</a>
                     <a href="#">Éducation technologique</a>
-
                 </div>
             </div>
             <!--  11e  -->
@@ -103,11 +94,8 @@
                     <a href="#">Éducation physique et santé</a>
                     <a href="#">Sciences</a>
                     <a href="#">Éducation technologique</a>
-
-
                 </div>
             </div>
-
             <!--  12e  -->
             <div class="w3-accordion">
                 <a onclick="myFunc('dou')" href="javascript:void(0)">12e<i class="fa fa-caret-down"></i></a>
@@ -125,11 +113,8 @@
                     <a href="#">Éducation physique et santé</a>
                     <a href="#">Sciences</a>
                     <a href="#">Éducation technologique</a>
-
-
                 </div>
             </div>
-
             <!--  courriels  -->
             <div class="w3-accordion">
                 <a onclick="myFunc('courriels')" href="javascript:void(0)">Courriels<i class="fa fa-caret-down"></i></a>
@@ -137,34 +122,16 @@
                     <a href="#" onclick="w3_close();openCours('cou-ad');myFunc('courriels')">Administration</a>
                     <a href="#" onclick="w3_close();openCours('cou-en');myFunc('courriels')">Enseignant(e)s</a>
                     <a href="#" onclick="w3_close();openCours('cou-or');myFunc('courriels')">Orientation</a>
-
-
-
                 </div>
             </div>
-
-
         </nav>
-
-
         <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer"></div>
-
         <div class="w3-main" style="margin-left:250px;">
-
-
-
             <div class="w3-container">
-
                 <div id="myTop" class="w3-top w3-container w3-theme w3-large">
                     <i class="fa fa-bars w3-opennav w3-hide-large w3-xlarge w3-margin-left w3-margin-right" onclick="w3_open()"></i>
                     <span id="myIntro" class="w3-hide">InfoCND</span>
                 </div>
-
-
-
-
-
-
                 <div id="cnd" class="cours">
                     <h1 class="w3-text-blue">InfoCND</h1>
                     <h5>La ressource des Alouettes</h5>
@@ -183,14 +150,10 @@
                                 <li>Appuyer sur la cote de votre cours.</li>
                             </ol>
                             <br> N.B. Une petite flèche est visible à la droite de l'onglet s'il y a de l'information supplémentaire.
-                            N'oubliez pas d'ajouter le site à vos favoris pour ne pas perdre le lien.
-                            <!--<a href="#" onclick="return add_favorite(this);">Add to Favorites</a></li>-->
-                            <!-- http://stackoverflow.com/questions/18457572/how-to-add-to-favorites-bookmark-for-all-browser-in-javascript -->
-                             <a href="javascript:CreateBookmarkLink();">Add to Favorites/Bookmark</a>
+                            N'oubliez pas d'ajouter le site à vos favoris pour ne pas perdre le lien. </li>
                     </ul>
                     <br>
                 </div>
-
                 <!--  courriels  administration-->
                 <div id="cou-ad" class="cours">
                     <h1 class="w3-text-blue">Courriels</h1>
@@ -199,17 +162,14 @@
                         <li>
                             <script language=JavaScript>
                                 var host = "nouvelon.ca";
-
 var admin = [
     {"prenom":"Johanne","nom":"Chrétien"}, 
     {"prenom":"Lynn","nom":"MacLean"}
 ];
-
 for (i = 0; i < admin.length; i++) {
     document.write("<a href='#' onclick='clean(admin[" + i + "])'>" + admin[i].prenom + " " + admin[i].nom + "</a>");
     document.write("<br>"); 
 }
-
 function clean(info) {
     info.nom = info.nom.replace(/-/g, "");
     info.nom = info.nom.replace(new RegExp(/[àáâãäå]/g),"a");
@@ -235,7 +195,6 @@ function clean(info) {
     info.prenom = info.prenom.replace(new RegExp(/[ýÿ]/g),"y");
     goMail(info.prenom, info.nom);
 }
-
 function goMail(prenom, nom) {
     window.location.href = "mailto:" + prenom.toLowerCase() + "." + nom.toLowerCase() + "@" + host;
 }
@@ -243,7 +202,6 @@ function goMail(prenom, nom) {
                     </ul>
                     <br>
                 </div>
-
                 <!--  courriels  personnel enseignant-->
                 <div id="cou-en" class="cours">
                     <h1 class="w3-text-blue">Courriels</h1>
@@ -254,7 +212,6 @@ function goMail(prenom, nom) {
                                 <!--
                                 
 var host = "nouvelon.ca";
-
 var pers = [
     {"prenom": "Michèle", "nom": "Albert"},
     {"prenom": "Denis", "nom": "Bidal"},
@@ -302,12 +259,10 @@ var pers = [
     {"prenom": "Renée", "nom": "Spadafore"},
     {"prenom": "Pierre", "nom": "Taillon"}
 ]
-
 for (i = 0; i < pers.length; i++) {
     document.write("<a href='#' onclick='clean(pers[" + i + "])'>" + pers[i].prenom + " " + pers[i].nom + "</a>");
     document.write("<br>"); 
 }
-
 function clean(info) {
     info.nom = info.nom.replace(/-/g, "");
     info.nom = info.nom.replace(new RegExp(/[àáâãäå]/g),"a");
@@ -333,17 +288,14 @@ function clean(info) {
     info.prenom = info.prenom.replace(new RegExp(/[ýÿ]/g),"y");
     goMail(info.prenom, info.nom);
 }
-
 function goMail(prenom, nom) {
     window.location.href = "mailto:" + prenom.toLowerCase() + "." + nom.toLowerCase() + "@" + host;
 }
-
 //-->
                             </script>
                     </ul>
                     <br>
                 </div>
-
                 <!--  courriels  orientation-->
                 <div id="cou-or" class="cours">
                     <h1 class="w3-text-blue">Courriels</h1>
@@ -353,18 +305,15 @@ function goMail(prenom, nom) {
                             <script language=JavaScript>
                                 <!--
 var host = "nouvelon.ca";
-
 var orient = [
     {"prenom": "Julie", "nom": "Godin"},
     {"prenom": "Lisa", "nom": "Labelle"},
     {"prenom": "Lynn", "nom": "Roy"}
 ];
-
 for (i = 0; i < orient.length; i++) {
     document.write("<a href='#' onclick='clean(orient[" + i + "])'>" + orient[i].prenom + " " + orient[i].nom + "</a>");
     document.write("<br>"); 
 }
-
 function clean(info) {
     info.nom = info.nom.replace(/-/g, "");
     info.nom = info.nom.replace(new RegExp(/[àáâãäå]/g),"a");
@@ -390,30 +339,23 @@ function clean(info) {
     info.prenom = info.prenom.replace(new RegExp(/[ýÿ]/g),"y");
     goMail(info.prenom, info.nom);
 }
-
 function goMail(prenom, nom) {
     window.location.href = "mailto:" + prenom.toLowerCase() + "." + nom.toLowerCase() + "@" + host;
 }
-
 //-->
                             </script>
                     </ul>
                     <br>
                 </div>
-
                 <!--  cours  -->
                 <div id="mfm1p" class="cours">
-
                     <h2>MFM1P</h2>
                     <p>mathématiques 9e</p>
                 </div>
-
-
                 <div id="mfm2p" class="cours">
                     <h2>MFM2P</h2>
                     <p>mathématiques 10e</p>
                 </div>
-
                 <div id="mcf3m" class="cours">
                     <h2>MCF3M</h2>
                     <table border=1>
@@ -434,16 +376,9 @@ function goMail(prenom, nom) {
                     <tr><td>hebdomadairement : 52</td></tr>
                     <tr><td>journalièrement : 365</td></tr>
                     </table></table>
-
                 
                 </div>
-
-
-
-
-
             </div>
-
             <style>
                 .cours {
                     padding-top: 40px;
@@ -454,10 +389,6 @@ function goMail(prenom, nom) {
                     direction: rtl;
                 }
             </style>
-
-
-
-
             <script>
                 function w3_open() {
     document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
@@ -474,10 +405,8 @@ function w3_close() {
     //document.getElementsByClassName("w3-overlay")[0].style.visibility = "hidden";
 }
             </script>
-
             <script>
                 window.onscroll = function() {myFunction()};
-
 function myFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         document.getElementById("myTop").classList.add("w3-card-4");
@@ -487,13 +416,11 @@ function myFunction() {
         document.getElementById("myTop").classList.remove("w3-card-4");
     }
 }
-
 function myFunc(id) {
     document.getElementById(id).classList.toggle("w3-show");
     document.getElementById(id).previousElementSibling.classList.toggle("w3-theme");
 }
             </script>
-
             <script>
                 openCours("cnd")
 function openCours(nomcours) {
@@ -508,53 +435,6 @@ function openCours(nomcours) {
     //Android 2.3 Fallback
     //document.getElementById(nomcours).style.visibility = "visible";
 }
-/*function add_favorite( a ) { 
-  title = document.title; 
-  url = document.location; 
-  try { 
-    // Internet Explorer 
-    window.external.AddFavorite( url, title ); 
-  } 
-  catch (e) { 
-    try { 
-      // Mozilla 
-      window.sidebar.addPanel( title, url, "" ); 
-    } 
-    catch (e) { 
-      // Opera 
-      if( typeof( opera ) == "object" ) { 
-        a.rel = "sidebar"; 
-        a.title = title; 
-        a.url = url; 
-        return true; 
-      } 
-      else { 
-        // Unknown 
-        alert( 'Press Ctrl-D to add page to your bookmarks' ); 
-      } 
-    } 
-  } 
-  return false; 
-}*/
-function CreateBookmarkLink(){
-        var title = document.title;
-        var url = document.location.href;
-
-        if(window.sidebar){
-            /* Mozilla Firefox Bookmark */
-            window.sidebar.addPanel(title, url, "");
-        }else if(window.external){
-            /* IE Favorite */
-            window.external.AddFavorite(url, title);
-        }else if(window.opera && window.print) {
-            /* Opera Hotlist */
-            alert("Press Control + D to bookmark");
-            return true;
-        }else{
-            /* Other */
-            alert("Press Control + D to bookmark");
-        }
             </script>
-
     </body>
 </html>
