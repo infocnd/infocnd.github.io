@@ -1,2 +1,2 @@
 # infocnd.github.io
-La ressource de l'alouette
+La ressource des Alouettes
