@@ -71,7 +71,10 @@
                     </div>
                     <a href="#">Éducation physique et santé</a>
                     <a href="#">Sciences</a>
-                    <a href="#">Éducation technologique</a>
+                    <a onclick="myFunc('tech10')" href="javascript:void(0)">Éducation technologique<i class="fa fa-caret-down"></i></a>
+                    <div id="tech10" class="w3-accordion-content w3-animate-left w3-padding">
+                        <a href="#" onclick="w3_close();openCours('tdj2o');myFunc('tech10');myFunc('dix')">TDJ2O</a>
+                    </div>
                 </div>
             </div>
             <!--  11e  -->
@@ -377,6 +380,24 @@ function goMail(prenom, nom) {
                     <tr><td>journalièrement : 365</td></tr>
                     </table></table>
                 
+                </div>
+                <div id="tdj2o" class="cours">
+                    <h2>TDJ2O</h2>
+                    <table border=1>
+                    <tr><td colspan =2 bgcolor=gray><center>Technologie du design</td></tr>
+			        <tr><td colspan =2><center>Les 9 étapes du processus de design</td></tr>
+                    </table><br><br>
+                    <table>
+			        <tr><td>L’étape 1: La détermination des problèmes et l’exploration des possibilités</td></tr>
+                    <tr><td>L’étape 2: La structure d’une esquisse</td></tr>
+                    <tr><td>L’étape 3: L’investigation et la recherche</td></tr>
+                    <tr><td>L’étape 4: La recherche de solutions de rechange</td></tr>
+                    <tr><td>L’étape 5: Le choix de la meilleure solution</td></tr>
+                    <tr><td>L’étape 6: Le travail préparatoire</td></tr>
+                    <tr><td>L’étape 7: La modélisation ou le prototype</td></tr>
+                    <tr><td>L’étape 8: Les essais et l’évaluation</td></tr>
+                    <tr><td>L’étape 9: La reprise du design et son amélioration</td></tr>
+                    </table></table>
                 </div>
             </div>
             <style>
