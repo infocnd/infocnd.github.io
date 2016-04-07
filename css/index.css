@@ -1,0 +1,17 @@
+.cours {
+    padding-top: 40px;
+}
+
+html, body, h1, h2, h3, h4, h5 {
+    font-family: "RobotoDraft", "Roboto", sans-serif;
+}
+
+.w3-sidenav a {
+    padding: 16px;
+    font-weight: bold
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
