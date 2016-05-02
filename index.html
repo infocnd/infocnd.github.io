@@ -59,7 +59,10 @@
                 <a href="#">Éducation artistique</a>
                 <a href="#">Affaires et commerce</a>
                 <a href="#">Études canadiennes et mondiales</a>
-                <a href="#">English</a>
+               <a onclick="myFunc('eng10')" href="javascript:void(0)">English<i class="fa fa-caret-down"></i></a>
+                <div id="eng10" class="w3-accordion-content w3-animate-left w3-padding">
+                    <a href="#" onclick="w3_close();openCours('eae2d');myFunc('eng10');myFunc('neu')">EAE2D</a>
+                </div>
                 <a href="#">Français</a>
                 <a href="#">Orientation et formation au cheminement de carrière</a>
 
@@ -676,6 +679,22 @@
                     </tr>
                 </table>
             </div>
+            
+            <div id="eae2d" class="cours">
+		<h2>EAE2D</h2>
+		<table border=1>
+		<tr><td bgcolor=gray><center>Exam Review</td></tr>
+		<tr><td>-Review and KNOW the plot and characters for the following works of literature: 
+		<ul><li>The Chryslalids : John Wyndham</li>
+			<li>Romeo and Juliet : William Shakespeare</li>
+			<li>Short Stories and poems: Edgar Allan Poe</li></ul></td></tr>
+		<tr><td>-Review and understand all elements and key terms of the poetry unit studied this year.</td></tr>
+		<tr><td>-Review the proper paragraph format.</td></tr>
+		<tr><td>-Review sight-reading strategies (reading diagonally for example)</td></tr>
+		<tr><td>-Make specific links to society today when supporting an opinion or argument.</td></tr>
+		</table>
+	</div>
+            
             <div id="eae3u" class="cours">
                 <h2>EAE3U</h2>
                 <a href="https://en.wikipedia.org/wiki/Harlem_Renaissance" target="_blank" style="color: blue">Harlem Renaissance</a><br>
