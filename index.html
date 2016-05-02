@@ -37,7 +37,10 @@
             <div id="neu" class="w3-accordion-content w3-animate-left w3-padding">
                 <a href="#">Éducation artistique</a>
                 <a href="#">Études canadiennes et mondiales</a>
-                <a href="#">English</a>
+                <a onclick="myFunc('eng9')" href="javascript:void(0)">English<i class="fa fa-caret-down"></i></a>
+                <div id="eng9" class="w3-accordion-content w3-animate-left w3-padding">
+                    <a href="#" onclick="w3_close();openCours('eae1d');myFunc('eng9');myFunc('neu')">EAE1D</a>
+                </div>
                 <a href="#">Français</a>
                 <a href="#">Enseignement religieux</a>
                 <a onclick="myFunc('maths9')" href="javascript:void(0)">Mathématiques<i class="fa fa-caret-down"></i></a>
@@ -638,6 +641,20 @@
                 </tr>
                 </table>
             </div>
+            
+            <div id="eae1d" class="cours">
+		<h2>EAE1D</h2>
+		<table border=1>
+		<tr><td bgcolor=gray><center>Exam Review</td></tr>
+		<tr><td>Review your notes on the short story elements and key terms.</td></tr>
+		<tr><td>Review your notes/questions on the following works: Cue for Treason and A Midsummer Night’s Dream.</td>
+		<tr><td>Review proper paragraph format.</td></tr>
+		<tr><td>Review your notes on how to write a character sketch.</td></tr>
+		<tr><td>Review sight reading strategies.</td></tr>
+		<tr><td>Make specific links to society today when supporting an opinion or argument.</td></tr>
+		</table>
+	</div>
+            
             <div id="mfm1p" class="cours">
                 <h2>MFM1P</h2>
                 <table border=1>
