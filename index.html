@@ -77,7 +77,10 @@
 
                 </div>
                 <a href="#">Éducation physique et santé</a>
-                <a href="#">Sciences</a>
+                <a onclick="myFunc('sci10')" href="javascript:void(0)">Sciences<i class="fa fa-caret-down"></i></a>
+                <div id="sci10" class="w3-accordion-content w3-animate-left w3-padding">
+                    <a href="#" onclick="w3_close();openCours('sch');myFunc('sci10');myFunc('dix')">Chimie</a>
+                </div>
                 <a onclick="myFunc('tech10')" href="javascript:void(0)">Éducation technologique<i class="fa fa-caret-down"></i></a>
                 <div id="tech10" class="w3-accordion-content w3-animate-left w3-padding">
                     <a href="#" onclick="w3_close();openCours('tdj2o');myFunc('tech10');myFunc('dix')">TDJ2O</a>
@@ -114,7 +117,7 @@
                 <!-- chimie11 devient sci11-->
                 <a onclick="myFunc('sci11')" href="javascript:void(0)">Sciences<i class="fa fa-caret-down"></i></a>
                 <div id="sci11" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('sch');myFunc('sci11');myFunc('onz')">SCH3</a>
+                    <a href="#" onclick="w3_close();openCours('sch');myFunc('sci11');myFunc('onz')">SCH</a>
                     <a href="#" onclick="w3_close();openCours('sph');myFunc('sci11');myFunc('onz')">SPH</a>
                 </div>
                 <a href="#">Éducation technologique</a>
