@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
- 
-<head> 
+
+<head>
     <title>InfoCND - La ressource des Alouettes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
@@ -69,7 +69,7 @@
                 <div id="can10" class="w3-accordion-content w3-animate-left w3-padding">
                     <a href="#" onclick="w3_close();openCours('chc2d');myFunc('fra10');myFunc('dix')">CHC2D</a>
                 </div>
-               <a onclick="myFunc('eng10')" href="javascript:void(0)">English<i class="fa fa-caret-down"></i></a>
+                <a onclick="myFunc('eng10')" href="javascript:void(0)">English<i class="fa fa-caret-down"></i></a>
                 <div id="eng10" class="w3-accordion-content w3-animate-left w3-padding">
                     <a href="#" onclick="w3_close();openCours('eae');myFunc('eng10');myFunc('dix')">EAE</a>
                     <a href="#" onclick="w3_close();openCours('eae2d');myFunc('eng10');myFunc('dix')">EAE2D</a>
@@ -88,7 +88,7 @@
                 <a onclick="myFunc('maths10')" href="javascript:void(0)">Mathématiques<i class="fa fa-caret-down"></i></a>
                 <div id="maths10" class="w3-accordion-content w3-animate-left w3-padding">
                     <a href="#" onclick="w3_close();openCours('mfm2p');myFunc('maths10');myFunc('dix')">MFM2P</a>
-			<a href="#" onclick="w3_close();openCours('mpm2d');myFunc('maths10');myFunc('dix')">MPM2D</a>
+                    <a href="#" onclick="w3_close();openCours('mpm2d');myFunc('maths10');myFunc('dix')">MPM2D</a>
                 </div>
                 <a href="#">Éducation physique et santé</a>
                 <a onclick="myFunc('sci10')" href="javascript:void(0)">Sciences<i class="fa fa-caret-down"></i></a>
@@ -131,7 +131,7 @@
                 </div>
                 <a onclick="myFunc('maths11')" href="javascript:void(0)">Mathématiques<i class="fa fa-caret-down"></i></a>
                 <div id="maths11" class="w3-accordion-content w3-animate-left w3-padding">
-                	<a href="#" onclick="w3_close();openCours('mbf3c');myFunc('maths11');myFunc('onz')">MBF3C</a>
+                    <a href="#" onclick="w3_close();openCours('mbf3c');myFunc('maths11');myFunc('onz')">MBF3C</a>
                     <a href="#" onclick="w3_close();openCours('mcf3m');myFunc('maths11');myFunc('onz')">MCF3M</a>
                 </div>
                 <a href="#">Éducation physique et santé</a>
@@ -139,7 +139,7 @@
                 <a onclick="myFunc('sci11')" href="javascript:void(0)">Sciences<i class="fa fa-caret-down"></i></a>
                 <div id="sci11" class="w3-accordion-content w3-animate-left w3-padding">
                     <a href="#" onclick="w3_close();openCours('sch');myFunc('sci11');myFunc('onz')">SCH3</a>
-                    <a href="#" onclick="w3_close();openCours('sph');myFunc('sci11');myFunc('onz')">SPH3</a>
+                    <a href="#" onclick="w3_close();openCours('sph3');myFunc('sci11');myFunc('onz')">SPH3</a>
                 </div>
                 <a href="#">Éducation technologique</a>
             </div>
@@ -175,7 +175,7 @@
                 <a onclick="myFunc('sci12')" href="javascript:void(0)">Sciences<i class="fa fa-caret-down"></i></a>
                 <div id="sci12" class="w3-accordion-content w3-animate-left w3-padding">
                     <a href="#" onclick="w3_close();openCours('sch');myFunc('sci12');myFunc('dou')">SCH4</a>
-                    <a href="#" onclick="w3_close();openCours('sph');myFunc('sci12');myFunc('dou')">SPH4</a>
+                    <a href="#" onclick="w3_close();openCours('sph4');myFunc('sci12');myFunc('dou')">SPH4</a>
                 </div>
                 <a href="#">Éducation technologique</a>
             </div>
@@ -198,29 +198,30 @@
         </div>
         <!-- Météo Média -->
         <center>
-<div id="plemx-root"></div> 
-  <script type="text/javascript"> 
-  var _plm = _plm || [];
-  _plm.push(['_btn', 29726]); 
-  _plm.push(['_loc','caon0664']);
-  _plm.push(['location', document.location.host ]);
-  (function(d,e,i) {
-  if (d.getElementById(i)) return;
-  var px = d.createElement(e);
-  px.type = 'text/javascript';
-  px.async = true;
-  px.id = i;
-  px.src = ('https:' == d.location.protocol ? 'https:' : 'http:') + '//widget.twnmm.com/js/btn/pelm.js?orig=fr_ca';
-  var s = d.getElementsByTagName('script')[0];
-  var py = d.createElement('link');
-  py.rel = 'stylesheet'
-  py.href = ('https:' == d.location.protocol ? 'https:' : 'http:') + '//widget.twnmm.com/styles/btn/styles.css'
-  s.parentNode.insertBefore(px, s);
-  s.parentNode.insertBefore(py, s);
-})(document, 'script', 'plmxbtn');</script>
+            <div id="plemx-root"></div>
+            <script type="text/javascript">
+                var _plm = _plm || [];
+                _plm.push(['_btn', 29726]);
+                _plm.push(['_loc', 'caon0664']);
+                _plm.push(['location', document.location.host]);
+                (function(d, e, i) {
+                    if (d.getElementById(i)) return;
+                    var px = d.createElement(e);
+                    px.type = 'text/javascript';
+                    px.async = true;
+                    px.id = i;
+                    px.src = ('https:' == d.location.protocol ? 'https:' : 'http:') + '//widget.twnmm.com/js/btn/pelm.js?orig=fr_ca';
+                    var s = d.getElementsByTagName('script')[0];
+                    var py = d.createElement('link');
+                    py.rel = 'stylesheet'
+                    py.href = ('https:' == d.location.protocol ? 'https:' : 'http:') + '//widget.twnmm.com/styles/btn/styles.css'
+                    s.parentNode.insertBefore(px, s);
+                    s.parentNode.insertBefore(py, s);
+                })(document, 'script', 'plmxbtn');
+            </script>
 
-    </center>
-</div>
+        </center>
+        </div>
 
 
 
@@ -248,8 +249,9 @@
                         </ol>
                         <br> N.B. Une petite flèche est visible à la droite de l'onglet s'il y a de l'information supplémentaire. N'oubliez pas d'ajouter le site à vos favoris pour ne pas perdre le lien. </li>
                 </ul>
-                <br>
-               visiteurs:<a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=infocnd.github.io/index.html&digit=style/shadows/27/&reloads=0" alt="www.reliablecounter.com" title="www.reliablecounter.com" border="0"></a><br /><a href="http://www.analogmix.com" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: white; text-decoration: none;">www.analogmix.com</a>            </div>
+                <br> visiteurs:
+                <a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=infocnd.github.io/index.html&digit=style/shadows/27/&reloads=0" alt="www.reliablecounter.com" title="www.reliablecounter.com" border="0"></a><br /><a href="http://www.analogmix.com"
+                    target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: white; text-decoration: none;">www.analogmix.com</a> </div>
             <!--  courriels  administration-->
             <div id="cou-ad" class="cours">
                 <h1 class="w3-text-blue">Courriels</h1>
@@ -575,29 +577,42 @@
                 </table>
             </div>
             <!--  orientation  -->
-		<div id="bene" class="cours">
-		<h2>Orientation</h2>
-		<table border=1>
-		<tr><td bgcolor=gray><center>Bénévolat</td></tr>
-		</table>
-		</div>
-		
+            <div id="bene" class="cours">
+                <h2>Orientation</h2>
+                <table border=1>
+                    <tr>
+                        <td bgcolor=gray>
+                            <center>Bénévolat</td>
+                    </tr>
+                </table>
+            </div>
+
             <!--  cours  -->
             <div id="sch" class="cours">
                 <h2>Chimie</h2>
                 <table border=1>
 
-		<tr><td bgcolor=lightgray><center>Tableau périodique des éléments</td></tr></table>
-		<center>
-		<img src="img/sch-tab-1.jpg"><img src="img/sch-tab-2.jpg">
-		</center>
-		<br><br>             
-		<table border=1>
+                    <tr>
+                        <td bgcolor=lightgray>
+                            <center>Tableau périodique des éléments</td>
+                    </tr>
+                </table>
+                <center>
+                    <img src="img/sch-tab-1.jpg"><img src="img/sch-tab-2.jpg">
+                </center>
+                <br><br>
+                <table border=1>
 
-		<tr><td bgcolor=lightgray><center>Ions complexes (radicaux)</h4></center></td></tr></table>
+                    <tr>
+                        <td bgcolor=lightgray>
+                            <center>Ions complexes (radicaux)</h4>
+                            </center>
+                        </td>
+                    </tr>
+                </table>
 
-		<img src="img/sch-1.jpg"><img src="img/sch-2.jpg"><img src="img/sch-3.jpg">
-		<img src="img/sch-4.jpg"><img src="img/sch-5.jpg"><img src="img/sch-6.jpg">
+                <img src="img/sch-1.jpg"><img src="img/sch-2.jpg"><img src="img/sch-3.jpg">
+                <img src="img/sch-4.jpg"><img src="img/sch-5.jpg"><img src="img/sch-6.jpg">
                 <h4>Règles de la nomenclature</h4>
                 <ol>
                     <li>Composés ioniques</li>
@@ -632,35 +647,75 @@
                 </tr>
                 </table>
             </div>
-            
+
             <div id="eae1d" class="cours">
-		<h2>EAE1D</h2>
-		<table border=1>
-		<tr><td bgcolor=gray><center>Exam Review</td></tr>
-		<tr><td>-Review your notes on the short story elements and key terms.</td></tr>
-		<tr><td>-Review your notes/questions on the following works: Cue for Treason and A Midsummer Night’s Dream.</td>
-		<tr><td>-Review proper paragraph format.</td></tr>
-		<tr><td>-Review your notes on how to write a character sketch.</td></tr>
-		<tr><td>-Review sight reading strategies.</td></tr>
-		<tr><td>-Make specific links to society today when supporting an opinion or argument.</td></tr>
-		</table>
-	</div>
+                <h2>EAE1D</h2>
+                <table border=1>
+                    <tr>
+                        <td bgcolor=gray>
+                            <center>Exam Review</td>
+                    </tr>
+                    <tr>
+                        <td>-Review your notes on the short story elements and key terms.</td>
+                    </tr>
+                    <tr>
+                        <td>-Review your notes/questions on the following works: Cue for Treason and A Midsummer Night’s Dream.</td>
+                        <tr>
+                            <td>-Review proper paragraph format.</td>
+                        </tr>
+                        <tr>
+                            <td>-Review your notes on how to write a character sketch.</td>
+                        </tr>
+                        <tr>
+                            <td>-Review sight reading strategies.</td>
+                        </tr>
+                        <tr>
+                            <td>-Make specific links to society today when supporting an opinion or argument.</td>
+                        </tr>
+                </table>
+            </div>
             <div id="cgc1d" class="cours">
-		<h2>CGC1D</h2>
-		<table border=1><tr><td bgcolor=gray><center>Revue</td></tr>
-		<tr><td>-Carte du Canada (provinces, territoires et capitales)</td></tr>
-		<tr><td>-Toutes les cartes étudiées (régions physiographiques, végétations, sols, climats, hydrographiques)</td></tr>
-		<tr><td>-Facteurs qui influencent le climat</td></tr>
-		<tr><td>-Cartes météorologiques (analyse)</td></tr>
-		<tr><td>-Désastres naturels qui affectent le Canada et les moyens de prévention</td></tr>
-		<tr><td>-Comment réduire son empreinte écologique?</td></tr>
-		<tr><td>-Connaître l'importance économique des ressources naturelles dans les régions physiographiques</td></tr>
-		<tr><td>-Pyramides des âges (analyse)</td></tr>
-		<tr><td>-Effets des immigrants au Canada</td></tr>
-		<tr><td>-Étude de Sudbury (sa formation, ses caractéristiques et les activités économiques)</td></tr>
-		<tr><td>-Projet de Maley Drive</td></tr>
-		</table>
-		</div>
+                <h2>CGC1D</h2>
+                <table border=1>
+                    <tr>
+                        <td bgcolor=gray>
+                            <center>Revue</td>
+                    </tr>
+                    <tr>
+                        <td>-Carte du Canada (provinces, territoires et capitales)</td>
+                    </tr>
+                    <tr>
+                        <td>-Toutes les cartes étudiées (régions physiographiques, végétations, sols, climats, hydrographiques)</td>
+                    </tr>
+                    <tr>
+                        <td>-Facteurs qui influencent le climat</td>
+                    </tr>
+                    <tr>
+                        <td>-Cartes météorologiques (analyse)</td>
+                    </tr>
+                    <tr>
+                        <td>-Désastres naturels qui affectent le Canada et les moyens de prévention</td>
+                    </tr>
+                    <tr>
+                        <td>-Comment réduire son empreinte écologique?</td>
+                    </tr>
+                    <tr>
+                        <td>-Connaître l'importance économique des ressources naturelles dans les régions physiographiques</td>
+                    </tr>
+                    <tr>
+                        <td>-Pyramides des âges (analyse)</td>
+                    </tr>
+                    <tr>
+                        <td>-Effets des immigrants au Canada</td>
+                    </tr>
+                    <tr>
+                        <td>-Étude de Sudbury (sa formation, ses caractéristiques et les activités économiques)</td>
+                    </tr>
+                    <tr>
+                        <td>-Projet de Maley Drive</td>
+                    </tr>
+                </table>
+            </div>
             <div id="mfm1p" class="cours">
                 <h2>MFM1P</h2>
                 <table border=1>
@@ -682,22 +737,38 @@
                     </tr>
                 </table>
             </div>
-            
+
             <div id="eae2d" class="cours">
-		<h2>EAE2D</h2>
-		<table border=1>
-		<tr><td bgcolor=gray><center>Exam Review</td></tr>
-		<tr><td>-Review and KNOW the plot and characters for the following works of literature: 
-		<ul><li>The Chryslalids : John Wyndham</li>
-			<li>Romeo and Juliet : William Shakespeare</li>
-			<li>Short Stories and poems: Edgar Allan Poe</li></ul></td></tr>
-		<tr><td>-Review and understand all elements and key terms of the poetry unit studied this year.</td></tr>
-		<tr><td>-Review the proper paragraph format.</td></tr>
-		<tr><td>-Review sight-reading strategies (reading diagonally for example)</td></tr>
-		<tr><td>-Make specific links to society today when supporting an opinion or argument.</td></tr>
-		</table>
-	</div>
-            
+                <h2>EAE2D</h2>
+                <table border=1>
+                    <tr>
+                        <td bgcolor=gray>
+                            <center>Exam Review</td>
+                    </tr>
+                    <tr>
+                        <td>-Review and KNOW the plot and characters for the following works of literature:
+                            <ul>
+                                <li>The Chryslalids : John Wyndham</li>
+                                <li>Romeo and Juliet : William Shakespeare</li>
+                                <li>Short Stories and poems: Edgar Allan Poe</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>-Review and understand all elements and key terms of the poetry unit studied this year.</td>
+                    </tr>
+                    <tr>
+                        <td>-Review the proper paragraph format.</td>
+                    </tr>
+                    <tr>
+                        <td>-Review sight-reading strategies (reading diagonally for example)</td>
+                    </tr>
+                    <tr>
+                        <td>-Make specific links to society today when supporting an opinion or argument.</td>
+                    </tr>
+                </table>
+            </div>
+
             <div id="eae3u" class="cours">
                 <h2>EAE3U</h2>
                 <a href="https://en.wikipedia.org/wiki/Harlem_Renaissance" target="_blank" style="color: blue">Harlem Renaissance</a><br>
@@ -705,31 +776,84 @@
                 <B>Watch/Read</B> <a href="http://www.bookrags.com/studyguide-a-time-to-kill/#gsc.tab=0" target="_blank" style="color: blue">A Time to Kill</a><br>
                 <B>Read</B> <a href="http://www.enotes.com/topics/boys-girls" target="_blank" style="color: blue">Boys and Girls</a><br>
                 <B>Read</B> <a href="http://www.sparknotes.com/shakespeare/merchant/" target="_blank" style="color: blue">The Merchant of Venice</a>
-		<br><br>
-                <font color="#000000" size="2">Research Paper
-&amp; MLA</font></u></strong></p><p class=""><span style="color: rgb(0, 0, 0); font-size: small; font-family: Verdana, Arial, sans-serif; background-color: initial;">MLA Works Cited
-generator:</span><span class="apple-converted-space" style="color: rgb(0, 0, 0); font-size: small; font-family: Verdana, Arial, sans-serif; background-color: initial;">&nbsp;</span><font color="#000000" style="font-family: Verdana, Arial, sans-serif; background-color: initial;"><a href="http://www.easybib.com/" target="_blank">http://www.easybib.com/</a></font></p><p class=""><a href="resources/MLA_Citation_Basics-EBook.pdf" target="_blank" style="font-family: Verdana, Arial, sans-serif; background-color: initial;"><font color="#000000" size="2">MLA Citation BASICS</font></a></p><p class=""><a href="resources/MLA_Visual_Guides_Part_1.pdf" target="_blank" style="font-family: Verdana, Arial, sans-serif; background-color: initial;"><font color="#000000" size="2">MLA Visual GUIDE 1</font></a></p><p class=""><a href="resources/MLA_Visual_Guides_Part_2.pdf" target="_blank" style="font-family: Verdana, Arial, sans-serif; background-color: initial;"><font color="#000000" size="2">MLA Visual GUIDE 2</font></a></p><p class=""><font color="#000000" size="2" style="font-family: Verdana, Arial, sans-serif; background-color: initial;"><a href="http://www.sudbury.library.on.ca/wcms/index.cfm?app=w_library&amp;lang=en&amp;currID=2734&amp;parID=0" target="_blank">http://www.sudbury.library.on.ca/wcms/index.cfm?app=w_library&amp;lang=en&amp;currID=2734&amp;parID=0</a></font></p><p class=""><font color="#000000" size="2" style="font-family: Verdana, Arial, sans-serif; background-color: initial;"><a href="http://infotrac.galegroup.com/itweb/ko_pl_gspl?db=HWRC" target="_blank">http://infotrac.galegroup.com/itweb/ko_pl_gspl?db=HWRC</a></font></p><p class=""><font color="#000000" size="2" style="font-family: Verdana, Arial, sans-serif; background-color: initial;"><a href="http://owl.english.purdue.edu/owl/resource/747/01/" target="_blank">http://owl.english.purdue.edu/owl/resource/747/01/</a></font></p><p class=""><font color="#000000" size="2" style="font-family: Verdana, Arial, sans-serif; background-color: initial;"><a href="http://library.concordia.ca/help/howto/mla.php" target="_blank">http://library.concordia.ca/help/howto/mla.php</a></font></p><p class=""></p><p class=""></p><p style="background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;" class=""><strong style="font-family: Verdana, Arial, sans-serif; background-color: initial;"><u><font color="#000000" size="2">Audiobooks</font></u></strong></p><p class=""><span style="color: rgb(0, 0, 0); font-size: small; font-family: Verdana, Arial, sans-serif; background-color: initial;">Frankenstein:</span><span class="apple-converted-space" style="color: rgb(0, 0, 0); font-size: small; font-family: Verdana, Arial, sans-serif; background-color: initial;">&nbsp;</span><font color="#000000" style="font-family: Verdana, Arial, sans-serif; background-color: initial;"><a href="http://librivox.org/frankenstein-or-modern-prometheus-by-mary-w-shelley/" target="_blank">http://librivox.org/frankenstein-or-modern-prometheus-by-mary-w-shelley/</a></font></p>
+                <br><br>
+                <font color="#000000" size="2">Research Paper &amp; MLA</font>
+                </u>
+                </strong>
+                </p>
+                <p class=""><span style="color: rgb(0, 0, 0); font-size: small; font-family: Verdana, Arial, sans-serif; background-color: initial;">MLA Works Cited
+generator:</span><span class="apple-converted-space" style="color: rgb(0, 0, 0); font-size: small; font-family: Verdana, Arial, sans-serif; background-color: initial;">&nbsp;</span>
+                    <font color="#000000" style="font-family: Verdana, Arial, sans-serif; background-color: initial;"><a href="http://www.easybib.com/" target="_blank">http://www.easybib.com/</a></font>
+                </p>
+                <p class="">
+                    <a href="resources/MLA_Citation_Basics-EBook.pdf" target="_blank" style="font-family: Verdana, Arial, sans-serif; background-color: initial;">
+                        <font color="#000000" size="2">MLA Citation BASICS</font>
+                    </a>
+                </p>
+                <p class="">
+                    <a href="resources/MLA_Visual_Guides_Part_1.pdf" target="_blank" style="font-family: Verdana, Arial, sans-serif; background-color: initial;">
+                        <font color="#000000" size="2">MLA Visual GUIDE 1</font>
+                    </a>
+                </p>
+                <p class="">
+                    <a href="resources/MLA_Visual_Guides_Part_2.pdf" target="_blank" style="font-family: Verdana, Arial, sans-serif; background-color: initial;">
+                        <font color="#000000" size="2">MLA Visual GUIDE 2</font>
+                    </a>
+                </p>
+                <p class="">
+                    <font color="#000000" size="2" style="font-family: Verdana, Arial, sans-serif; background-color: initial;"><a href="http://www.sudbury.library.on.ca/wcms/index.cfm?app=w_library&amp;lang=en&amp;currID=2734&amp;parID=0" target="_blank">http://www.sudbury.library.on.ca/wcms/index.cfm?app=w_library&amp;lang=en&amp;currID=2734&amp;parID=0</a></font>
+                </p>
+                <p class="">
+                    <font color="#000000" size="2" style="font-family: Verdana, Arial, sans-serif; background-color: initial;"><a href="http://infotrac.galegroup.com/itweb/ko_pl_gspl?db=HWRC" target="_blank">http://infotrac.galegroup.com/itweb/ko_pl_gspl?db=HWRC</a></font>
+                </p>
+                <p class="">
+                    <font color="#000000" size="2" style="font-family: Verdana, Arial, sans-serif; background-color: initial;"><a href="http://owl.english.purdue.edu/owl/resource/747/01/" target="_blank">http://owl.english.purdue.edu/owl/resource/747/01/</a></font>
+                </p>
+                <p class="">
+                    <font color="#000000" size="2" style="font-family: Verdana, Arial, sans-serif; background-color: initial;"><a href="http://library.concordia.ca/help/howto/mla.php" target="_blank">http://library.concordia.ca/help/howto/mla.php</a></font>
+                </p>
+                <p class=""></p>
+                <p class=""></p>
+                <p style="background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;" class=""><strong style="font-family: Verdana, Arial, sans-serif; background-color: initial;"><u><font color="#000000" size="2">Audiobooks</font></u></strong></p>
+                <p class=""><span style="color: rgb(0, 0, 0); font-size: small; font-family: Verdana, Arial, sans-serif; background-color: initial;">Frankenstein:</span><span class="apple-converted-space" style="color: rgb(0, 0, 0); font-size: small; font-family: Verdana, Arial, sans-serif; background-color: initial;">&nbsp;</span>
+                    <font color="#000000" style="font-family: Verdana, Arial, sans-serif; background-color: initial;"><a href="http://librivox.org/frankenstein-or-modern-prometheus-by-mary-w-shelley/" target="_blank">http://librivox.org/frankenstein-or-modern-prometheus-by-mary-w-shelley/</a></font>
+                </p>
 
             </div>
             <div id="chc2d" class="cours">
-		<h2>CHC2D</h2>
-		<table border=1><tr><td bgcolor=gray><center>Revue</td></tr>
-		<tr><td>-Revoir les étapes de la persécution des Juifs</td></tr>
-		<tr><td>-Décrire fait intéressants des camps de concentration et d'extermination Juifs</td></tr>
-		<tr><td>-Analyse de caricatures selon format enseigné en classe
-		(revoir personnages et évènements importants de la guerre froide ainsi que la conscription lors des deux Guerres mondiales)</td></tr>
-		<tr><td>-Revoir <b>toute</b> la contribution du Canada lors des deux Guerres mondiales
-		(batailles, contribution industrielle, rôle des femmes, rôle des amérindiens et noirs, rôle des enfants, faits intéressants, statistiques, etc)</td></tr>
-		</table>
-	    </div>
+                <h2>CHC2D</h2>
+                <table border=1>
+                    <tr>
+                        <td bgcolor=gray>
+                            <center>Revue</td>
+                    </tr>
+                    <tr>
+                        <td>-Revoir les étapes de la persécution des Juifs</td>
+                    </tr>
+                    <tr>
+                        <td>-Décrire fait intéressants des camps de concentration et d'extermination Juifs</td>
+                    </tr>
+                    <tr>
+                        <td>-Analyse de caricatures selon format enseigné en classe (revoir personnages et évènements importants de la guerre froide ainsi que la conscription lors des deux Guerres mondiales)</td>
+                    </tr>
+                    <tr>
+                        <td>-Revoir <b>toute</b> la contribution du Canada lors des deux Guerres mondiales (batailles, contribution industrielle, rôle des femmes, rôle des amérindiens et noirs, rôle des enfants, faits intéressants, statistiques, etc)</td>
+                    </tr>
+                </table>
+            </div>
             <div id="mfm2p" class="cours">
-		<h2>MFM2P</h2>
-		<table border=1><tr><td bgcolor=lightgray><center><b>Revue pour l'examen</b></td></tr></table>	
-		<br><img src="img/MFM2P_Revue-01.jpg"><img src="img/MFM2P_Revue-02.jpg"><img src="img/MFM2P_Revue-03.jpg">
-		<img src="img/MFM2P_Revue-04.jpg"><img src="img/MFM2P_Revue-05.jpg"><img src="img/MFM2P_Revue-06.jpg">
-		<img src="img/MFM2P_Revue-07.jpg"><img src="img/MFM2P_Revue-08.jpg"><img src="img/MFM2P_Revue-08.jpg">
-		<img src="img/MFM2P_Revue-10.jpg"><img src="img/MFM2P_Revue-11.jpg">
-		</div>
+                <h2>MFM2P</h2>
+                <table border=1>
+                    <tr>
+                        <td bgcolor=lightgray>
+                            <center><b>Revue pour l'examen</b></td>
+                    </tr>
+                </table>
+                <br><img src="img/MFM2P_Revue-01.jpg"><img src="img/MFM2P_Revue-02.jpg"><img src="img/MFM2P_Revue-03.jpg">
+                <img src="img/MFM2P_Revue-04.jpg"><img src="img/MFM2P_Revue-05.jpg"><img src="img/MFM2P_Revue-06.jpg">
+                <img src="img/MFM2P_Revue-07.jpg"><img src="img/MFM2P_Revue-08.jpg"><img src="img/MFM2P_Revue-08.jpg">
+                <img src="img/MFM2P_Revue-10.jpg"><img src="img/MFM2P_Revue-11.jpg">
+            </div>
             <div id="mpm2d" class="cours">
                 <h2>MPM2D</h2>
                 <table border=1>
@@ -745,19 +869,29 @@ generator:</span><span class="apple-converted-space" style="color: rgb(0, 0, 0);
                     </tr>
                 </table>
                 <br><br>
-		<table border=1><tr><td bgcolor=lightgray><center><b>Revue pour l'examen</b></td></tr></table>	
-		<br><img src="img/MPM2D_Revue-01.jpg"><img src="img/MPM2D_Revue-02.jpg"><img src="img/MPM2D_Revue-03.jpg">
-		<img src="img/MPM2D_Revue-04.jpg"><img src="img/MPM2D_Revue-05.jpg"><img src="img/MPM2D_Revue-06.jpg">
-		<img src="img/MPM2D_Revue-07.jpg"><img src="img/MPM2D_Revue-08.jpg">
-            	</div>
-            	<div id="mbf3c" class="cours">
-		<h2>MBF3C</h2>
-		<table border=1><tr><td bgcolor=lightgray><center><b>Revue pour l'examen</b></td></tr></table>	
-		<br><img src="img/mbf3c-revue-01.jpg"><img src="img/mbf3c-revue-02.jpg"><img src="img/mbf3c-revue-03.jpg">
-		<img src="img/mbf3c-revue-04.jpg"><img src="img/mbf3c-revue-05.jpg"><img src="img/mbf3c-revue-06.jpg">
-		<img src="img/mbf3c-revue-07.jpg"><img src="img/mbf3c-revue-08.jpg"><img src="img/mbf3c-revue-08.jpg">
-		<img src="img/mbf3c-revue-10.jpg"><img src="img/mbf3c-revue-11.jpg">
-		</div>
+                <table border=1>
+                    <tr>
+                        <td bgcolor=lightgray>
+                            <center><b>Revue pour l'examen</b></td>
+                    </tr>
+                </table>
+                <br><img src="img/MPM2D_Revue-01.jpg"><img src="img/MPM2D_Revue-02.jpg"><img src="img/MPM2D_Revue-03.jpg">
+                <img src="img/MPM2D_Revue-04.jpg"><img src="img/MPM2D_Revue-05.jpg"><img src="img/MPM2D_Revue-06.jpg">
+                <img src="img/MPM2D_Revue-07.jpg"><img src="img/MPM2D_Revue-08.jpg">
+            </div>
+            <div id="mbf3c" class="cours">
+                <h2>MBF3C</h2>
+                <table border=1>
+                    <tr>
+                        <td bgcolor=lightgray>
+                            <center><b>Revue pour l'examen</b></td>
+                    </tr>
+                </table>
+                <br><img src="img/mbf3c-revue-01.jpg"><img src="img/mbf3c-revue-02.jpg"><img src="img/mbf3c-revue-03.jpg">
+                <img src="img/mbf3c-revue-04.jpg"><img src="img/mbf3c-revue-05.jpg"><img src="img/mbf3c-revue-06.jpg">
+                <img src="img/mbf3c-revue-07.jpg"><img src="img/mbf3c-revue-08.jpg"><img src="img/mbf3c-revue-08.jpg">
+                <img src="img/mbf3c-revue-10.jpg"><img src="img/mbf3c-revue-11.jpg">
+            </div>
             <div id="mcf3m" class="cours">
                 <h2>MCF3M</h2>
                 <table border=1>
@@ -837,16 +971,751 @@ generator:</span><span class="apple-converted-space" style="color: rgb(0, 0, 0);
             </div>
 
             <!--By Mouhamed & Eric-->
-            <div id="sph" class="cours">
+            <div id="sph3" class="cours">
                 <table border="2">
                     <td colspan="2" bgcolor="lightblue">
                         <center>
                             <h1>Physique</h1></center>
                     </td>
                 </table>
+
+                <h2>Formules<h2>
+                    
+                    <p><b><i>N.B.</i></b></p>
+                    <p><i>Tu as droit à une aide-mémoire de 4" par 6" ( environ 10 cm par 15 cm ). Tu peux écrire ce que tu veux sur cette aide mémoire, formules, exemples, définitions etc.</i></p>
+                    <p><b><u>Tu as besoin d’une règle, un rapporteur et une calculatrice.</u></b></p>
+                    <p>Tu peux écrire ton examen en crayon.</p>
+                    <p><b><u>BONNE ÉTUDE ET BON SUCCÈS.</u></b></p>
+                    
+                        
+
+		<h3>Mouvement (Dynamique)</h3>
+			<ul>
+				<li>
+					<p>v = <sup>d</sup>/<sub>t</sub></p>
+				</li>
+				<li>
+					<p>a = <sup>(vf - vi)</sup>/<sub>t</sub></p>
+				</li>
+				<li>
+					<p>a = <sup>(v2 - v1)</sup>/<sub>(t2 - t1)</sub></p>
+				</li>
+				<li>
+					<p>d = <sup>[(vf + vi) * &#916t]</sup>/<sub>2</sub></p>
+				</li>
+				<li>
+					<p>d = vi*t + <sup>(a*t<sup>2</sup>)</sup>/<sub>2</sub></p>
+				</li>
+				<li>
+					<p><sup>km/h</sup>/<sub>3.6</sub> = m/s</p>
+					<p>m/s * 3.6 = km/h</p>
+				</li>
+				<li>
+					<p>v = <sup>(d2 - d1)</sup>/<sub>(t2 - t1)</sub></p>
+					<p>a = <sup>(v2 - v1)</sup>/<sub>(t2 - t1)</sub></p>
+				</li>
+			</ul>
+            <h4>Révision</h4>
+            <ul>
+                <li>Revoir les problèmes de mouvement ( formules v = d/t, etc) et de force ( lois de Newton ).
+                <li>Revoir les graphiques.
+                <li>Revoir l’aspect vectoriel du mouvement; vecteur-vitesse, vecteur-accélération, vecteur force.( addition de vecteur )
+                <li>Revoir les tests de cette unité.
+            </ul>
+		
+	   <h3>Force</h3> 
+			<ul>
+				<li>
+					<p>F = m * a</p>
+				</li>
+				<li>
+					<p>Fg = m * g</p>
+				</li>
+				<li>
+					<p>Fg = <sup>(G * m1 * m2)</sup>/<sub>d<sup>2</sup></sub></p>
+			</ul>
+                        <h4>Révision</h4>
+            <ul>
+                <li>Revoir les problèmes de mouvement ( formules v = d/t, etc) et de force ( lois de Newton ).
+                <li>Revoir les graphiques.
+                <li>Revoir l’aspect vectoriel du mouvement; vecteur-vitesse, vecteur-accélération, vecteur force.( addition de vecteur )
+                <li>Revoir les tests de cette unité.
+            </ul>
+					
+		<h3>Travail, Énergie, Puissance</h3>
+			<ul>
+				<li>
+					<p>W = F * d</p>
+				</li>
+				<li>
+					<p>Eg = m * g * &#916h </p>
+				</li>
+				<li>
+					<p>Ec = <sup>1</sup>/<sub>2</sub> * m * v<sup>2</sup></p>
+				</li>
+				<li>
+					<p>P = <sup>E</sup>/<sub>t</sub></p>
+				</li>
+				<li>
+					<p>Rendement = (<sup>Énergie utilisable produite</sup>/<sub>Énergie fournie</sub>) * 100%<p>
+				</li>
+			</ul>
+            
+            <h4>Révision</h4>
+            <ul>
+                <li>Revoir les problèmes d’énergie ( potentielle gravitationnelle et cinétique ), travail et puissance.
+                <li>Revoir la loi de conservation d’énergie.
+                <li>Revoir le rendement.
+                <li>Revoir l'énergie thermique; capacité thermique spécifique,  chaleur latente, transfert de chaleur.
+            </ul>
+		
+		<h3>Énergie thermique</h3>
+			<ul>
+				<li>
+					<p>m * c * &#916T = -m * c * &#916T </p> 
+				</li>
+				<li>
+					<p>L = <sup>E<sub>T</sub></sup>/<sub>m</sub></p>
+				</li>
+			</ul>
+            
+                        <h4>Révision</h4>
+            <ul>
+                <li>Revoir les problèmes d’énergie ( potentielle gravitationnelle et cinétique ), travail et puissance.
+                <li>Revoir la loi de conservation d’énergie.
+                <li>Revoir le rendement.
+                <li>Revoir l'énergie thermique; capacité thermique spécifique,  chaleur latente, transfert de chaleur.
+            </ul>
+		
+		<h3>Électricité</h3>
+			<ul>
+				<li>
+					<p><sup>R<sub>1</sub></sup>/<sub>R<sub>2</sub></sub> = <sup>L<sub>1</sub></sup>/<sub>L<sub>2</sub></sub></p>
+				</li>
+				<li>
+					<p><sup>R<sub>1</sub></sup>/<sub>R<sub>2</sub></sub> = <sup>A<sub>1</sub></sup>/<sub>A<sub>2</sub></sub></p>
+				</li>
+				<li>
+					<p>V = <sup>E</sup>/<sub>Q</sub></p>
+				</li>
+				<li>
+					<p>E = <sup>Q</sup>/<sub>t</sub></p>
+				</li>
+				<li>
+					<p>R = <sup>V</sup>/<sub>I</sub></p>
+				</li>
+				<ul>
+					<li>Série</li>
+					<ul>
+						<li>
+							<p>R<sub>T</sub> = R1 + R2</p>
+						</li>
+						<li>
+							<p>V<sub>T</sub> = V1 + V2</p>
+						</li>
+						<li>
+							<p>I<sub>T</sub> = I1 = I2</p>	
+						</li>	
+					</ul>
+					<li>Parallèle</li>
+					<ul>
+						<li>
+							<p><sup>1</sup>/<sub>R<sub>T</sub></sub> = <sup>1</sup>/<sub>R<sub>1</sub></sub> + <sup>1</sup>/<sub>R<sub>2</sub></sub></p>
+						</li>
+						<li>
+							<p>V<sub>T</sub> = V1 = V2</p>
+						</li>
+						<li>
+							<p>I<sub>T</sub> = I1 + I2</p>	
+						</li>	
+					</ul>
+			</ul>
+			</ul>
+            
+                        <h4>Révision</h4>
+            <ul>
+                <li>Revoir la loi d’Ohm et ses applications à des circuits en parallèle et en série. 
+                <li>Revoir la loi de la main gauche pour les conducteurs rectiligne et les solénoïdes.
+                <li>Revoir l'induction électromagnétique ( le transformateur, loi de Lenz etc. )
+                <li>Revoir la distinction et le fonctionnement du moteur électrique et les génératrices.
+            </ul>
+					
+		<h3>Les ondes</h3>
+			<ul>
+					<li>
+						<p>Fréquence = <sup>Cycle</sup>/<sub>Temps</sub></p>
+					</li>
+					<li>
+						<p>Période = <sup>Temps</sup>/<sub>Cycle</sub></p>
+					</li>
+					<li>
+						<p>f = <sup>1</sup>/<sub>T</sub></p>
+					</li>
+					<li>
+						<p>T = <sup>1</sup>/<sub>f</sub></p></li>
+					</li>
+				</ul>
+			</ul>
+            
+                                    <h4>Révision</h4>
+            <ul>
+                <li>Revoir les termes qui s’appliquent au ondes mécaniques. ( longueur d’onde, amplitude, fréquence, etc ) 
+                <li>Revoir les caractéristiques des ondes. ( interférence, ondes stationnaires, résonance, battements, harmoniques, etc )
+                <li>Revoir les caractéristiques des ondes sonores. ( vitesse, nombre de Mach, résonance d’un tube fermé, effet Doppler, etc )
+            </ul>
+		</div>
+            <div id="tdj2o" class="cours">
+                <h2>TDJ2O</h2>
+                <table border=1>
+                    <tr>
+                        <td colspan=2 bgcolor=lightgray>
+                            <center>Technologie du design</td>
+                    </tr>
+                    <tr>
+                        <td colspan=2>
+                            <center>Les 9 étapes du processus de design</td>
+                    </tr>
+                </table><br><br>
+                <table>
+                    <tr>
+                        <td width="70">L’étape 1: </td>
+                        <td> La détermination des problèmes et l’exploration des possibilités</td>
+                    </tr>
+                    <tr>
+                        <td>L’étape 2: </td>
+                        <td> La structure d’une esquisse</td>
+                    </tr>
+                    <tr>
+                        <td>L’étape 3: </td>
+                        <td> L’investigation et la recherche</td>
+                    </tr>
+                    <tr>
+                        <td>L’étape 4: </td>
+                        <td> La recherche de solutions de rechange</td>
+                    </tr>
+                    <tr>
+                        <td>L’étape 5: </td>
+                        <td> Le choix de la meilleure solution</td>
+                    </tr>
+                    <tr>
+                        <td>L’étape 6: </td>
+                        <td> Le travail préparatoire</td>
+                    </tr>
+                    <tr>
+                        <td>L’étape 7: </td>
+                        <td> La modélisation ou le prototype</td>
+                    </tr>
+                    <tr>
+                        <td>L’étape 8: </td>
+                        <td> Les essais et l’évaluation</td>
+                    </tr>
+                    <tr>
+                        <td>L’étape 9: </td>
+                        <td> La reprise du design et son amélioration</td>
+                    </tr>
+                </table>
+                </table>
+            </div>
+            <div id="hsp3" class="cours">
+                <table border="1">
+                    <td>
+                        <center>
+                            <h2>Psychologie</h2>
+                        </center>
+                    </td>
+                </table>
+                <h3>Le développement de la psychologie</h3>
+                <h4>Les domaines d'études de la psychologie</h4>
+                <ul>
+                    <li>La psychologie a traversé des périodes dominés par diverses écoles de pensée</li>
+                </ul>
+                <h4>La psychanalyse</h4>
+                <ul>
+                    <li>À la suite des travaux innovateurs de Sigmung Freud, les recherches en psychologie ont surtout été orienté ver la <u>psychanalyse</u></li>
+                    <li>Les psychanalistes ont tenté d'analyser les expériences les plus profondes (pensées, sentiments, émotions, fantasmes et les rêves) de leurs sujets dans le but de traiter les patient qui souffraient d'anxiétés et de tensions graves.</li>
+                    <li>Des exemples de psychanalistes sont Sigmung Freud, Alfred Adler et Carl Gustav Jung</li>
+                </ul>
+            </div>
+            <div id="fra" class="cours">
+                <h2>FRA</h2>
+                <table border=1>
+                    <tr>
+                        <td colspan=2 bgcolor=lightgray>
+                            <center>Grammaire</td>
+                    </tr>
+                </table><br><br>
+                <h4>Marqueurs de relation</h4>
+                <pre>
+         
+Les marqueurs de relation servent à relier des phrases ou des éléments à l’intérieur d’une phrase. En établissant des liens entre les mots et les phrases, ces marqueurs jouent un rôle primordial : construire la cohérence nécessaire au texte.  
+ 
+Les marqueurs de relation – coordonnants, subordonnants, prépositions – indiquent de manière explicite le lien entre les unités syntaxiques – mots, groupes de mots, phrases – qu’ils relient.  
+ 
+On doit être attentif au choix des marqueurs de relation, car ils ont généralement une valeur sémantique. Ainsi, changer de marqueur modifie le sens des énoncés ou le rapport de sens entre les énoncés. 
+
+    Cette automobile est rapide et économique. (addition) 
+    Cette automobile est rapide, mais économique. (opposition) 
+    Elle n’osait pas exprimer son opinion, ensuite elle l’a regretté. (temps) 
+    Elle n’osait pas exprimer son opinion, cependant elle l’a regretté. (restriction) 
+    Elle n’osait pas exprimer son opinion, de sorte qu’elle l’a regretté. (conséquence)  
+    Elle n’osait pas exprimer son opinion, encore qu’elle l’a regretté. (concession) 
+    Elle n’osait pas exprimer son opinion, au cas où elle l’aurait regretté. (condition) 
+    Elle n’osait pas exprimer son opinion, de crainte qu’elle ne le regrette. (but) 
+    Au lieu de s’enfuir, le héros fait une prière. (alternative) 
+    Avant de s’enfuir, le héros fait une prière. (temps : antériorité) 
+    Florence a un rendez-vous avec le coiffeur. (accompagnement) 
+    Florence a un rendez-vous chez le coiffeur. (lieu) 
+
+1.	Coordonnants  
+Les coordonnants – les conjonctions de coordination et les adverbes coordonnants – servent à relier des unités compatibles sur le plan du sens et de la syntaxe : des mots, des groupes, des phrases, des subordonnées.  
+ 
+*Le narrateur de ce conte aime pêcher, les bons repas entre amis et aller à la chasse. (incompatibilité syntaxique) 
+Le narrateur de ce conte aime pêcher, aller à la chasse et partager de bons repas entre amis. (compatibilité syntaxique) 
+*La première année, elle traversa la province et une crise existentielle. (incompatibilité de sens) 
+La première année, elle traversa la province et vécut une crise existentielle. (compatibilité de sens) 
+ 
+Il importe de bien connaître le rapport qu’on désire établir entre les unités pour pouvoir choisir le bon coordonnant.  
+ 
+ATTENTION  
+Il y aura erreur dans la coordination ou manque de clarté de l’énoncé si le coordonnant n’est pas utilisé selon le sens qu’il exprime. 
+ 
+*La métaphore associe l’île à une femme ; ensuite, cette image contribue à personnifier le lieu. (sens : succession) 
+La métaphore associe l’île à une femme ; de plus, cette image contribue à personnifier le lieu. (sens : addition) 
+ 
+Les coordonnants servent à indiquer notamment les sens suivants :  
+ 
+    •	La cause (car, en effet, en raison de…)  
+La connaissance de l’histoire littéraire est importante, car elle éclaire souvent le sens d’une œuvre.  
+ 
+    •	La conséquence (ainsi, aussi, c’est pourquoi, donc, en conséquence, partant, de là, d’où…)  
+Il a lu tout Balzac, donc il devrait pouvoir en parler en connaissance de cause.  Il a lu tout Balzac : de là ses connaissances sur l’auteur. 
+ 
+    •	L’addition (ainsi que, bien plus, de plus, ensuite, et, puis…)  
+Le passé lui offre la première impulsion pour qu'il rentre en lui-même et qu’il se réfugie dans le présent. 
+ 
+    •	L’opposition ou la restriction (au contraire, cependant, en revanche, mais, par contre, pourtant, toutefois…)  David a obtenu la meilleure note en français ; pourtant, il déteste cette matière.  
+ 
+    •	L’explication ou la précision (à savoir, c’est-à-dire, par exemple, soit…)  Flore a rencontré son amoureux à l'époque des vendanges, c'est-à-dire fin septembre. 
+ 
+ATTENTION  
+Il y aura erreur dans la coordination ou manque de clarté de l’énoncé si les phrases syntaxiques reliées par des coordonnants sont trop nombreuses dans la phrase graphique . 
+ 
+*Le jeune orphelin aime parler à sa vieille voisine, car il la trouve sympathique, mais elle devient aveugle avec le temps et elle perd sa lucidité puis, vers la fin, ne le reconnaît plus.  
+ 
+Le jeune orphelin aime parler à sa vieille voisine, car il la trouve sympathique. Or elle devient aveugle avec le temps et perd sa lucidité. Vers la fin, elle ne le reconnaît plus.  
+ 
+2.	Subordonnants  
+Les subordonnants sont des marqueurs qui introduisent une subordonnée. Nous ne retenons ici que les subordonnants à valeur sémantique, c’est-à-dire les conjonctions de subordination autres que la conjonction que . 
+ 
+Les conjonctions de subordination ont une valeur sémantique. Il importe donc de bien connaître le rapport de sens qu’on désire établir entre les phrases pour pouvoir choisir la bonne conjonction : 
+    •	le rapport temporel d’antériorité, de simultanéité ou de postériorité (alors que, après que, aussitôt que, avant que, chaque fois que, depuis que, en attendant que, lorsque, quand, tandis que…) 
+    •	la cause (attendu que, comme, étant donné que, parce que, puisque, vu que …)  
+    •	la conséquence (à tel point que, de façon que, de sorte que, si bien que, tellement que…)  
+    •	le but (afin que, de crainte que, de manière que, de peur que, pour que…)  
+    •	la condition (à condition que, à supposer que, au cas où, dans l’éventualité que, pourvu que, si…)  
+    •	la concession (alors que, bien que, encore que, en dépit du fait que, quoique…)  
+ 
+ATTENTION  
+Comme pour les coordonnants, il y aura erreur dans la subordination ou manque de clarté de l’énoncé si les phrases reliées par des subordonnants sont trop nombreuses. La ponctuation (virgule, deux-points, point-virgule, tiret) peut parfois remplacer avantageusement un marqueur de relation. 
+ 
+*La dernière strophe laisse entendre que le temps a passé et que la femme oubliera son amour puisqu’elle laisse ses souvenirs derrière elle parce qu’ils ont perdu de leur valeur sentimentale. 
+ 
+La dernière strophe laisse entendre que le temps a passé et que la femme oubliera son amour : elle laisse ses souvenirs derrière elle parce qu’ils ont perdu de leur valeur sentimentale. 
+ 
+3.	Prépositions  
+Les prépositions servent à marquer les relations entre le complément et le mot complété, ou encore, entre la phrase complétée et le complément de phrase.  
+ 
+Le groupe prépositionnel (GPrép) commence toujours par une préposition et peut jouer le rôle de marqueur de relation.  
+ 
+On doit veiller au choix de la préposition, qui peut parfois entraîner une erreur. On s’en sert pour marquer notamment :  
+    •	le lieu (à, chez, dans, derrière, en, jusqu’à, sous, vers…)  
+    •	le but (afin de, dans le but de, en vue de, pour…)  
+    •	le temps (à, après, avant, depuis, dès, pendant…)  
+    •	l’opposition (contre, malgré, nonobstant…)  
+    •	la cause (à cause de, attendu, de, étant donné, grâce à…)  
+ 
+Remarque 
+Quand les prépositions à et de fusionnent avec les déterminants le / les, elles forment un déterminant contracté au / aux. 
+ 
+Pour choisir correctement une préposition ou une locution prépositive : 
+    •	vérifiez le sens de ce que vous voulez exprimer (le temps, le lieu, le moyen, la manière, le but, la provenance, etc.) ;  
+    •	consultez le dictionnaire à l’article concernant la préposition que vous employez ; 
+    •	consultez le dictionnaire à l’article concernant le mot qui est placé avant ou après la préposition. Ainsi, si vous cherchez la préposition qui doit suivre le verbe parler, vous trouverez la réponse à l’article concernant le mot parler dans le dictionnaire : 
+« Parler : discuter avec quelqu'un au sujet de quelque chose ou de quelqu'un, sur un thème : C'est quelqu'un avec qui on peut parler de tout. Parler (de) philosophie. 
+« Parler : dire quelque chose à quelqu'un, lui exprimer sa pensée au sujet de quelque chose ou de quelqu'un, faire un discours portant sur tel point : Le premier ministre a parlé au pays de la situation. » (Encyclopédie Larousse.fr) ; 
+    •	surveillez les énumérations, dans lesquelles il faut répéter les prépositions à, de et en devant chacun des éléments ; 
+    •	surveillez l’emploi fautif de au niveau de, face à, vis-à-vis, sans, avec, etc. Voir ces mots dans le Multidictionnaire. 
+
+    </pre>
+                <br><br>
+                <h4>Coordination et juxtaposition</h4>
+                <pre>
+La coordination consiste à joindre par un coordonnant des éléments de même niveau
+syntaxique, c’est-à-dire des éléments qui remplissent la même fonction et qui peuvent se
+remplacer l’un l’autre. On appelle « coordonnant » le mot ou la locution qui relie les
+éléments coordonnés ; le terme coordonnant désigne aussi la fonction de ce mot.
+[Renée joue souvent au tennis] et [nage tous les jours].
+> Le coordonnant et relie deux phrases de même niveau syntaxique (le sujet de la
+deuxième phrase (Renée nage…) a été effacé pour éviter la répétition).
+Le faucon pèlerin niche [sur les grands édifices] ou [sous les ponts].
+> Le coordonnant ou relie deux groupes prépositionnels (GPrép) en fonction de
+complément indirect du verbe niche.
+[Daniel] et [Patrick] présenteront leur projet au président cet après-midi.
+> Le coordonnant et relie deux groupes nominaux (GN) qui remplissent la fonction
+de sujet.
+Dans les exemples ci-dessus, les éléments coordonnés sont de même catégorie. Mais il
+arrive que des éléments coordonnés ne soient pas de même catégorie.
+Ce cheval est [rapide] et [d’une grande robustesse].
+> Le coordonnant et relie deux groupes en fonction d’attribut du sujet ; le premier
+est un groupe adjectival (GAdj) et le second, un GPrép.
+En plus de jouer un rôle syntaxique, le coordonnant joue un rôle sémantique, car il exprime
+l’addition (et, de plus), l’alternative (ou), la cause (car, en effet), la conséquence
+(donc, par conséquent), l’opposition (mais, cependant), etc.
+La juxtaposition est une coordination sans l’emploi d’un coordonnant. Le coordonnant
+est remplacé par un signe de ponctuation (une virgule, un deux-points ou un pointvirgule),
+qui sépare graphiquement les éléments de même fonction juxtaposés.
+↓
+[Chaque soir], [au coucher du soleil], ces petites fleurs jaunes s’épanouissent.
+> La virgule sépare deux groupes de mots ayant la fonction de complément de
+phrase.
+↓
+[Chaque soir, au coucher du soleil, ces petites fleurs jaunes s’épanouissent] ; [elles
+dégagent alors une fraîche odeur citronnée].
+> Le point-virgule sépare deux phrases de même niveau syntaxique.
+
+
+
+LA COORDINATION DE GROUPES PRÉPOSITIONNELS (GPRÉP)
+
+Dans la coordination et la juxtaposition de groupes prépositionnels (GPrép), c’est-à-dire
+de groupes débutant par une préposition, il faut respecter une règle particulière : on doit
+répéter les prépositions à, de et en au début de chacun des GPrép désignant des entités
+différentes. Les autres prépositions peuvent être répétées ou non.
+J’ai envie [de me faire couler un bon bain] et [de me détendre au moins une heure].
+J’aime bien me détendre [en lisant un roman] ou [en prenant un bain chaud].
+J’ai confié mon chien [à ma sœur] et [à son mari] le temps de mon voyage.
+Je compte [sur ma sœur] et [(sur) son mari] pour en prendre soin.
+> Ici, la répétition de la préposition sur est facultative.
+La sortie a été reportée [à cause du froid] et [(à cause) de la neige].
+> Ici, la répétition de la première partie de la préposition à cause de est facultative ;
+on doit cependant répéter obligatoirement le de (du, des).
+J’ai confié mon chien à ma [sœur] et [amie].
+> Ici, sœur et amie représentent une seule personne.
+LA COORDINATION DE SUBORDONNÉES CIRCONSTANCIELLES
+Les subordonnées circonstancielles expriment différentes valeurs de sens, lesquelles sont
+précisées par un mot de relation ayant la fonction de subordonnant. Voici quelques
+exemples de subordonnants de cause ou de justification : parce que, puisque, comme,
+étant donné que, vu que ; de temps : avant que, après que, lorsque, quand, etc. ; de but :
+pour que, afin que, etc.
+Dans la coordination et la juxtaposition de subordonnées circonstancielles, il faut respecter
+une règle particulière : les subordonnants doivent être répétés ou tout simplement
+repris par que devant le deuxième élément coordonné ou juxtaposé.
+Il est venu [parce qu’il avait une affaire à régler] et [(parce) qu’il voulait me parler].
+> Ici, la répétition de la première partie du subordonnant parce que est facultative ;
+on doit cependant répéter obligatoirement le que (qu’).
+Ferme les fenêtres [avant qu’il se mette à pleuvoir] et [(avant) que nos papiers
+s’envolent].
+> Ici, la répétition de la première partie du subordonnant avant que est facultative ;
+on doit cependant répéter obligatoirement le que (qu’).
+Attention ! Lorsque la cause est exprimée par le coordonnant car, ce dernier n’est ni
+répété ni repris par que devant le deuxième élément coordonné.
+[Il est venu], car [il avait une affaire à régler et il voulait me parler].
+
+
+
+LA COORDINATION DE SUBORDONNÉES RELATIVES
+
+Dans la coordination et la juxtaposition de subordonnées relatives, on doit respecter une
+règle particulière : lorsque le pronom relatif et le sujet de la deuxième subordonnée relative
+sont les mêmes que ceux de la première, on ne les répète pas, mais ils doivent être
+exprimés s’ils sont différents.
+C’était une marchandise [dont tout le monde avait besoin] et [voulait faire provision].
+> Les deux relatives coordonnées sont équivalentes à ces phrases :
+[Tout le monde avait besoin de la marchandise.]
+[Tout le monde voulait faire provision de la marchandise.]
+Le sujet tout le monde est le même dans les deux phrases et le pronom relatif doit
+aussi être le même pour remplacer de la marchandise : on emploie dont parce
+que ce groupe débute par la préposition de (avoir besoin de…, faire provision
+de…).
+Le cola demeurait la marchandise-clé [dont tout le monde avait besoin] et [qu’on
+venait régulièrement se procurer].
+> Les deux relatives coordonnées sont équivalentes à ces phrases :
+[Tout le monde avait besoin de la marchandise.]
+[On venait régulièrement se procurer la marchandise.]
+Le sujet n’est pas le même dans les deux phrases et le pronom relatif ne doit pas
+être le même pour remplacer de la marchandise et la marchandise : le premier
+groupe débute par la préposition de, on doit donc employer le pronom dont ; le
+second groupe est un GN complément direct du verbe se procurer, on doit donc
+employer le pronom relatif que (qu’).
+    </pre>
+                <br></br>
+                <h4>Transformation de phrase</h4>
+                <pre>
+Une phrase transformée est une phrase syntaxique construite à partir du modèle de base, mais
+qui n’est plus conforme au modèle de base parce qu’elle a subi l’une des transformations
+suivantes :
+    • Transformation de type et de forme
+La phrase n’est plus à la fois déclarative, positive, active, neutre et personnelle.
+    • Transformation par déplacement d’un constituant obligatoire
+Dans cette phrase, l’ordre sujet–prédicat a été inversé.
+    • Transformation par enchâssement
+La phrase est utilisée comme subordonnée.
+Transformation de type et de forme
+Une phrase répond toujours à un type (déclaratif OU interrogatif OU exclamatif OU impératif)
+et à quatre formes (positive ou négative ET active ou passive ET neutre ou emphatique ET
+personnelle ou impersonnelle1
+). On peut changer le type et les formes d’une phrase en
+appliquant certaines manipulations.
+MODÈLE DE BASE (toujours de type déclaratif et de formes positive, active, neutre et
+personnelle)
+L’écureuil a croqué la noix.
+MANIPULATION D’ADDITION (type interrogatif)
+Est-ce que l’écureuil a croqué la noix ?
+MANIPULATION DE REMPLACEMENT (type interrogatif)
+Qui a croqué la noix ?
+MANIPULATION DE DÉPLACEMENT (forme passive)
+La noix a été croquée par l’écureuil.
+MANIPULATION D’EFFACEMENT (type impératif)
+Ø Croque cette noix.
+ 1. La construction impersonnelle est considérée comme une phrase à construction particulière lorsqu’il
+s’agit d’une phrase construite avec un verbe qui ne se conjugue qu’à la forme impersonnelle.
+
+
+MANIPULATION D’ENCADREMENT (forme emphatique)
+C’est l’écureuil qui a croqué la noix.
+MANIPULATION DE DÉTACHEMENT (forme emphatique)
+L’écureuil, il a croqué la noix.
+Ainsi, la phrase : Le chat a chassé habilement les souris, qui est déclarative, positive, active,
+neutre et personnelle, peut, à la suite de certaines manipulations, devenir :
+INTERROGATIVE (positive, active, neutre et personnelle)
+– Interrogation totale (qui porte sur toute la phrase et qui appelle une réponse en oui/non)
+Est-ce que le chat a chassé habilement les souris ? (Addition d’un mot interrogatif)
+Le chat a-t-il chassé habilement les souris ? (Addition d’un pronom)
+– Interrogation partielle (qui porte sur une partie de la phrase)
+Qui a chassé habilement les souris ? (Remplacement d’une partie de la phrase par un
+pronom interrogatif)
+Qu’est-ce que le chat a chassé habilement ? (Remplacement d’une partie de la phrase
+par un pronom interrogatif et déplacement de ce pronom et addition d’un interrogatif)
+EXCLAMATIVE (positive, active, neutre et personnelle)
+Comme le chat a chassé habilement les souris ! (Addition d’un mot exclamatif)
+Que de souris le chat a chassées habilement ! (Déplacement du complément du verbe
+et remplacement du dét. dans ce GN complément)
+IMPÉRATIVE (positive, active, neutre et personnelle)
+Ø Chasse habilement les souris. (Effacement du sujet)
+NÉGATIVE (déclarative, active, neutre et personnelle)
+Le chat n’a pas chassé habilement les souris. (Addition d’adverbes de négation)
+Le chat n’a chassé habilement aucune souris. (Addition d’un adverbe de négation et
+remplacement d’un dét. par un dét. à valeur négative)
+Aucun chat n’a chassé habilement les souris. (Addition d’un adverbe de négation et
+remplacement d’un dét. par un dét. à valeur négative)
+PASSIVE (déclarative, positive, neutre et personnelle)
+Les souris sont chassées habilement par le chat. (Déplacement du sujet et du complé-
+ment du verbe et remplacement du verbe par être suivi d’un participe passé et addition
+de la préposition par)
+EMPHATIQUE (déclarative, positive, active et personnelle)
+C’est le chat qui a chassé habilement les souris. (Encadrement du sujet par les
+marqueurs c’est… qui)
+Ce sont les souris que le chat a chassées. (Déplacement et encadrement du complé-
+ment par les marqueurs ce sont… que)
+
+
+Ce qui a chassé les souris, c’est le chat. (Détachement et encadrement du complément
+par les marqueurs ce qui... c’est)
+Ce que le chat a chassé habilement, ce sont les souris. (Détachement du complément
+par les marqueurs ce que… ce sont)
+Le chat, il a chassé habilement les souris. (Détachement et reprise du groupe détaché,
+par un pronom)
+Il a chassé habilement les souris, le chat. (Détachement et annonce du groupe détaché,
+par un pronom)
+IMPERSONNELLE (déclarative, positive, active et neutre)
+Cette phrase ne peut pas être transformée en phrase impersonnelle.
+Il est à noter cependant que certains verbes comme entrer, venir, arriver et se passer sont
+susceptibles d’être employés à la forme impersonnelle.
+Ainsi, la phrase : Trois chats entrent dans cette cage, qui est déclarative, positive, active, neutre
+et personnelle, peut devenir déclarative, positive, active, neutre et impersonnelle :
+Il entre trois chats dans cette cage. (Déplacement du sujet et addition du pronom
+impersonnel il)
+    </pre>
+                <br><br>
+                <h4>Guillemets et italique</h4>
+                <pre>
+L’emploi régulier des guillemets est le suivant : ils servent à isoler une citation ou un
+dialogue.
+Richard Séguin chante : « Partir, c’est pas guérir. » (citation)
+La dame lui demanda :
+« Pensez-vous arriver à temps à votre rendez-vous ?
+– Avec toute cette circulation, je ne le crois pas. » (dialogue)
+Toutefois, les guillemets sont aussi employés pour remplacer l’italique quand il est
+impossible d’utiliser celui-ci, comme dans un manuscrit ou un texte dactylographié. On
+les trouve donc autour d’un titre, du mot dont on parle, d’un terme ne faisant pas partie
+de la langue courante (mot étranger, marque de commerce, expression familière, néologisme).
+Dans un texte imprimé, il faut utiliser l’italique pour tous ces cas.
+Texte imprimé :
+As-tu lu La Cérémonie des anges, de Marie Laberge ? (titre)
+Le nom rédacteur est l’attribut du sujet mon jeune frère. (mots dont on parle)
+En fin de semaine, je me suis acheté des pantalons Levi’s. (marque de commerce)
+Texte manuscrit :
+As-tu lu « La Cérémonie des anges », de Marie Laberge ?
+Le nom « rédacteur » est l’attribut du sujet « mon jeune frère ».
+En fin de semaine, je me suis acheté des pantalons « Levi’s ».
+    </pre>
+                <br><br>
+                <h4>Point-virgule et deux-points</h4>
+                <pre>
+EMPLOI DU POINT-VIRGULE
+Le point-virgule sert à séparer des phrases étroitement liées par le sens, que l’on pourrait
+séparer par un point, mais entre lesquelles on veut montrer qu’il y a un lien de sens plus
+étroit. La deuxième phrase constitue souvent une addition à la première. Elle peut pré-
+senter une explication ou une opposition.
+Pierre ne m’a pas rappelée après cette soirée ; peut-être a-t-il rencontré quelqu’un
+d’autre.
+> La deuxième phrase est une explication de la première.
+Certains enfants jouent calmement avec leurs jouets ; d’autres courent à droite et à
+gauche.
+> La deuxième phrase présente une opposition par rapport à la première.
+Le point-virgule est aussi utilisé pour séparer les éléments d’une énumération présentée
+sous forme de liste.
+Vous devez suivre les étapes suivantes :
+• faire un résumé de ce qui est dit sur le sujet ;
+• donner votre opinion avec précision ;
+• expliquer cette opinion à l’aide d’arguments.
+EMPLOI DU DEUX-POINTS
+Le deux-points sert à introduire une énumération, un discours rapporté direct ou une
+citation.
+Tout était en solde : les livres, les cassettes, les disques et les revues.
+> Le deux-points introduit une énumération.
+Furieux, il s’est écrié : « Ce n’est pas moi qui ai cassé le vase ! »
+> Le deux-points introduit un discours rapporté direct.
+Savez-vous qui a dit : « Je ne suis pas d’accord avec ce que vous dites, mais je me
+battrai jusqu’au bout pour que vous puissiez le dire. » ? C’est Voltaire, bien sûr !
+> Le deux-points introduit une citation, qui est, en fait, une sorte de discours rapporté
+direct.
+Le deux-points sert aussi à introduire une phrase qui présente une cause ou une consé-
+quence de ce qui est énoncé dans la phrase précédente. Dans ces cas, on peut remplacer
+le signe de ponctuation par un marqueur de relation qui exprime le rapport de sens existant
+entre les deux phrases (ex. : cause : parce que, car ; conséquence : donc, par conséquent).
+
+Luc ne pourra pas participer au tournoi : il s’est cassé le bras droit.
+> Le deux-points introduit une phrase qui présente une cause de ce qui est dit
+dans la phrase précédente ; on peut le remplacer par parce que.
+Luc s’est cassé le bras droit : il ne pourra pas participer au tournoi.
+> Le deux-points introduit une phrase qui présente une conséquence de ce qui est
+dit dans la phrase précédente ; on peut le remplacer par par conséquent.
+    </pre>
+            </div>
+            <div id="eae" class="cours">
+                <h2>EAE</h2>
+                <table>
+                    <tr>
+                        <td bgcolor=lightgray><b>Sentences</b></td>
+                    </tr>
+                </table>
+
+
+                <br>A sentence almost always has three features
+                <br>1. A subject
+                <br>2. A verb
+                <br>3. A complete thought
+                <br><br> Three types of sentences will be presented here:
+                <br>1. Simple Sentences
+                <br>2. Compound Sentences
+                <br>3. Complex Sentences
+                <br><br>
+                <strong>Simple Sentences:</strong>
+                <br>A Simple sentence is one independent clause (IC).<br><br>
+                <u>Examples:</u>
+                <br>
+                <i>Mr. Shipley travelled to Canada last fall.
+<br><br>The old truck was pulled by a team of horses.
+<br><br>Bram rarely mowed the lawn.</i>
+                <br><br><strong>Compound Sentences:</strong>
+                <br> A Compound sentence is composed of two or more independent clauses (ICs).
+                <br><br>
+                <u>Examples:</u>
+                <br><i>
+Mr. Shipley travelled to Canada last fall but he hadn't the money to do any sightseeing.
+<br><br>
+The old truck was pulled by a team of horses, so that john could save on the cost of fuel.
+<br><br>
+Bram rarely mowed the lawn, and he never fixed the fence poles either.
+</i><br><br> Problems frequently occur when two simple sentence (ICs) are being joined to make a compound sentence. These problems are called run-on sentences. These may have a period as its only punctuation mark OR it may be inappropriately punctuated
+                with one or more commas (this type of run-on sentence is called a "comma splice").
+                <br><br>
+                <u>Example:</u>
+                <br><br><i>
+John can't wait to go to the dance Arlene attends weekly.
+</i><br><br>
+                <strong>Comma splices</strong>
+                <br><br>
+                <u>Examples:</u>
+                <br>
+                <i>John can't wait to go to the dance Arlene attends weekly. </i>
+                <br><br> 1. Use a period to separate the intendent clause into sentence.
+                <br>2. Use a semicolon to separate the independent clauses within a single sentence.
+                <br>3. Use a coordinating conjunction and a comma to join the two clauses Comma slices.
+                <br><br>
+                <u>This is a comma splice:</u><br><i> John is going to the dance, Arlene attends every week.</i>
+                <br><br>
+
+                <u>This is how to fix it:</u>
+                <br>Use a semicolon, a transitional expression, and a comma.
+                <br><br>
+                <i>John is going to the dance; likewise, Arlene is also going.
+<br><br>
+Hagar is a very wise woman; However, she is beginning to change her ways in old age.</i>
+                <br><br>
+                <strong>Complex Sentences:</strong>
+                <br><br> A Complex sentence is composed of one independent clause with one or more subordinate (dependent) clauses.
+                <br><br> A subordinate (dependent) clause is of secondary importance in a sentence and depends on an independent clause to make a sentences.
+                <br><br>
+                <u>Examples:</u>
+                <br>
+                <i>Because he was late for work, he had to work in the evening.
+<br><br>
+If we all pool our money, we ca buy you a university education.
+<br><br>
+Murray befriended Hagar who looked this and forlorn.</i>
+                <br><br> **Note the placement of a comma after the dependent clause.**
+                <br><br> When the dependent clause is at the beginning of a sentence, the pattern is the following:
+                <br>DC, IC (DEPENDENT CLAUSE, INDEPENDENT CLAUSE)
+                <br><br> When the dependent clause is at the end of the sentence, there is no comma needed.
+                <br> ID DC (independent clause dependent clause)
+                <br><br>
+                <strong>Sentence fragments:</strong>
+                <br><br> A sentence fragment is a piece of information that is punctuated as a sentence but that lacks some of the characteristics of a complete sentence.
+                <br><br>
+                <u>Example:</u>
+                <br><i>Tired of having to ask her for help.</i>
+                <br><br> The statement does not have a subject; we do not know who is tired of having to ask her to help.
+                <br><br> How to fix it: add a subject.
+                <br><i>Hagar is tired of having to ask her for help.
+<br><br>
+Tombstones in the Manawaka cemetery.</i>
+                <br><br> The statement does not contain a verb. Looked at by itself, we do not know what is being said about the tombstones in the cemetery.
+                <br><br> How to fix it: add a verb.
+                <br>
+                <i>There were people laying flowers on tombstones in the Manawaka cemetery.
+<br><br>
+I was late for church. Because Bram was drunk again.</i>
+                <br><br> The phrase is a dependent clause; it provides additional information about the independent clause. By itself, it does not provide a complete thought.
+                <br><br> How to fix it: change the punctuation.
+
+                <br><i>I was late for church, because Bram was drunk again. <br></i><br> OR
+                <br><i><br> I was late for church. Because Bram was drunk again, I missed the reverend's sermon.
+</i>
+                </p>
+            </div>
+            <div id="sph4" class="cours">
+                <table border="2">
+                    <td colspan="2" bgcolor="lightblue">
+                        <center>
+                            <h1>Physique</h1></center>
+                    </td>
+                </table>
+
                 <h2>Formules<h2>
 
-		<h3>Mouvement</h3>
+		<h3>Mouvement (Dynamique)</h3>
 			<ul>
 				<li>
 					<p>v = <sup>d</sup>/<sub>t</sub></p>
@@ -976,549 +1845,9 @@ generator:</span><span class="apple-converted-space" style="color: rgb(0, 0, 0);
 				</ul>
 			</ul>
 		</div>
-            <div id="tdj2o" class="cours">
-                <h2>TDJ2O</h2>
-                <table border=1>
-                    <tr>
-                        <td colspan=2 bgcolor=lightgray>
-                            <center>Technologie du design</td>
-                    </tr>
-                    <tr>
-                        <td colspan=2>
-                            <center>Les 9 étapes du processus de design</td>
-                    </tr>
-                </table><br><br>
-                <table>
-                    <tr>
-                        <td width="70">L’étape 1: </td>
-                        <td> La détermination des problèmes et l’exploration des possibilités</td>
-                    </tr>
-                    <tr>
-                        <td>L’étape 2: </td>
-                        <td> La structure d’une esquisse</td>
-                    </tr>
-                    <tr>
-                        <td>L’étape 3: </td>
-                        <td> L’investigation et la recherche</td>
-                    </tr>
-                    <tr>
-                        <td>L’étape 4: </td>
-                        <td> La recherche de solutions de rechange</td>
-                    </tr>
-                    <tr>
-                        <td>L’étape 5: </td>
-                        <td> Le choix de la meilleure solution</td>
-                    </tr>
-                    <tr>
-                        <td>L’étape 6: </td>
-                        <td> Le travail préparatoire</td>
-                    </tr>
-                    <tr>
-                        <td>L’étape 7: </td>
-                        <td> La modélisation ou le prototype</td>
-                    </tr>
-                    <tr>
-                        <td>L’étape 8: </td>
-                        <td> Les essais et l’évaluation</td>
-                    </tr>
-                    <tr>
-                        <td>L’étape 9: </td>
-                        <td> La reprise du design et son amélioration</td>
-                    </tr>
-                </table>
-                </table>
-            </div>
-            <div id="hsp3" class="cours">
-    <table border="1">
-        <td>
-            <center>
-                <h2>Psychologie</h2>
-            </center>
-        </td>
-    </table>
-    <h3>Le développement de la psychologie</h3>
-    <h4>Les domaines d'études de la psychologie</h4>
-    <ul>
-        <li>La psychologie a traversé des périodes dominés par diverses écoles de pensée</li>
-    </ul>
-    <h4>La psychanalyse</h4>
-    <ul>
-        <li>À la suite des travaux innovateurs de Sigmung Freud, les recherches en psychologie ont surtout été orienté ver la <u>psychanalyse</u></li>
-        <li>Les psychanalistes ont tenté d'analyser les expériences les plus profondes (pensées, sentiments, émotions, fantasmes et les rêves) de leurs sujets dans le but de traiter les patient qui souffraient d'anxiétés et de tensions graves.</li>
-        <li>Des exemples de psychanalistes sont Sigmung Freud, Alfred Adler et Carl Gustav Jung</li>
-    </ul>
-</div>
-            <div id="fra" class="cours">
-    <h2>FRA</h2>
-    <table border=1>
-        <tr>
-            <td colspan=2 bgcolor=lightgray>
-                <center>Grammaire</td>
-        </tr>
-    </table><br><br>
-    <h4>Marqueurs de relation</h4>
-    <pre>
-         
-Les marqueurs de relation servent à relier des phrases ou des éléments à l’intérieur d’une phrase. En établissant des liens entre les mots et les phrases, ces marqueurs jouent un rôle primordial : construire la cohérence nécessaire au texte.  
- 
-Les marqueurs de relation – coordonnants, subordonnants, prépositions – indiquent de manière explicite le lien entre les unités syntaxiques – mots, groupes de mots, phrases – qu’ils relient.  
- 
-On doit être attentif au choix des marqueurs de relation, car ils ont généralement une valeur sémantique. Ainsi, changer de marqueur modifie le sens des énoncés ou le rapport de sens entre les énoncés. 
-
-    Cette automobile est rapide et économique. (addition) 
-    Cette automobile est rapide, mais économique. (opposition) 
-    Elle n’osait pas exprimer son opinion, ensuite elle l’a regretté. (temps) 
-    Elle n’osait pas exprimer son opinion, cependant elle l’a regretté. (restriction) 
-    Elle n’osait pas exprimer son opinion, de sorte qu’elle l’a regretté. (conséquence)  
-    Elle n’osait pas exprimer son opinion, encore qu’elle l’a regretté. (concession) 
-    Elle n’osait pas exprimer son opinion, au cas où elle l’aurait regretté. (condition) 
-    Elle n’osait pas exprimer son opinion, de crainte qu’elle ne le regrette. (but) 
-    Au lieu de s’enfuir, le héros fait une prière. (alternative) 
-    Avant de s’enfuir, le héros fait une prière. (temps : antériorité) 
-    Florence a un rendez-vous avec le coiffeur. (accompagnement) 
-    Florence a un rendez-vous chez le coiffeur. (lieu) 
-
-1.	Coordonnants  
-Les coordonnants – les conjonctions de coordination et les adverbes coordonnants – servent à relier des unités compatibles sur le plan du sens et de la syntaxe : des mots, des groupes, des phrases, des subordonnées.  
- 
-*Le narrateur de ce conte aime pêcher, les bons repas entre amis et aller à la chasse. (incompatibilité syntaxique) 
-Le narrateur de ce conte aime pêcher, aller à la chasse et partager de bons repas entre amis. (compatibilité syntaxique) 
-*La première année, elle traversa la province et une crise existentielle. (incompatibilité de sens) 
-La première année, elle traversa la province et vécut une crise existentielle. (compatibilité de sens) 
- 
-Il importe de bien connaître le rapport qu’on désire établir entre les unités pour pouvoir choisir le bon coordonnant.  
- 
-ATTENTION  
-Il y aura erreur dans la coordination ou manque de clarté de l’énoncé si le coordonnant n’est pas utilisé selon le sens qu’il exprime. 
- 
-*La métaphore associe l’île à une femme ; ensuite, cette image contribue à personnifier le lieu. (sens : succession) 
-La métaphore associe l’île à une femme ; de plus, cette image contribue à personnifier le lieu. (sens : addition) 
- 
-Les coordonnants servent à indiquer notamment les sens suivants :  
- 
-    •	La cause (car, en effet, en raison de…)  
-La connaissance de l’histoire littéraire est importante, car elle éclaire souvent le sens d’une œuvre.  
- 
-    •	La conséquence (ainsi, aussi, c’est pourquoi, donc, en conséquence, partant, de là, d’où…)  
-Il a lu tout Balzac, donc il devrait pouvoir en parler en connaissance de cause.  Il a lu tout Balzac : de là ses connaissances sur l’auteur. 
- 
-    •	L’addition (ainsi que, bien plus, de plus, ensuite, et, puis…)  
-Le passé lui offre la première impulsion pour qu'il rentre en lui-même et qu’il se réfugie dans le présent. 
- 
-    •	L’opposition ou la restriction (au contraire, cependant, en revanche, mais, par contre, pourtant, toutefois…)  David a obtenu la meilleure note en français ; pourtant, il déteste cette matière.  
- 
-    •	L’explication ou la précision (à savoir, c’est-à-dire, par exemple, soit…)  Flore a rencontré son amoureux à l'époque des vendanges, c'est-à-dire fin septembre. 
- 
-ATTENTION  
-Il y aura erreur dans la coordination ou manque de clarté de l’énoncé si les phrases syntaxiques reliées par des coordonnants sont trop nombreuses dans la phrase graphique . 
- 
-*Le jeune orphelin aime parler à sa vieille voisine, car il la trouve sympathique, mais elle devient aveugle avec le temps et elle perd sa lucidité puis, vers la fin, ne le reconnaît plus.  
- 
-Le jeune orphelin aime parler à sa vieille voisine, car il la trouve sympathique. Or elle devient aveugle avec le temps et perd sa lucidité. Vers la fin, elle ne le reconnaît plus.  
- 
-2.	Subordonnants  
-Les subordonnants sont des marqueurs qui introduisent une subordonnée. Nous ne retenons ici que les subordonnants à valeur sémantique, c’est-à-dire les conjonctions de subordination autres que la conjonction que . 
- 
-Les conjonctions de subordination ont une valeur sémantique. Il importe donc de bien connaître le rapport de sens qu’on désire établir entre les phrases pour pouvoir choisir la bonne conjonction : 
-    •	le rapport temporel d’antériorité, de simultanéité ou de postériorité (alors que, après que, aussitôt que, avant que, chaque fois que, depuis que, en attendant que, lorsque, quand, tandis que…) 
-    •	la cause (attendu que, comme, étant donné que, parce que, puisque, vu que …)  
-    •	la conséquence (à tel point que, de façon que, de sorte que, si bien que, tellement que…)  
-    •	le but (afin que, de crainte que, de manière que, de peur que, pour que…)  
-    •	la condition (à condition que, à supposer que, au cas où, dans l’éventualité que, pourvu que, si…)  
-    •	la concession (alors que, bien que, encore que, en dépit du fait que, quoique…)  
- 
-ATTENTION  
-Comme pour les coordonnants, il y aura erreur dans la subordination ou manque de clarté de l’énoncé si les phrases reliées par des subordonnants sont trop nombreuses. La ponctuation (virgule, deux-points, point-virgule, tiret) peut parfois remplacer avantageusement un marqueur de relation. 
- 
-*La dernière strophe laisse entendre que le temps a passé et que la femme oubliera son amour puisqu’elle laisse ses souvenirs derrière elle parce qu’ils ont perdu de leur valeur sentimentale. 
- 
-La dernière strophe laisse entendre que le temps a passé et que la femme oubliera son amour : elle laisse ses souvenirs derrière elle parce qu’ils ont perdu de leur valeur sentimentale. 
- 
-3.	Prépositions  
-Les prépositions servent à marquer les relations entre le complément et le mot complété, ou encore, entre la phrase complétée et le complément de phrase.  
- 
-Le groupe prépositionnel (GPrép) commence toujours par une préposition et peut jouer le rôle de marqueur de relation.  
- 
-On doit veiller au choix de la préposition, qui peut parfois entraîner une erreur. On s’en sert pour marquer notamment :  
-    •	le lieu (à, chez, dans, derrière, en, jusqu’à, sous, vers…)  
-    •	le but (afin de, dans le but de, en vue de, pour…)  
-    •	le temps (à, après, avant, depuis, dès, pendant…)  
-    •	l’opposition (contre, malgré, nonobstant…)  
-    •	la cause (à cause de, attendu, de, étant donné, grâce à…)  
- 
-Remarque 
-Quand les prépositions à et de fusionnent avec les déterminants le / les, elles forment un déterminant contracté au / aux. 
- 
-Pour choisir correctement une préposition ou une locution prépositive : 
-    •	vérifiez le sens de ce que vous voulez exprimer (le temps, le lieu, le moyen, la manière, le but, la provenance, etc.) ;  
-    •	consultez le dictionnaire à l’article concernant la préposition que vous employez ; 
-    •	consultez le dictionnaire à l’article concernant le mot qui est placé avant ou après la préposition. Ainsi, si vous cherchez la préposition qui doit suivre le verbe parler, vous trouverez la réponse à l’article concernant le mot parler dans le dictionnaire : 
-« Parler : discuter avec quelqu'un au sujet de quelque chose ou de quelqu'un, sur un thème : C'est quelqu'un avec qui on peut parler de tout. Parler (de) philosophie. 
-« Parler : dire quelque chose à quelqu'un, lui exprimer sa pensée au sujet de quelque chose ou de quelqu'un, faire un discours portant sur tel point : Le premier ministre a parlé au pays de la situation. » (Encyclopédie Larousse.fr) ; 
-    •	surveillez les énumérations, dans lesquelles il faut répéter les prépositions à, de et en devant chacun des éléments ; 
-    •	surveillez l’emploi fautif de au niveau de, face à, vis-à-vis, sans, avec, etc. Voir ces mots dans le Multidictionnaire. 
-
-    </pre>
-    <br><br>
-    <h4>Coordination et juxtaposition</h4>
-    <pre>
-La coordination consiste à joindre par un coordonnant des éléments de même niveau
-syntaxique, c’est-à-dire des éléments qui remplissent la même fonction et qui peuvent se
-remplacer l’un l’autre. On appelle « coordonnant » le mot ou la locution qui relie les
-éléments coordonnés ; le terme coordonnant désigne aussi la fonction de ce mot.
-[Renée joue souvent au tennis] et [nage tous les jours].
-> Le coordonnant et relie deux phrases de même niveau syntaxique (le sujet de la
-deuxième phrase (Renée nage…) a été effacé pour éviter la répétition).
-Le faucon pèlerin niche [sur les grands édifices] ou [sous les ponts].
-> Le coordonnant ou relie deux groupes prépositionnels (GPrép) en fonction de
-complément indirect du verbe niche.
-[Daniel] et [Patrick] présenteront leur projet au président cet après-midi.
-> Le coordonnant et relie deux groupes nominaux (GN) qui remplissent la fonction
-de sujet.
-Dans les exemples ci-dessus, les éléments coordonnés sont de même catégorie. Mais il
-arrive que des éléments coordonnés ne soient pas de même catégorie.
-Ce cheval est [rapide] et [d’une grande robustesse].
-> Le coordonnant et relie deux groupes en fonction d’attribut du sujet ; le premier
-est un groupe adjectival (GAdj) et le second, un GPrép.
-En plus de jouer un rôle syntaxique, le coordonnant joue un rôle sémantique, car il exprime
-l’addition (et, de plus), l’alternative (ou), la cause (car, en effet), la conséquence
-(donc, par conséquent), l’opposition (mais, cependant), etc.
-La juxtaposition est une coordination sans l’emploi d’un coordonnant. Le coordonnant
-est remplacé par un signe de ponctuation (une virgule, un deux-points ou un pointvirgule),
-qui sépare graphiquement les éléments de même fonction juxtaposés.
-↓
-[Chaque soir], [au coucher du soleil], ces petites fleurs jaunes s’épanouissent.
-> La virgule sépare deux groupes de mots ayant la fonction de complément de
-phrase.
-↓
-[Chaque soir, au coucher du soleil, ces petites fleurs jaunes s’épanouissent] ; [elles
-dégagent alors une fraîche odeur citronnée].
-> Le point-virgule sépare deux phrases de même niveau syntaxique.
-
-
-
-LA COORDINATION DE GROUPES PRÉPOSITIONNELS (GPRÉP)
-
-Dans la coordination et la juxtaposition de groupes prépositionnels (GPrép), c’est-à-dire
-de groupes débutant par une préposition, il faut respecter une règle particulière : on doit
-répéter les prépositions à, de et en au début de chacun des GPrép désignant des entités
-différentes. Les autres prépositions peuvent être répétées ou non.
-J’ai envie [de me faire couler un bon bain] et [de me détendre au moins une heure].
-J’aime bien me détendre [en lisant un roman] ou [en prenant un bain chaud].
-J’ai confié mon chien [à ma sœur] et [à son mari] le temps de mon voyage.
-Je compte [sur ma sœur] et [(sur) son mari] pour en prendre soin.
-> Ici, la répétition de la préposition sur est facultative.
-La sortie a été reportée [à cause du froid] et [(à cause) de la neige].
-> Ici, la répétition de la première partie de la préposition à cause de est facultative ;
-on doit cependant répéter obligatoirement le de (du, des).
-J’ai confié mon chien à ma [sœur] et [amie].
-> Ici, sœur et amie représentent une seule personne.
-LA COORDINATION DE SUBORDONNÉES CIRCONSTANCIELLES
-Les subordonnées circonstancielles expriment différentes valeurs de sens, lesquelles sont
-précisées par un mot de relation ayant la fonction de subordonnant. Voici quelques
-exemples de subordonnants de cause ou de justification : parce que, puisque, comme,
-étant donné que, vu que ; de temps : avant que, après que, lorsque, quand, etc. ; de but :
-pour que, afin que, etc.
-Dans la coordination et la juxtaposition de subordonnées circonstancielles, il faut respecter
-une règle particulière : les subordonnants doivent être répétés ou tout simplement
-repris par que devant le deuxième élément coordonné ou juxtaposé.
-Il est venu [parce qu’il avait une affaire à régler] et [(parce) qu’il voulait me parler].
-> Ici, la répétition de la première partie du subordonnant parce que est facultative ;
-on doit cependant répéter obligatoirement le que (qu’).
-Ferme les fenêtres [avant qu’il se mette à pleuvoir] et [(avant) que nos papiers
-s’envolent].
-> Ici, la répétition de la première partie du subordonnant avant que est facultative ;
-on doit cependant répéter obligatoirement le que (qu’).
-Attention ! Lorsque la cause est exprimée par le coordonnant car, ce dernier n’est ni
-répété ni repris par que devant le deuxième élément coordonné.
-[Il est venu], car [il avait une affaire à régler et il voulait me parler].
-
-
-
-LA COORDINATION DE SUBORDONNÉES RELATIVES
-
-Dans la coordination et la juxtaposition de subordonnées relatives, on doit respecter une
-règle particulière : lorsque le pronom relatif et le sujet de la deuxième subordonnée relative
-sont les mêmes que ceux de la première, on ne les répète pas, mais ils doivent être
-exprimés s’ils sont différents.
-C’était une marchandise [dont tout le monde avait besoin] et [voulait faire provision].
-> Les deux relatives coordonnées sont équivalentes à ces phrases :
-[Tout le monde avait besoin de la marchandise.]
-[Tout le monde voulait faire provision de la marchandise.]
-Le sujet tout le monde est le même dans les deux phrases et le pronom relatif doit
-aussi être le même pour remplacer de la marchandise : on emploie dont parce
-que ce groupe débute par la préposition de (avoir besoin de…, faire provision
-de…).
-Le cola demeurait la marchandise-clé [dont tout le monde avait besoin] et [qu’on
-venait régulièrement se procurer].
-> Les deux relatives coordonnées sont équivalentes à ces phrases :
-[Tout le monde avait besoin de la marchandise.]
-[On venait régulièrement se procurer la marchandise.]
-Le sujet n’est pas le même dans les deux phrases et le pronom relatif ne doit pas
-être le même pour remplacer de la marchandise et la marchandise : le premier
-groupe débute par la préposition de, on doit donc employer le pronom dont ; le
-second groupe est un GN complément direct du verbe se procurer, on doit donc
-employer le pronom relatif que (qu’).
-    </pre>
-    <br></br>
-    <h4>Transformation de phrase</h4>
-    <pre>
-Une phrase transformée est une phrase syntaxique construite à partir du modèle de base, mais
-qui n’est plus conforme au modèle de base parce qu’elle a subi l’une des transformations
-suivantes :
-    • Transformation de type et de forme
-La phrase n’est plus à la fois déclarative, positive, active, neutre et personnelle.
-    • Transformation par déplacement d’un constituant obligatoire
-Dans cette phrase, l’ordre sujet–prédicat a été inversé.
-    • Transformation par enchâssement
-La phrase est utilisée comme subordonnée.
-Transformation de type et de forme
-Une phrase répond toujours à un type (déclaratif OU interrogatif OU exclamatif OU impératif)
-et à quatre formes (positive ou négative ET active ou passive ET neutre ou emphatique ET
-personnelle ou impersonnelle1
-). On peut changer le type et les formes d’une phrase en
-appliquant certaines manipulations.
-MODÈLE DE BASE (toujours de type déclaratif et de formes positive, active, neutre et
-personnelle)
-L’écureuil a croqué la noix.
-MANIPULATION D’ADDITION (type interrogatif)
-Est-ce que l’écureuil a croqué la noix ?
-MANIPULATION DE REMPLACEMENT (type interrogatif)
-Qui a croqué la noix ?
-MANIPULATION DE DÉPLACEMENT (forme passive)
-La noix a été croquée par l’écureuil.
-MANIPULATION D’EFFACEMENT (type impératif)
-Ø Croque cette noix.
- 1. La construction impersonnelle est considérée comme une phrase à construction particulière lorsqu’il
-s’agit d’une phrase construite avec un verbe qui ne se conjugue qu’à la forme impersonnelle.
-
-
-MANIPULATION D’ENCADREMENT (forme emphatique)
-C’est l’écureuil qui a croqué la noix.
-MANIPULATION DE DÉTACHEMENT (forme emphatique)
-L’écureuil, il a croqué la noix.
-Ainsi, la phrase : Le chat a chassé habilement les souris, qui est déclarative, positive, active,
-neutre et personnelle, peut, à la suite de certaines manipulations, devenir :
-INTERROGATIVE (positive, active, neutre et personnelle)
-– Interrogation totale (qui porte sur toute la phrase et qui appelle une réponse en oui/non)
-Est-ce que le chat a chassé habilement les souris ? (Addition d’un mot interrogatif)
-Le chat a-t-il chassé habilement les souris ? (Addition d’un pronom)
-– Interrogation partielle (qui porte sur une partie de la phrase)
-Qui a chassé habilement les souris ? (Remplacement d’une partie de la phrase par un
-pronom interrogatif)
-Qu’est-ce que le chat a chassé habilement ? (Remplacement d’une partie de la phrase
-par un pronom interrogatif et déplacement de ce pronom et addition d’un interrogatif)
-EXCLAMATIVE (positive, active, neutre et personnelle)
-Comme le chat a chassé habilement les souris ! (Addition d’un mot exclamatif)
-Que de souris le chat a chassées habilement ! (Déplacement du complément du verbe
-et remplacement du dét. dans ce GN complément)
-IMPÉRATIVE (positive, active, neutre et personnelle)
-Ø Chasse habilement les souris. (Effacement du sujet)
-NÉGATIVE (déclarative, active, neutre et personnelle)
-Le chat n’a pas chassé habilement les souris. (Addition d’adverbes de négation)
-Le chat n’a chassé habilement aucune souris. (Addition d’un adverbe de négation et
-remplacement d’un dét. par un dét. à valeur négative)
-Aucun chat n’a chassé habilement les souris. (Addition d’un adverbe de négation et
-remplacement d’un dét. par un dét. à valeur négative)
-PASSIVE (déclarative, positive, neutre et personnelle)
-Les souris sont chassées habilement par le chat. (Déplacement du sujet et du complé-
-ment du verbe et remplacement du verbe par être suivi d’un participe passé et addition
-de la préposition par)
-EMPHATIQUE (déclarative, positive, active et personnelle)
-C’est le chat qui a chassé habilement les souris. (Encadrement du sujet par les
-marqueurs c’est… qui)
-Ce sont les souris que le chat a chassées. (Déplacement et encadrement du complé-
-ment par les marqueurs ce sont… que)
-
-
-Ce qui a chassé les souris, c’est le chat. (Détachement et encadrement du complément
-par les marqueurs ce qui... c’est)
-Ce que le chat a chassé habilement, ce sont les souris. (Détachement du complément
-par les marqueurs ce que… ce sont)
-Le chat, il a chassé habilement les souris. (Détachement et reprise du groupe détaché,
-par un pronom)
-Il a chassé habilement les souris, le chat. (Détachement et annonce du groupe détaché,
-par un pronom)
-IMPERSONNELLE (déclarative, positive, active et neutre)
-Cette phrase ne peut pas être transformée en phrase impersonnelle.
-Il est à noter cependant que certains verbes comme entrer, venir, arriver et se passer sont
-susceptibles d’être employés à la forme impersonnelle.
-Ainsi, la phrase : Trois chats entrent dans cette cage, qui est déclarative, positive, active, neutre
-et personnelle, peut devenir déclarative, positive, active, neutre et impersonnelle :
-Il entre trois chats dans cette cage. (Déplacement du sujet et addition du pronom
-impersonnel il)
-    </pre>
-    <br><br>
-    <h4>Guillemets et italique</h4>
-    <pre>
-L’emploi régulier des guillemets est le suivant : ils servent à isoler une citation ou un
-dialogue.
-Richard Séguin chante : « Partir, c’est pas guérir. » (citation)
-La dame lui demanda :
-« Pensez-vous arriver à temps à votre rendez-vous ?
-– Avec toute cette circulation, je ne le crois pas. » (dialogue)
-Toutefois, les guillemets sont aussi employés pour remplacer l’italique quand il est
-impossible d’utiliser celui-ci, comme dans un manuscrit ou un texte dactylographié. On
-les trouve donc autour d’un titre, du mot dont on parle, d’un terme ne faisant pas partie
-de la langue courante (mot étranger, marque de commerce, expression familière, néologisme).
-Dans un texte imprimé, il faut utiliser l’italique pour tous ces cas.
-Texte imprimé :
-As-tu lu La Cérémonie des anges, de Marie Laberge ? (titre)
-Le nom rédacteur est l’attribut du sujet mon jeune frère. (mots dont on parle)
-En fin de semaine, je me suis acheté des pantalons Levi’s. (marque de commerce)
-Texte manuscrit :
-As-tu lu « La Cérémonie des anges », de Marie Laberge ?
-Le nom « rédacteur » est l’attribut du sujet « mon jeune frère ».
-En fin de semaine, je me suis acheté des pantalons « Levi’s ».
-    </pre>
-    <br><br>
-    <h4>Point-virgule et deux-points</h4>
-    <pre>
-EMPLOI DU POINT-VIRGULE
-Le point-virgule sert à séparer des phrases étroitement liées par le sens, que l’on pourrait
-séparer par un point, mais entre lesquelles on veut montrer qu’il y a un lien de sens plus
-étroit. La deuxième phrase constitue souvent une addition à la première. Elle peut pré-
-senter une explication ou une opposition.
-Pierre ne m’a pas rappelée après cette soirée ; peut-être a-t-il rencontré quelqu’un
-d’autre.
-> La deuxième phrase est une explication de la première.
-Certains enfants jouent calmement avec leurs jouets ; d’autres courent à droite et à
-gauche.
-> La deuxième phrase présente une opposition par rapport à la première.
-Le point-virgule est aussi utilisé pour séparer les éléments d’une énumération présentée
-sous forme de liste.
-Vous devez suivre les étapes suivantes :
-• faire un résumé de ce qui est dit sur le sujet ;
-• donner votre opinion avec précision ;
-• expliquer cette opinion à l’aide d’arguments.
-EMPLOI DU DEUX-POINTS
-Le deux-points sert à introduire une énumération, un discours rapporté direct ou une
-citation.
-Tout était en solde : les livres, les cassettes, les disques et les revues.
-> Le deux-points introduit une énumération.
-Furieux, il s’est écrié : « Ce n’est pas moi qui ai cassé le vase ! »
-> Le deux-points introduit un discours rapporté direct.
-Savez-vous qui a dit : « Je ne suis pas d’accord avec ce que vous dites, mais je me
-battrai jusqu’au bout pour que vous puissiez le dire. » ? C’est Voltaire, bien sûr !
-> Le deux-points introduit une citation, qui est, en fait, une sorte de discours rapporté
-direct.
-Le deux-points sert aussi à introduire une phrase qui présente une cause ou une consé-
-quence de ce qui est énoncé dans la phrase précédente. Dans ces cas, on peut remplacer
-le signe de ponctuation par un marqueur de relation qui exprime le rapport de sens existant
-entre les deux phrases (ex. : cause : parce que, car ; conséquence : donc, par conséquent).
-
-Luc ne pourra pas participer au tournoi : il s’est cassé le bras droit.
-> Le deux-points introduit une phrase qui présente une cause de ce qui est dit
-dans la phrase précédente ; on peut le remplacer par parce que.
-Luc s’est cassé le bras droit : il ne pourra pas participer au tournoi.
-> Le deux-points introduit une phrase qui présente une conséquence de ce qui est
-dit dans la phrase précédente ; on peut le remplacer par par conséquent.
-    </pre>
-</div>
-            <div id="eae" class="cours">
-                <h2>EAE</h2>
-                <table>
-                    <tr>
-                        <td bgcolor=lightgray><b>Sentences</b></td>
-                    </tr>
-                </table>
-
-
-                <br>A sentence almost always has three features
-                <br>1. A subject
-                <br>2. A verb
-                <br>3. A complete thought
-                <br><br> Three types of sentences will be presented here:
-                <br>1. Simple Sentences
-                <br>2. Compound Sentences
-                <br>3. Complex Sentences
-                <br><br>
-                <strong>Simple Sentences:</strong>
-                <br>A Simple sentence is one independent clause (IC).<br><br>
-                <u>Examples:</u>
-                <br>
-                <i>Mr. Shipley travelled to Canada last fall.
-<br><br>The old truck was pulled by a team of horses.
-<br><br>Bram rarely mowed the lawn.</i>
-                <br><br><strong>Compound Sentences:</strong>
-                <br> A Compound sentence is composed of two or more independent clauses (ICs).
-                <br><br>
-                <u>Examples:</u>
-                <br><i>
-Mr. Shipley travelled to Canada last fall but he hadn't the money to do any sightseeing.
-<br><br>
-The old truck was pulled by a team of horses, so that john could save on the cost of fuel.
-<br><br>
-Bram rarely mowed the lawn, and he never fixed the fence poles either.
-</i><br><br> Problems frequently occur when two simple sentence (ICs) are being joined to make a compound sentence. These problems are called run-on sentences. These may have a period as its only punctuation mark OR it may be inappropriately punctuated
-                with one or more commas (this type of run-on sentence is called a "comma splice").
-                <br><br>
-                <u>Example:</u>
-                <br><br><i>
-John can't wait to go to the dance Arlene attends weekly.
-</i><br><br>
-                <strong>Comma splices</strong>
-                <br><br>
-                <u>Examples:</u>
-                <br>
-                <i>John can't wait to go to the dance Arlene attends weekly. </i>
-                <br><br> 1. Use a period to separate the intendent clause into sentence.
-                <br>2. Use a semicolon to separate the independent clauses within a single sentence.
-                <br>3. Use a coordinating conjunction and a comma to join the two clauses Comma slices.
-                <br><br>
-                <u>This is a comma splice:</u><br><i> John is going to the dance, Arlene attends every week.</i>
-                <br><br>
-
-                <u>This is how to fix it:</u>
-                <br>Use a semicolon, a transitional expression, and a comma.
-                <br><br>
-                <i>John is going to the dance; likewise, Arlene is also going.
-<br><br>
-Hagar is a very wise woman; However, she is beginning to change her ways in old age.</i>
-                <br><br>
-                <strong>Complex Sentences:</strong>
-                <br><br> A Complex sentence is composed of one independent clause with one or more subordinate (dependent) clauses.
-                <br><br> A subordinate (dependent) clause is of secondary importance in a sentence and depends on an independent clause to make a sentences.
-                <br><br>
-                <u>Examples:</u>
-                <br>
-                <i>Because he was late for work, he had to work in the evening.
-<br><br>
-If we all pool our money, we ca buy you a university education.
-<br><br>
-Murray befriended Hagar who looked this and forlorn.</i>
-                <br><br> **Note the placement of a comma after the dependent clause.**
-                <br><br> When the dependent clause is at the beginning of a sentence, the pattern is the following:
-                <br>DC, IC (DEPENDENT CLAUSE, INDEPENDENT CLAUSE)
-                <br><br> When the dependent clause is at the end of the sentence, there is no comma needed.
-                <br> ID DC (independent clause dependent clause)
-                <br><br>
-                <strong>Sentence fragments:</strong>
-                <br><br> A sentence fragment is a piece of information that is punctuated as a sentence but that lacks some of the characteristics of a complete sentence.
-                <br><br>
-                <u>Example:</u>
-                <br><i>Tired of having to ask her for help.</i>
-                <br><br> The statement does not have a subject; we do not know who is tired of having to ask her to help.
-                <br><br> How to fix it: add a subject.
-                <br><i>Hagar is tired of having to ask her for help.
-<br><br>
-Tombstones in the Manawaka cemetery.</i>
-                <br><br> The statement does not contain a verb. Looked at by itself, we do not know what is being said about the tombstones in the cemetery.
-                <br><br> How to fix it: add a verb.
-                <br>
-                <i>There were people laying flowers on tombstones in the Manawaka cemetery.
-<br><br>
-I was late for church. Because Bram was drunk again.</i>
-                <br><br> The phrase is a dependent clause; it provides additional information about the independent clause. By itself, it does not provide a complete thought.
-                <br><br> How to fix it: change the punctuation.
-
-                <br><i>I was late for church, because Bram was drunk again. <br></i><br> OR
-                <br><i><br> I was late for church. Because Bram was drunk again, I missed the reverend's sermon.
-</i>
-                </p>
-            </div>
         </div>
         <script src="js/email.js"></script>
         <script src="js/index.js"></script>
 </body>
+
 </html>
