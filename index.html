@@ -66,7 +66,11 @@
             <a onclick="myFunc('dix')" href="javascript:void(0)">10e<i class="fa fa-caret-down"></i></a>
             <div id="dix" class="w3-accordion-content w3-animate-left w3-padding">
                 <a href="#">Éducation artistique</a>
-                <a href="#">Affaires et commerce</a>
+                <a onclick="myFunc('aff10')" href="javascript:void(0)">Affaires et commerce<i class="fa fa-caret-down"></i></a>
+                <div id="aff10" class="w3-accordion-content w3-animate-left w3-padding">
+                    <a href="#" onclick="w3_close();openCours('bbi2o');myFunc('aff10');myFunc('dix')">BBI2O</a>
+                </div>
+
                 <a onclick="myFunc('can10')" href="javascript:void(0)">Études canadiennes et mondiales<i class="fa fa-caret-down"></i></a>
                 <div id="can10" class="w3-accordion-content w3-animate-left w3-padding">
                     <a href="#" onclick="w3_close();openCours('chc2d');myFunc('fra10');myFunc('dix')">CHC2D</a>
@@ -788,6 +792,18 @@
                     </tr>
                 </table>
             </div>
+
+	<div id="bbi2o" class="cours">
+
+		<h2>BBI2O</h2>
+
+	
+		<table border=1>
+<tr><td bgcolor=lightgray><center><b>Revue pour l'examen</b></td></tr></table>	
+
+		<br><img src="img/bbi2o-revue-01.jpg"><img src="img/bbi2o-revue-02.jpg">
+	
+	</div>
 
 	<div id="snc2d" class="cours">
 
