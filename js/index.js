@@ -46,11 +46,8 @@ function openCours(nomcours) {
 function get() {
     var l = 0;
     var url = window.location.href;
-    alert(url);
     l = url.length;
-    alert(l);
     url = url.slice(25, l);
-    alert(url);
     set(url);
 }
 
