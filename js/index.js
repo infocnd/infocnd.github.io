@@ -9,7 +9,7 @@ function w3_close() {
 
 }
 
-window.onscroll = function() {
+window.onscroll = function () {
     myFunction()
 };
 
@@ -42,3 +42,23 @@ function openCours(nomcours) {
     //Android 2.3 Fallback
     //document.getElementById(nomcours).style.visibility = "visible";
 }
+
+function get() {
+    var url = window.location.href;
+    set(url);
+}
+
+function set(adresse) {
+    switch (adresse) {
+    case "http://infocnd.github.io/#ballon":
+        w3_close();
+        openCours('paract');
+        myFunc('par');
+        break;
+
+    default:
+        break;
+    }
+}
+
+window.addEventListener("load", get);
