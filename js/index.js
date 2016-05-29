@@ -44,13 +44,16 @@ function openCours(nomcours) {
 }
 
 function get() {
+    var l = 0;
     var url = window.location.href;
+    l = url.length;
+    url = url.slice(25, l);
     set(url);
 }
 
 function set(adresse) {
     switch (adresse) {
-    case "http://infocnd.github.io/#ballon":
+    case "#ballon":
         w3_close();
         openCours('paract');
         myFunc('par');
