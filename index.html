@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -178,7 +178,12 @@
                 </div>
 
                 <a href="#">Études interdisciplinaires</a>
-                <a href="#">Mathématiques</a>
+                 <a onclick="myFunc('maths12')" href="javascript:void(0)">Mathématiques<i class="fa fa-caret-down"></i></a>
+                <div id="maths12" class="w3-accordion-content w3-animate-left w3-padding">
+                    <a href="#" onclick="w3_close();openCours('mdm4u');myFunc('maths12');myFunc('dou')">MDM4U</a>
+                    <a href="#" onclick="w3_close();openCours('mhf4u');myFunc('maths12');myFunc('dou')">MHF4U</a>
+                    
+                </div>
                 <a href="#">Éducation physique et santé</a>
                 <a onclick="myFunc('sci12')" href="javascript:void(0)">Sciences<i class="fa fa-caret-down"></i></a>
                 <div id="sci12" class="w3-accordion-content w3-animate-left w3-padding">
@@ -665,6 +670,16 @@
             </div>
 
             <!--  cours  -->
+<div id="ics" class="cours">
+                    <h2>ICS</h2>
+                    <table border=1>
+                    <tr><td bgcolor=lightgray><center>Table des 128 caractères ASCII</td></tr>
+                    <tr><td><img src="img/ics-1.jpg"></td></tr>
+                    <tr><td><img src="img/ics-2.jpg"></td></tr>
+                    </table>
+
+                
+                </div>
             <div id="sch" class="cours">
                 <h2>Chimie</h2>
                 <table border="1">
@@ -777,48 +792,16 @@
                 </table>
             </div>
             <div id="cgc1d" class="cours">
-                <h2>CGC1D</h2>
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>Revue</center>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>-Carte du Canada (provinces, territoires et capitales)</td>
-                    </tr>
-                    <tr>
-                        <td>-Toutes les cartes étudiées (régions physiographiques, végétations, sols, climats, hydrographiques)</td>
-                    </tr>
-                    <tr>
-                        <td>-Facteurs qui influencent le climat</td>
-                    </tr>
-                    <tr>
-                        <td>-Cartes météorologiques (analyse)</td>
-                    </tr>
-                    <tr>
-                        <td>-Désastres naturels qui affectent le Canada et les moyens de prévention</td>
-                    </tr>
-                    <tr>
-                        <td>-Comment réduire son empreinte écologique?</td>
-                    </tr>
-                    <tr>
-                        <td>-Connaître l'importance économique des ressources naturelles dans les régions physiographiques</td>
-                    </tr>
-                    <tr>
-                        <td>-Pyramides des âges (analyse)</td>
-                    </tr>
-                    <tr>
-                        <td>-Effets des immigrants au Canada</td>
-                    </tr>
-                    <tr>
-                        <td>-Étude de Sudbury (sa formation, ses caractéristiques et les activités économiques)</td>
-                    </tr>
-                    <tr>
-                        <td>-Projet de Maley Drive</td>
-                    </tr>
-                </table>
-            </div>
+
+	<h2>CGC1D</h2>
+
+	
+<table border=1>
+<tr><td bgcolor=lightgray><center><b>Revue pour l'examen</b></td></tr></table>	
+
+	<br><img src="img/cgc1d-revue.jpg">
+	
+	</div>
             <div id="mfm1p" class="cours">
                 <h2>MFM1P</h2>
                 <table border="1">
@@ -973,27 +956,16 @@ generator:</span><span class="apple-converted-space" style="color: rgb(0, 0, 0);
 
             </div>
             <div id="chc2d" class="cours">
-                <h2>CHC2D</h2>
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>Revue</center>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>-Revoir les étapes de la persécution des Juifs</td>
-                    </tr>
-                    <tr>
-                        <td>-Décrire fait intéressants des camps de concentration et d'extermination Juifs</td>
-                    </tr>
-                    <tr>
-                        <td>-Analyse de caricatures selon format enseigné en classe (revoir personnages et évènements importants de la guerre froide ainsi que la conscription lors des deux Guerres mondiales)</td>
-                    </tr>
-                    <tr>
-                        <td>-Revoir <b>toute</b> la contribution du Canada lors des deux Guerres mondiales (batailles, contribution industrielle, rôle des femmes, rôle des amérindiens et noirs, rôle des enfants, faits intéressants, statistiques, etc)</td>
-                    </tr>
-                </table>
-            </div>
+
+	<h2>CHC2D</h2>
+
+	
+<table border=1>
+<tr><td bgcolor=lightgray><center><b>Revue pour l'examen</b></td></tr></table>	
+
+	<br><img src="img/chc2d-revue.jpg">
+	
+	</div>
             <div id="mfm2p" class="cours">
                 <h2>MFM2P</h2>
                 <table border="1">
@@ -2130,6 +2102,30 @@ I was late for church. Because bram was drunk again.</i>
                 <br><i><br> I was late for church. Because bram was drunk again, I missed the reverend's sermon.
 </i>
             </div>
+
+<div id="mdm4u" class="cours">
+
+	<h2>MDM4U</h2>
+
+	
+<table border=1>
+<tr><td bgcolor=lightgray><center><b>Revue pour l'examen</b></td></tr></table>	
+
+	<br><img src="img/mdm4u-revue.jpg">
+	
+	</div>
+
+<div id="mhf4u" class="cours">
+
+	<h2>MHF4U</h2>
+
+	
+<table border=1>
+<tr><td bgcolor=lightgray><center><b>Revue pour l'examen</b></td></tr></table>	
+
+	<br><img src="img/mhf4u-revue.jpg">
+	
+	</div>
 
             <div id="sph4c" class="cours">
 
