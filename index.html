@@ -5,8 +5,7 @@
     <title>InfoCND - La ressource des Alouettes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/w3.css">
-    <link rel="stylesheet" href="css/w3-theme-blue.css">
+    <link rel="stylesheet" href="css/w3-theme-blue.min.css">
     <link href="https://fonts.googleapis.com/css?family=RobotoDraft" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/index.css">
@@ -14,7 +13,6 @@
 </head>
 
 <body>
-    <iframe id="x" src="http://disted.azurewebsites.net"></iframe>
     <nav class="w3-sidenav w3-collapse w3-white w3-animate-left w3-card-2" style="z-index:5;width:250px;">
         <a href="#" onclick="openCours('cnd');w3_close()" class="w3-border-bottom w3-large"><img src="img/logoCND-petit.png" style="width:80%;"></a>
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-text-blue w3-hide-large w3-closenav w3-large">Fermé &times;</a>
@@ -178,17 +176,17 @@
                 </div>
 
                 <a href="#">Études interdisciplinaires</a>
-                 <a onclick="myFunc('maths12')" href="javascript:void(0)">Mathématiques<i class="fa fa-caret-down"></i></a>
+                <a onclick="myFunc('maths12')" href="javascript:void(0)">Mathématiques<i class="fa fa-caret-down"></i></a>
                 <div id="maths12" class="w3-accordion-content w3-animate-left w3-padding">
                     <a href="#" onclick="w3_close();openCours('mdm4u');myFunc('maths12');myFunc('dou')">MDM4U</a>
                     <a href="#" onclick="w3_close();openCours('mhf4u');myFunc('maths12');myFunc('dou')">MHF4U</a>
-                    
+
                 </div>
                 <a href="#">Éducation physique et santé</a>
                 <a onclick="myFunc('sci12')" href="javascript:void(0)">Sciences<i class="fa fa-caret-down"></i></a>
                 <div id="sci12" class="w3-accordion-content w3-animate-left w3-padding">
                     <a href="#" onclick="w3_close();openCours('sch');myFunc('sci12');myFunc('dou')">SCH4</a>
-		<a href="#" onclick="w3_close();openCours('sch4u');myFunc('sci12');myFunc('dou')">SCH4U</a>
+                    <a href="#" onclick="w3_close();openCours('sch4u');myFunc('sci12');myFunc('dou')">SCH4U</a>
                     <a href="#" onclick="w3_close();openCours('sph4');myFunc('sci12');myFunc('dou')">SPH4</a>
                     <a href="#" onclick="w3_close();openCours('sph4c');myFunc('sci12');myFunc('dou')">SPH4C</a>
                     <a href="#" onclick="w3_close();openCours('sph4u');myFunc('sci12');myFunc('dou')">SPH4U</a>
@@ -228,7 +226,7 @@
                 _plm.push(['_btn', 29726]);
                 _plm.push(['_loc', 'caon0664']);
                 _plm.push(['location', document.location.host]);
-                (function (d, e, i) {
+                (function(d, e, i) {
                     if (d.getElementById(i)) return;
                     var px = d.createElement(e);
                     px.type = 'text/javascript';
@@ -260,7 +258,9 @@
                 <h1 class="w3-text-blue">InfoCND</h1>
                 <h5>La ressource des Alouettes</h5>
                 <ul class="w3-leftbar w3-theme-border" style="list-style-type:none">
-                    <li>Bienvenue au site d'information du Collège Notre-Dame. Le site <b>infocnd.github.io</b> est le centre d'information pour certains cours offert ici au Collège Notre-Dame. Le site est en développement donc le contenu sera mis à jours au fur et à mesure que l'information peut être numérisée. Le site est créé pour faciliter l'apprentissage, les devoirs et l'étude pour les examens. Le site est séparé en onglets pour que vous puissiez y trouver précisément l'information que vous avez besoin. Pour trouver le cours que vous cherchez:
+                    <li>Bienvenue au site d'information du Collège Notre-Dame. Le site <b>infocnd.github.io</b> est le centre d'information pour certains cours offert ici au Collège Notre-Dame. Le site est en développement donc le contenu sera mis à jours
+                        au fur et à mesure que l'information peut être numérisée. Le site est créé pour faciliter l'apprentissage, les devoirs et l'étude pour les examens. Le site est séparé en onglets pour que vous puissiez y trouver précisément l'information
+                        que vous avez besoin. Pour trouver le cours que vous cherchez:
                         <br>
                         <br>
                         <ol>
@@ -623,7 +623,8 @@
                         <td>
                             <br>
                             <ol>
-                                <li>À la recherche d’entraîneurs de soccer pour des enfants de 4 à 12 ans du 18 mai au 22 juin en soirée (de 18h à 19h) dans la Vallée (sur la rue Emily). Pour donner ton nom ou obtenir plus de détails, svp communiquer avec Jean au <a href="tel:7056622186">705.662.2186</a>.</li>
+                                <li>À la recherche d’entraîneurs de soccer pour des enfants de 4 à 12 ans du 18 mai au 22 juin en soirée (de 18h à 19h) dans la Vallée (sur la rue Emily). Pour donner ton nom ou obtenir plus de détails, svp communiquer avec
+                                    Jean au <a href="tel:7056622186">705.662.2186</a>.</li>
                                 <br>
                                 <li>À la recherche d’élèves bénévoles pour aider avec des tâches de jardinage pour les Jardins communautaires de Coniston.
                                     <br>Tâches :
@@ -634,7 +635,8 @@
                                     </ul>
                                     Pour plus de détails, svp communiquer avec Micheline Rioux-Tellier au <a href="tel:7056945969">705.694.5969</a> ou par courriel :<a href="mailto:micheline.rioux.tellier@gmail.com">micheline.rioux.tellier@gmail.com</a></li>
                                 <br>
-                                <li>À la recherche d’élèves bénévoles pour le Festival Boréal qui aura lieu les 8, 9 et 10 juillet. Tu peux faire demande en ligne : <a href="http://www.nlfbsudbury.com/fr/benevole">www.nlfbsudbury.com/fr/benevole</a> ou tu peux appeler le <a href="tel:7056745512">705.674.5512</a>.</li>
+                                <li>À la recherche d’élèves bénévoles pour le Festival Boréal qui aura lieu les 8, 9 et 10 juillet. Tu peux faire demande en ligne : <a href="http://www.nlfbsudbury.com/fr/benevole">www.nlfbsudbury.com/fr/benevole</a> ou tu
+                                    peux appeler le <a href="tel:7056745512">705.674.5512</a>.</li>
                             </ol>
                         </td>
                     </tr>
@@ -671,16 +673,23 @@
             </div>
 
             <!--  cours  -->
-<div id="ics" class="cours">
-                    <h2>ICS</h2>
-                    <table border=1>
-                    <tr><td bgcolor=lightgray><center>Table des 128 caractères ASCII</td></tr>
-                    <tr><td><img src="img/ics-1.jpg"></td></tr>
-                    <tr><td><img src="img/ics-2.jpg"></td></tr>
-                    </table>
+            <div id="ics" class="cours">
+                <h2>ICS</h2>
+                <table border=1>
+                    <tr>
+                        <td bgcolor=lightgray>
+                            <center>Table des 128 caractères ASCII</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/ics-1.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/ics-2.jpg"></td>
+                    </tr>
+                </table>
 
-                
-                </div>
+
+            </div>
             <div id="sch" class="cours">
                 <h2>Chimie</h2>
                 <table border="1">
@@ -716,7 +725,8 @@
                     <ul>
                         <li>Nomme l'élément négatif en premier et ajoute le suffixe "URE" (ex: NaCl = Chlor<b>ure</b> de sodium</li>
                         <li>Ajoute le suffixe "YDE" pour les composés binaires formés d'oxygène (ex: MgO = Ox<b>yde</b> de magnésium)</li>
-                        <li>Lorsque les composés ioniques sont formés d'atomes à <b>deux valences</b>, nomme l'élément négatif en premier et ensuite nomme l'élément positif suivi de la <b>valence entre les parenthèses</b>. (ex: CuCl<sub>2</sub> = chlorure de cuivre <b>(II)</b>)</li>
+                        <li>Lorsque les composés ioniques sont formés d'atomes à <b>deux valences</b>, nomme l'élément négatif en premier et ensuite nomme l'élément positif suivi de la <b>valence entre les parenthèses</b>. (ex: CuCl<sub>2</sub> = chlorure
+                            de cuivre <b>(II)</b>)</li>
                     </ul>
                     <li>Composés formés d'ions polyatomiques</li>
                     <ul>
@@ -794,15 +804,19 @@
             </div>
             <div id="cgc1d" class="cours">
 
-	<h2>CGC1D</h2>
+                <h2>CGC1D</h2>
 
-	
-<table border=1>
-<tr><td bgcolor=lightgray><center><b>Revue pour l'examen</b></td></tr></table>	
 
-	<br><img src="img/cgc1d-revue.jpg">
-	
-	</div>
+                <table border=1>
+                    <tr>
+                        <td bgcolor=lightgray>
+                            <center><b>Revue pour l'examen</b></td>
+                    </tr>
+                </table>
+
+                <br><img src="img/cgc1d-revue.jpg">
+
+            </div>
             <div id="mfm1p" class="cours">
                 <h2>MFM1P</h2>
                 <table border="1">
@@ -958,15 +972,19 @@ generator:</span><span class="apple-converted-space" style="color: rgb(0, 0, 0);
             </div>
             <div id="chc2d" class="cours">
 
-	<h2>CHC2D</h2>
+                <h2>CHC2D</h2>
 
-	
-<table border=1>
-<tr><td bgcolor=lightgray><center><b>Revue pour l'examen</b></td></tr></table>	
 
-	<br><img src="img/chc2d-revue.jpg">
-	
-	</div>
+                <table border=1>
+                    <tr>
+                        <td bgcolor=lightgray>
+                            <center><b>Revue pour l'examen</b></td>
+                    </tr>
+                </table>
+
+                <br><img src="img/chc2d-revue.jpg">
+
+            </div>
             <div id="mfm2p" class="cours">
                 <h2>MFM2P</h2>
                 <table border="1">
@@ -2011,7 +2029,8 @@ The old truck was pulled by a team of horses, so that john could save on the cos
 bram rarely mowed the lawn, and he never fixed the fence poles either.
 </i>
                 <br>
-                <br> Problems frequently occur when two simple sentence (ICs) are being joined to make a compound sentence. These problems are called run-on sentences. These may have a period as its only punctuation mark OR it may be inappropriately punctuated with one or more commas (this type of run-on sentence is called a "comma splice").
+                <br> Problems frequently occur when two simple sentence (ICs) are being joined to make a compound sentence. These problems are called run-on sentences. These may have a period as its only punctuation mark OR it may be inappropriately punctuated
+                with one or more commas (this type of run-on sentence is called a "comma splice").
                 <br>
                 <br>
                 <u>Example:</u>
@@ -2104,41 +2123,53 @@ I was late for church. Because bram was drunk again.</i>
 </i>
             </div>
 
-<div id="mdm4u" class="cours">
+            <div id="mdm4u" class="cours">
 
-	<h2>MDM4U</h2>
+                <h2>MDM4U</h2>
 
-	
-<table border=1>
-<tr><td bgcolor=lightgray><center><b>Revue pour l'examen</b></td></tr></table>	
 
-	<br><img src="img/mdm4u-revue.jpg">
-	
-	</div>
+                <table border=1>
+                    <tr>
+                        <td bgcolor=lightgray>
+                            <center><b>Revue pour l'examen</b></td>
+                    </tr>
+                </table>
 
-<div id="mhf4u" class="cours">
+                <br><img src="img/mdm4u-revue.jpg">
 
-	<h2>MHF4U</h2>
+            </div>
 
-	
-<table border=1>
-<tr><td bgcolor=lightgray><center><b>Revue pour l'examen</b></td></tr></table>	
+            <div id="mhf4u" class="cours">
 
-	<br><img src="img/mhf4u-revue.jpg">
-	
-	</div>
+                <h2>MHF4U</h2>
 
-<div id="sch4u" class="cours">
 
-	<h2>SCH4U</h2>
+                <table border=1>
+                    <tr>
+                        <td bgcolor=lightgray>
+                            <center><b>Revue pour l'examen</b></td>
+                    </tr>
+                </table>
 
-	
-<table border=1>
-<tr><td bgcolor=lightgray><center><b>Revue pour l'examen</b></td></tr></table>	
+                <br><img src="img/mhf4u-revue.jpg">
 
-	<br><img src="img/sch4u-revue-01.jpg"><img src="img/sch4u-revue-02.jpg">
-	
-	</div>
+            </div>
+
+            <div id="sch4u" class="cours">
+
+                <h2>SCH4U</h2>
+
+
+                <table border=1>
+                    <tr>
+                        <td bgcolor=lightgray>
+                            <center><b>Revue pour l'examen</b></td>
+                    </tr>
+                </table>
+
+                <br><img src="img/sch4u-revue-01.jpg"><img src="img/sch4u-revue-02.jpg">
+
+            </div>
             <div id="sph4c" class="cours">
 
                 <h2>SPH4C</h2>
@@ -2322,8 +2353,8 @@ I was late for church. Because bram was drunk again.</i>
             </div>
         </div>
     </div>
-    <script src="js/email.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/email.min.js"></script>
 
 </body>
 
