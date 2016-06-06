@@ -56,7 +56,13 @@
 
                 </div>
                 <a href="#">Éducation physique et santé</a>
-                <a href="#">Sciences</a>
+                <a onclick="myFunc('sci9')" href="javascript:void(0)">Sciences<i class="fa fa-caret-down"></i></a>
+                <div id="sci9" class="w3-accordion-content w3-animate-left w3-padding">
+                    <a href="#" onclick="w3_close();openCours('snc1p');myFunc('sci9');myFunc('neu')">SNC1P</a>
+
+                </div>
+
+
             </div>
         </div>
         <!--  10e  -->
@@ -144,6 +150,7 @@
                 <!-- chimie11 devient sci11-->
                 <a onclick="myFunc('sci11')" href="javascript:void(0)">Sciences<i class="fa fa-caret-down"></i></a>
                 <div id="sci11" class="w3-accordion-content w3-animate-left w3-padding">
+                    <a href="#" onclick="w3_close();openCours('sbi3u');myFunc('sci11');myFunc('onz')">SBI3U</a>
                     <a href="#" onclick="w3_close();openCours('sch');myFunc('sci11');myFunc('onz')">SCH3</a>
                     <a href="#" onclick="w3_close();openCours('sph3');myFunc('sci11');myFunc('onz')">SPH3</a>
                 </div>
@@ -843,6 +850,25 @@
                         <td><img src="img/mfm1p-4.jpg"></td>
                     </tr>
                 </table>
+            </div>
+
+		<div id="snc1p" class="cours">
+
+                <h2>SNC1P</h2>
+
+
+                <table border="1">
+                    <tr>
+                        <td bgcolor="lightgray">
+                            <center>
+                                <b>Revue pour l'examen</b>
+                            </center>
+                        </td>
+                    </tr>
+                </table>
+
+                <br><img src="img/snc1p-revue-p1.jpg"><img src="img/snc1p-revue-p2.jpg"><img src="img/snc1p-revue-p3.jpg">
+                <img src="img/snc1p-revue-a1.jpg"><img src="img/snc1p-revue-a2.jpg">
             </div>
 
             <div id="bbi2o" class="cours">
@@ -2220,6 +2246,19 @@ I was late for church. Because bram was drunk again.</i>
                 <br><img src="img/mhf4u-revue.jpg">
 
             </div>
+
+		<div id="sbi3u" class="cours">
+
+	<h2>SBI3U</h2>
+
+	
+<table border=1>
+<tr><td bgcolor=lightgray><center><b>Revue pour l'examen</b></td></tr></table>	
+
+	<br><img src="img/sbi3u-revue-1.jpg">
+	
+	</div>
+
 
             <div id="sch4u" class="cours">
 
