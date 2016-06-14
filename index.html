@@ -292,11 +292,11 @@
         </center>
     </nav>
     <header class="w3-container w3-card-4 w3-theme">
-  <h3>
+        <h3>
   <i class="w3-opennav fa fa-bars" onclick="w3_open()"></i>
   InfoCND
   </h3>
-</header>
+    </header>
     <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer"></div>
     <div class="w3-main" style="margin-left:250px;">
         <div class="w3-container">
@@ -730,6 +730,13 @@
                                         <div class="w3-container container" style="height: 100%;">
                                             <iframe src="http://bracket.azurewebsites.net/" class="v"></iframe>
                                         </div>
+                                        <script>
+                                            window.setInterval("reloadIFrame();", 50000);
+
+                                            function reloadIFrame() {
+                                                document.getElementById("myIframe").src="http://bracket.azurewebsites.net/";
+                                            }
+                                        </script>
                                     </div>
                                 </div>
                             </center>
