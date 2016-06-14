@@ -15,7 +15,7 @@
             height: 100%;
         }
         
-        @media screen and (min-width: 1080px) {
+        @media screen and (min-width: 720px) {
             .container {
                 text-align: center;
                 position: relative;
