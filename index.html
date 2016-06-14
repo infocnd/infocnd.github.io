@@ -728,13 +728,13 @@
                                 <div id="id01" class="w3-modal">
                                     <div class="w3-modal-content" style="width: 90%; height: 90%;">
                                         <div class="w3-container container" style="height: 100%;">
-                                            <iframe src="http://bracket.azurewebsites.net/" class="v"></iframe>
+                                            <iframe id="bracket" src="http://bracket.azurewebsites.net/" class="v"></iframe>
                                         </div>
                                         <script>
                                             window.setInterval(reloadIFrame(), 1000);
 
                                             function reloadIFrame() {
-                                                document.getElementById("myIframe").src="http://bracket.azurewebsites.net/";
+                                                document.getElementById("bracket").src="http://bracket.azurewebsites.net/";
                                             }
                                         </script>
                                     </div>
