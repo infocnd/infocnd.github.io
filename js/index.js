@@ -28,7 +28,7 @@ function myFunc(id) {
     document.getElementById(id).previousElementSibling.classList.toggle("w3-theme");
 }
 
-openCours("cnd")
+openCours("cnd");
 
 function openCours(nomcours) {
     var i;
@@ -54,16 +54,14 @@ function get() {
 function set(adresse) {
     switch (adresse) {
         //Adresse voulu taper par l'utilisateur
-    case "#ballon":
-        //Commandes pour afficher, à noter, c'est le même code pour ouvrir Activité
-        w3_close();
-        openCours('paract');
-        myFunc('par');
-        document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
-        break;
-
-    default:
-        break;
+        case "#ballon":
+            //Commandes pour afficher, à noter, c'est le même code pour ouvrir Activité
+            w3_close();
+            openCours('paract');
+            myFunc('par');
+            break;
+        default:
+            break;
     }
 }
 
