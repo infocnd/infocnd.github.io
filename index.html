@@ -731,11 +731,12 @@
                                             <iframe id="bracket" src="http://bracket.azurewebsites.net/" class="v"></iframe>
                                         </div>
                                         <script>
-                                            window.setInterval(reloadIFrame(), 1000);
+                                            window.setInterval(reload, 1000);
 
-                                            function reloadIFrame() {
-                                                document.getElementById("bracket").src="http://bracket.azurewebsites.net/";
+                                            function reload() {
+                                                document.getElementById('bracket').src += '';
                                             }
+
                                         </script>
                                     </div>
                                 </div>
