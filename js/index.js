@@ -59,6 +59,7 @@ function set(adresse) {
         w3_close();
         openCours('paract');
         myFunc('par');
+        document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
         break;
 
     default:
