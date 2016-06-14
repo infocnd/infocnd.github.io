@@ -10,6 +10,43 @@
     <link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="img/logoCND.png" sizes="16x16" type="image/png">
+    <style>
+        .container {
+            text-align: center;
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 50%;
+            float: left;
+        }
+        
+        .video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        @media screen and (min-width: 1080px) {
+            .container {
+                text-align: center;
+                position: relative;
+                width: 49%;
+                height: 0;
+                margin-left: 13px;
+                padding-bottom: 40%;
+                float: left;
+            }
+            .video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -668,43 +705,6 @@
             <div id="paract" class="cours">
                 <h2>Parlement des élèves</h2>
                 <table border="1">
-                    <style>
-                        .container {
-                            text-align: center;
-                            position: relative;
-                            width: 100%;
-                            height: 0;
-                            padding-bottom: 50%;
-                            float: left;
-                        }
-                        
-                        .video {
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
-                        }
-                        
-                        @media screen and (min-width: 1080px) {
-                            .container {
-                                text-align: center;
-                                position: relative;
-                                width: 49%;
-                                height: 0;
-                                margin-left: 13px;
-                                padding-bottom: 40%;
-                                float: left;
-                            }
-                            .video {
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                    </style>
                     <tr>
                         <td bgcolor="lightgray">
                             <center>À venir</center>
@@ -713,7 +713,10 @@
                     <tr>
                         <td>
                             <div class="container">
-                                <iframe src="http://infocnd.azurewebsites.net"></iframe>
+                                <iframe src="https://www.youtube.com/embed/YY8ZA47tiD4?rel=0&amp;autoplay=1" frameborder="0" class="video"></iframe>
+                            </div>
+                            <div class="container">
+                                <iframe src="https://www.youtube.com/embed/ZSt9tm3RoUU?rel=0&amp;autoplay=1" frameborder="0" class="video"></iframe>
                             </div>
                         </td>
                     </tr>
