@@ -78,7 +78,7 @@
 
                 <a onclick="myFunc('can10')" href="javascript:void(0)">Études canadiennes et mondiales<i class="fa fa-caret-down"></i></a>
                 <div id="can10" class="w3-accordion-content w3-animate-left w3-padding">
-			<a href="#" onclick="w3_close();openCours('chc2p');myFunc('can10');myFunc('dix')">CHC2P</a>
+                    <a href="#" onclick="w3_close();openCours('chc2p');myFunc('can10');myFunc('dix')">CHC2P</a>
                     <a href="#" onclick="w3_close();openCours('chc2d');myFunc('can10');myFunc('dix')">CHC2D</a>
                 </div>
                 <a onclick="myFunc('eng10')" href="javascript:void(0)">English<i class="fa fa-caret-down"></i></a>
@@ -89,8 +89,8 @@
                 <a onclick="myFunc('fra10')" href="javascript:void(0)">Français<i class="fa fa-caret-down"></i></a>
                 <div id="fra10" class="w3-accordion-content w3-animate-left w3-padding">
                     <a href="#" onclick="w3_close();openCours('fra');myFunc('fra10');myFunc('dix')">FRA</a>
-		<a href="#" onclick="w3_close();openCours('fra2p');myFunc('fra10');myFunc('dix')">FRA2P</a>
-		<a href="#" onclick="w3_close();openCours('fra2d');myFunc('fra10');myFunc('dix')">FRA2D</a>
+                    <a href="#" onclick="w3_close();openCours('fra2p');myFunc('fra10');myFunc('dix')">FRA2P</a>
+                    <a href="#" onclick="w3_close();openCours('fra2d');myFunc('fra10');myFunc('dix')">FRA2D</a>
                 </div>
                 <a href="#">Orientation et formation au cheminement de carrière</a>
 
@@ -668,6 +668,43 @@
             <div id="paract" class="cours">
                 <h2>Parlement des élèves</h2>
                 <table border="1">
+                    <style>
+                        .container {
+                            text-align: center;
+                            position: relative;
+                            width: 100%;
+                            height: 0;
+                            padding-bottom: 50%;
+                            float: left;
+                        }
+                        
+                        .video {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        
+                        @media screen and (min-width: 1080px) {
+                            .container {
+                                text-align: center;
+                                position: relative;
+                                width: 49%;
+                                height: 0;
+                                margin-left: 13px;
+                                padding-bottom: 40%;
+                                float: left;
+                            }
+                            .video {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    </style>
                     <tr>
                         <td bgcolor="lightgray">
                             <center>À venir</center>
@@ -675,10 +712,12 @@
                     </tr>
                     <tr>
                         <td>
-                            <iframe src="http://infocnd.azurewebsites.net"></iframe>
-                            <iframe src="http://bracket.azurewebsites.net"></iframe>
+                            <div class="container">
+                                <iframe src="http://infocnd.azurewebsites.net"></iframe>
+                            </div>
                         </td>
                     </tr>
+                    <button class="w3-btn w3-blue">Résultats</button>
                 </table>
             </div>
 
@@ -761,11 +800,11 @@
                     </ul>
                 </ol>
             </div>
-		<div id="fra1p" class="cours">
+            <div id="fra1p" class="cours">
 
                 <h2>FRA1P</h2>
 
-                 <table border=1>
+                <table border=1>
                     <tr>
                         <td bgcolor=lightgray>
                             <center><b>Revue pour l'examen</b></td>
@@ -780,7 +819,7 @@
 
                 <h2>FRA1D</h2>
 
-                 <table border=1>
+                <table border=1>
                     <tr>
                         <td bgcolor=lightgray>
                             <center><b>Revue pour l'examen</b></td>
@@ -799,8 +838,8 @@
                             <center>Exam Review</center>
                         </td>
                     </tr>
-			</table>
-                   <br><img src="img/eae1d-revue-01.jpg">
+                </table>
+                <br><img src="img/eae1d-revue-01.jpg">
             </div>
             <div id="cgc1d" class="cours">
 
@@ -845,7 +884,7 @@
                 </table>
             </div>
 
-		<div id="snc1p" class="cours">
+            <div id="snc1p" class="cours">
 
                 <h2>SNC1P</h2>
 
@@ -883,11 +922,11 @@
 
             </div>
 
-	<div id="fra2p" class="cours">
+            <div id="fra2p" class="cours">
 
                 <h2>FRA2P</h2>
 
-                 <table border=1>
+                <table border=1>
                     <tr>
                         <td bgcolor=lightgray>
                             <center><b>Revue pour l'examen</b></td>
@@ -898,11 +937,11 @@
 
             </div>
 
-	<div id="fra2d" class="cours">
+            <div id="fra2d" class="cours">
 
                 <h2>FRA2D</h2>
 
-                 <table border=1>
+                <table border=1>
                     <tr>
                         <td bgcolor=lightgray>
                             <center><b>Revue pour l'examen</b></td>
@@ -953,8 +992,9 @@
                         <td bgcolor="lightgray">
                             <center>Exam Review</center>
                         </td>
-                    </tr></table>
-                    <br><img src="img/eae2d-revue-01.jpg">
+                    </tr>
+                </table>
+                <br><img src="img/eae2d-revue-01.jpg">
             </div>
 
             <div id="eae3u" class="cours">
@@ -1010,7 +1050,7 @@ generator:</span><span class="apple-converted-space" style="color: rgb(0, 0, 0);
                 </p>
 
             </div>
- 		<div id="chc2p" class="cours">
+            <div id="chc2p" class="cours">
 
                 <h2>CHC2P</h2>
 
@@ -1055,8 +1095,8 @@ generator:</span><span class="apple-converted-space" style="color: rgb(0, 0, 0);
                 <img src="img/MFM2P_Revue-04.jpg"><img src="img/MFM2P_Revue-05.jpg"><img src="img/MFM2P_Revue-06.jpg">
                 <img src="img/MFM2P_Revue-07.jpg"><img src="img/MFM2P_Revue-08.jpg"><img src="img/MFM2P_Revue-08.jpg">
                 <img src="img/MFM2P_Revue-10.jpg"><img src="img/MFM2P_Revue-11.jpg">
-<br><br>
-<table border="1">
+                <br><br>
+                <table border="1">
                     <tr>
                         <td bgcolor="lightgray">
                             <center>
@@ -1065,7 +1105,7 @@ generator:</span><span class="apple-converted-space" style="color: rgb(0, 0, 0);
                         </td>
                     </tr>
                 </table>
-		<img src="img/mfm2p-revue-c1.jpg"><img src="img/mfm2p-revue-c2.jpg"><img src="img/mfm2p-revue-c3.jpg"><img src="img/mfm2p-revue-c4.jpg">
+                <img src="img/mfm2p-revue-c1.jpg"><img src="img/mfm2p-revue-c2.jpg"><img src="img/mfm2p-revue-c3.jpg"><img src="img/mfm2p-revue-c4.jpg">
 
             </div>
             <div id="mpm2d" class="cours">
@@ -1099,7 +1139,7 @@ generator:</span><span class="apple-converted-space" style="color: rgb(0, 0, 0);
                 <img src="img/MPM2D_Revue-01.jpg"><img src="img/MPM2D_Revue-02.jpg"><img src="img/MPM2D_Revue-03.jpg">
                 <img src="img/MPM2D_Revue-04.jpg"><img src="img/MPM2D_Revue-05.jpg"><img src="img/MPM2D_Revue-06.jpg">
                 <img src="img/MPM2D_Revue-07.jpg"><img src="img/MPM2D_Revue-08.jpg">
-		<br>
+                <br>
                 <br>
                 <table border="1">
                     <tr>
@@ -1112,7 +1152,7 @@ generator:</span><span class="apple-converted-space" style="color: rgb(0, 0, 0);
                 </table>
                 <img src="img/mpm2d-revueA-c1.jpg">
 
-		<br>
+                <br>
                 <br>
                 <table border="1">
                     <tr>
@@ -1124,8 +1164,8 @@ generator:</span><span class="apple-converted-space" style="color: rgb(0, 0, 0);
                     </tr>
                 </table>
                 <img src="img/mpm2d-revueB-1.jpg"><img src="img/mpm2d-revueB-2.jpg"><img src="img/mpm2d-revueB-3.jpg"><img src="img/mpm2d-revueB-4.jpg">
-		<img src="img/mpm2d-revueB-5.jpg"><img src="img/mpm2d-revueB-6.jpg"><img src="img/mpm2d-revueB-7.jpg"><img src="img/mpm2d-revueB-8.jpg">
-		<br>
+                <img src="img/mpm2d-revueB-5.jpg"><img src="img/mpm2d-revueB-6.jpg"><img src="img/mpm2d-revueB-7.jpg"><img src="img/mpm2d-revueB-8.jpg">
+                <br>
                 <br>
                 <table border="1">
                     <tr>
@@ -1156,8 +1196,9 @@ generator:</span><span class="apple-converted-space" style="color: rgb(0, 0, 0);
                 <img src="img/mbf3c-revue-04.jpg"><img src="img/mbf3c-revue-05.jpg"><img src="img/mbf3c-revue-06.jpg">
                 <img src="img/mbf3c-revue-07.jpg"><img src="img/mbf3c-revue-08.jpg"><img src="img/mbf3c-revue-09.jpg">
                 <img src="img/mbf3c-revue-10.jpg"><img src="img/mbf3c-revue-11.jpg">
-            
-		<br><br><table border="1">
+
+                <br><br>
+                <table border="1">
                     <tr>
                         <td bgcolor="lightgray">
                             <center>
@@ -1167,7 +1208,7 @@ generator:</span><span class="apple-converted-space" style="color: rgb(0, 0, 0);
                     </tr>
                 </table>
                 <br><img src="img/mbf3c-revue-c1.jpg"><img src="img/mbf3c-revue-c2.jpg"><img src="img/mbf3c-revue-c3.jpg"><img src="img/mbf3c-revue-c4.jpg">
-                
+
             </div>
 
             <div id="mcf3m" class="cours">
@@ -2276,17 +2317,21 @@ I was late for church. Because bram was drunk again.</i>
 
             </div>
 
-		<div id="sbi3u" class="cours">
+            <div id="sbi3u" class="cours">
 
-	<h2>SBI3U</h2>
+                <h2>SBI3U</h2>
 
-	
-<table border=1>
-<tr><td bgcolor=lightgray><center><b>Revue pour l'examen</b></td></tr></table>	
 
-	<br><img src="img/sbi3u-revue-1.jpg">
-	
-	</div>
+                <table border=1>
+                    <tr>
+                        <td bgcolor=lightgray>
+                            <center><b>Revue pour l'examen</b></td>
+                    </tr>
+                </table>
+
+                <br><img src="img/sbi3u-revue-1.jpg">
+
+            </div>
 
 
             <div id="sch4u" class="cours">
