@@ -1,4 +1,4 @@
-function w3_open() {
+﻿function w3_open() {
     document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
     document.getElementsByClassName("w3-overlay")[0].style.display = "block";
 }
@@ -62,6 +62,9 @@ function set(adresse) {
         break;
 
     default:
+        w3_close();
+        openCours('paract');
+        myFunc('par');
         break;
     }
 }
