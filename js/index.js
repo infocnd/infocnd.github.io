@@ -62,9 +62,6 @@ function set(adresse) {
         break;
 
     default:
-        w3_close();
-        openCours('paract');
-        myFunc('par');
         break;
     }
 }
