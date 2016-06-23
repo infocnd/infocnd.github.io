@@ -59,6 +59,8 @@ function set(adresse) {
         openCours('hre4m');
         myFunc('rel11');
         myFunc('onz');
+        break;
+        
     case "#ballon":
         //Commandes pour afficher, à noter, c'est le même code pour ouvrir Activité
         w3_close();
