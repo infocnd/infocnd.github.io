@@ -54,12 +54,7 @@ function get() {
 function set(adresse) {
     switch (adresse) {
         //Adresse voulu taper par l'utilisateur
-    case "#er11":
-        w3_close();
-        openCours('hre4m');
-        myFunc('rel11');
-        myFunc('onz');
-        break;
+    
         
     case "#ballon":
         //Commandes pour afficher, à noter, c'est le même code pour ouvrir Activité
