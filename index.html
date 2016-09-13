@@ -1,69 +1,31 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang=fr>
 
 <head>
     <title>InfoCND - La ressource des Alouettes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/w3-theme-blue.min.css">
-    <link href="https://fonts.googleapis.com/css?family=RobotoDraft" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="icon" href="img/logoCND.png" sizes="16x16" type="image/png">
-    <style>
-        .container {
-            text-align: center;
-            position: relative;
-            width: 100%;
-            height: 0;
-            padding-bottom: 50%;
-            float: left;
-        }
-        
-        .v {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        
-        @media screen and (min-width: 1080px) {
-            .container {
-                text-align: center;
-                position: relative;
-                width: 49%;
-                height: 0;
-                margin-left: 13px;
-                padding-bottom: 40%;
-                float: left;
-            }
-            .v {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=RobotoDraft" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/site/logoCND.png" sizes="16x16" type="image/png">
 </head>
 
 <body>
     <nav class="w3-sidenav w3-collapse w3-white w3-animate-left w3-card-2" style="z-index:5;width:250px;">
         <a href="#" onclick="openCours('cnd');w3_close()" class="w3-border-bottom w3-large">
             <div style="margin-left: 40px; display: inline-block; vertical-align: middle;">
-                <img src="img/logoCND.png" style="width:40px;" alt="InfoCND">
+                <img src="img/site/logoCND.png" style="width:40px;" alt="InfoCND">
             </div>
             <div style="display: inline-block; vertical-align: middle;">
                 <p>1nf0CND</p>
             </div>
         </a>
-        <a href="javascript:void(0)" onclick="w3_close()" class="w3-text-blue w3-hide-large w3-closenav w3-large">Fermer la page &times;</a>
+        <a href="#" onclick="w3_close()" class="w3-text-blue w3-hide-large w3-closenav w3-large">Fermer la page &times;</a>
         <!--  examen  
         <div class="w3-accordion">
 
-            <a onclick="myFunc('exa')" href="javascript:void(0)">Examen<i class="fa fa-caret-down"></i></a>
+            <a onclick="myFunc('exa')" href="#">Examen</a>
             <div id="exa" class="w3-accordion-content w3-animate-left w3-padding">
                 <a href="#" onclick="w3_close();openCours('exa9');myFunc('exa')">9e</a>
                 <a href="#" onclick="w3_close();openCours('exa10');myFunc('exa')">10e</a>
@@ -75,202 +37,105 @@
 
         <!--  9e  -->
         <div class="w3-accordion">
-            <a onclick="myFunc('neu')" href="javascript:void(0)">9e<i class="fa fa-caret-down"></i></a>
+            <a onclick="myFunc('neu')" href="#">9e</a>
             <div id="neu" class="w3-accordion-content w3-animate-left w3-padding">
                 <a href="#">Éducation artistique</a>
-                <a onclick="myFunc('can9')" href="javascript:void(0)">Études canadiennes et mondiales<i class="fa fa-caret-down"></i></a>
-                <div id="can9" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('cgc1d');myFunc('can9');myFunc('neu')">CGC1D</a>
-                </div>
-                <a onclick="myFunc('eng9')" href="javascript:void(0)">English<i class="fa fa-caret-down"></i></a>
-                <div id="eng9" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('eae');myFunc('eng9');myFunc('neu')">EAE</a>
-                    <a href="#" onclick="w3_close();openCours('eae1d');myFunc('eng9');myFunc('neu')">EAE1D</a>
-                </div>
-                <a onclick="myFunc('fra9')" href="javascript:void(0)">Français<i class="fa fa-caret-down"></i></a>
-                <div id="fra9" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('fra');myFunc('fra9');myFunc('neu')">FRA</a>
-                    <a href="#" onclick="w3_close();openCours('fra1p');myFunc('fra9');myFunc('neu')">FRA1P</a>
-                    <a href="#" onclick="w3_close();openCours('fra1d');myFunc('fra9');myFunc('neu')">FRA1D</a>
-                </div>
+                <a href="#">Études canadiennes et mondiales</a>
+                <a href="#">English</a>
+                <a href="#">Français</a>
                 <a href="#">Enseignement religieux</a>
-                <a onclick="myFunc('maths9')" href="javascript:void(0)">Mathématiques<i class="fa fa-caret-down"></i></a>
-                <div id="maths9" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('mfm1p');myFunc('maths9');myFunc('neu')">MFM1P</a>
-
-                </div>
+                <a href="#">Mathématiques</a>
                 <a href="#">Éducation physique et santé</a>
-                <a onclick="myFunc('sci9')" href="javascript:void(0)">Sciences<i class="fa fa-caret-down"></i></a>
-                <div id="sci9" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('snc1p');myFunc('sci9');myFunc('neu')">SNC1P</a>
-
-                </div>
-
-
+                <a href="#">Sciences</a>
             </div>
         </div>
         <!--  10e  -->
         <div class="w3-accordion">
-            <a onclick="myFunc('dix')" href="javascript:void(0)">10e<i class="fa fa-caret-down"></i></a>
+            <a onclick="myFunc('dix')" href="#">10e &#x25BC;</a>
             <div id="dix" class="w3-accordion-content w3-animate-left w3-padding">
                 <a href="#">Éducation artistique</a>
-                <a onclick="myFunc('aff10')" href="javascript:void(0)">Affaires et commerce<i class="fa fa-caret-down"></i></a>
-                <div id="aff10" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('bbi2o');myFunc('aff10');myFunc('dix')">BBI2O</a>
-                </div>
-
-                <a onclick="myFunc('can10')" href="javascript:void(0)">Études canadiennes et mondiales<i class="fa fa-caret-down"></i></a>
-                <div id="can10" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('chc2p');myFunc('can10');myFunc('dix')">CHC2P</a>
-                    <a href="#" onclick="w3_close();openCours('chc2d');myFunc('can10');myFunc('dix')">CHC2D</a>
-                </div>
-                <a onclick="myFunc('eng10')" href="javascript:void(0)">English<i class="fa fa-caret-down"></i></a>
-                <div id="eng10" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('eae');myFunc('eng10');myFunc('dix')">EAE</a>
-                    <a href="#" onclick="w3_close();openCours('eae2d');myFunc('eng10');myFunc('dix')">EAE2D</a>
-                </div>
-                <a onclick="myFunc('fra10')" href="javascript:void(0)">Français<i class="fa fa-caret-down"></i></a>
-                <div id="fra10" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('fra');myFunc('fra10');myFunc('dix')">FRA</a>
-                    <a href="#" onclick="w3_close();openCours('fra2p');myFunc('fra10');myFunc('dix')">FRA2P</a>
-                    <a href="#" onclick="w3_close();openCours('fra2d');myFunc('fra10');myFunc('dix')">FRA2D</a>
-                </div>
+                <a href="#">Affaires et commerce</a>
+                <a href="#">Études canadiennes et mondiales</a>
+                <a href="#">English</a>
+                <a href="#">Français</a>
                 <a href="#">Orientation et formation au cheminement de carrière</a>
-
-                <a onclick="myFunc('ics10')" href="javascript:void(0)">Études informatiques<i class="fa fa-caret-down"></i></a>
-                <div id="ics10" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('ics');myFunc('ics10');myFunc('dix')">ICS2</a>
+                <a onclick="myFunc('ics2')" href="javascript:void(0)">Études informatiques &#x25BC;</a>
+                <div id="ics2" class="w3-accordion-content w3-animate-left w3-padding">
+                    <a href="#" onclick="w3_close();openCours('ics2o');myFunc('ics2');myFunc('dix')">ICS2</a>
                 </div>
-
-                <a onclick="myFunc('maths10')" href="javascript:void(0)">Mathématiques<i class="fa fa-caret-down"></i></a>
-                <div id="maths10" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('mfm2p');myFunc('maths10');myFunc('dix')">MFM2P</a>
-                    <a href="#" onclick="w3_close();openCours('mpm2d');myFunc('maths10');myFunc('dix')">MPM2D</a>
-                </div>
+                <a href="#">Mathématiques</a>
                 <a href="#">Éducation physique et santé</a>
-                <a onclick="myFunc('sci10')" href="javascript:void(0)">Sciences<i class="fa fa-caret-down"></i></a>
-                <div id="sci10" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('snc2d');myFunc('sci10');myFunc('dix')">SNC2D</a>
-                    <a href="#" onclick="w3_close();openCours('sch');myFunc('sci10');myFunc('dix')">Chimie</a>
-                </div>
-                <a onclick="myFunc('tech10')" href="javascript:void(0)">Éducation technologique<i class="fa fa-caret-down"></i></a>
-                <div id="tech10" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('tdj2o');myFunc('tech10');myFunc('dix')">TDJ2O</a>
+                <a href="#">Sciences</a>
+                <a onclick="myFunc('tdj2')" href="javascript:void(0)">Études technologique &#x25BC;</a>
+                <div id="tdj2" class="w3-accordion-content w3-animate-left w3-padding">
+                    <a href="#" onclick="w3_close();openCours('tdj2o');myFunc('tdj2');myFunc('dix')">TDJ2</a>
                 </div>
             </div>
         </div>
         <!--  11e  -->
         <div class="w3-accordion">
-            <a onclick="myFunc('onz')" href="javascript:void(0)">11e<i class="fa fa-caret-down"></i></a>
+            <a onclick="myFunc('onz')" href="#">11e &#x25BC;</a>
             <div id="onz" class="w3-accordion-content w3-animate-left w3-padding">
                 <a href="#">Éducation artistique</a>
                 <a href="#">Affaires et commerce</a>
                 <a href="#">Études canadiennes et mondiales</a>
-                <a onclick="myFunc('eng11')" href="javascript:void(0)">English<i class="fa fa-caret-down"></i></a>
-                <div id="eng11" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('eae');myFunc('eng11');myFunc('onz')">EAE</a>
-                    <a href="#" onclick="w3_close();openCours('eae3u');myFunc('eng11');myFunc('onz')">EAE3U</a>
-
-                </div>
-
-                <a onclick="myFunc('fra11')" href="javascript:void(0)">Français<i class="fa fa-caret-down"></i></a>
-                <div id="fra11" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('fra');myFunc('fra11');myFunc('onz')">FRA</a>
-                </div>
+                <a href="#">English</a>
+                <a href="#">Français</a>
                 <a href="#">Orientation et formation au cheminement de carrière</a>
-                <a onclick="myFunc('sciHS')" href="javascript:void(0)">Sciences humaines et sociales<i class="fa fa-caret-down"></i></a>
-                <div id="sciHS" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('hsp3');myFunc('sciHS');myFunc('onz')">HSP3</a>
+                <a href="#">Sciences humaines et sociales</a>
+                <a onclick="myFunc('ics3')" href="javascript:void(0)">Études informatiques &#x25BC;</a>
+                <div id="ics3" class="w3-accordion-content w3-animate-left w3-padding">
+                    <a href="#" onclick="w3_close();openCours('ics3uc');myFunc('ics3');myFunc('onz')">ICS3</a>
                 </div>
-
-                <a onclick="myFunc('ics11')" href="javascript:void(0)">Études informatiques<i class="fa fa-caret-down"></i></a>
-                <div id="ics11" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('ics');myFunc('ics11');myFunc('onz')">ICS3</a>
-                </div>
-                <a onclick="myFunc('maths11')" href="javascript:void(0)">Mathématiques<i class="fa fa-caret-down"></i></a>
-                <div id="maths11" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('mbf3c');myFunc('maths11');myFunc('onz')">MBF3C</a>
-                    <a href="#" onclick="w3_close();openCours('mcf3m');myFunc('maths11');myFunc('onz')">MCF3M</a>
-                    <a href="#" onclick="w3_close();openCours('mcr3u');myFunc('maths11');myFunc('onz')">MCR3U</a>
+                <a onclick="myFunc('math11')" href="javascript:void(0)">Mathématiques &#x25BC;</a>
+                <div id="math11" class="w3-accordion-content w3-animate-left w3-padding">
+                    <a href="#" onclick="w3_close();openCours('mcf3m');myFunc('math11');myFunc('onz')">MCF3</a>
                 </div>
                 <a href="#">Éducation physique et santé</a>
-                <!-- chimie11 devient sci11-->
-                <a onclick="myFunc('sci11')" href="javascript:void(0)">Sciences<i class="fa fa-caret-down"></i></a>
-                <div id="sci11" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('sbi3u');myFunc('sci11');myFunc('onz')">SBI3U</a>
-                    <a href="#" onclick="w3_close();openCours('sch');myFunc('sci11');myFunc('onz')">SCH3</a>
-                    <a href="#" onclick="w3_close();openCours('sph3');myFunc('sci11');myFunc('onz')">SPH3</a>
-                </div>
+                <a href="#">Sciences</a>
                 <a href="#">Éducation technologique</a>
-
-		
-		<a onclick="myFunc('rel11')" href="javascript:void(0)">Enseignement religieux<i class="fa fa-caret-down"></i></a>
-                <div id="rel11" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('hre4m');myFunc('rel11');myFunc('onz')">HRE4M</a>
-
+                <a href="#">Enseignement religieux</a>
             </div>
         </div>
         <!--  12e  -->
         <div class="w3-accordion">
-            <a onclick="myFunc('dou')" href="javascript:void(0)">12e<i class="fa fa-caret-down"></i></a>
+            <a onclick="myFunc('dou')" href="#">12e &#x25BC;</a>
             <div id="dou" class="w3-accordion-content w3-animate-left w3-padding">
                 <a href="#">Éducation artistique</a>
                 <a href="#">Affaires et commerce</a>
                 <a href="#">Études canadiennes et mondiales</a>
-
-                <a onclick="myFunc('eng12')" href="javascript:void(0)">English<i class="fa fa-caret-down"></i></a>
-                <div id="eng12" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('eae');myFunc('eng12');myFunc('dou')">EAE</a>
-                </div>
-
-                <a onclick="myFunc('fra12')" href="javascript:void(0)">Français<i class="fa fa-caret-down"></i></a>
-                <div id="fra12" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('fra');myFunc('fra12');myFunc('dou')">FRA</a>
-                </div>
+                <a href="#">English</a>
+                <a href="#">Français</a>
                 <a href="#">Sciences humaines et sociales</a>
                 <a href="#">Enseignement religieux</a>
-
-                <a onclick="myFunc('ics12')" href="javascript:void(0)">Études informatiques<i class="fa fa-caret-down"></i></a>
-                <div id="ics12" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('ics');myFunc('ics12');myFunc('dou')">ICS4</a>
+                <a onclick="myFunc('ics4')" href="javascript:void(0)">Études informatiques &#x25BC;</a>
+                <div id="ics4" class="w3-accordion-content w3-animate-left w3-padding">
+                    <a href="#" onclick="w3_close();openCours('ics4uc');myFunc('ics4');myFunc('dou')">ICS4</a>
                 </div>
-
                 <a href="#">Études interdisciplinaires</a>
-                <a onclick="myFunc('maths12')" href="javascript:void(0)">Mathématiques<i class="fa fa-caret-down"></i></a>
-                <div id="maths12" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('mdm4u');myFunc('maths12');myFunc('dou')">MDM4U</a>
-                    <a href="#" onclick="w3_close();openCours('mhf4u');myFunc('maths12');myFunc('dou')">MHF4U</a>
-
-                </div>
+                <a href="#">Mathématiques</a>
                 <a href="#">Éducation physique et santé</a>
-                <a onclick="myFunc('sci12')" href="javascript:void(0)">Sciences<i class="fa fa-caret-down"></i></a>
-                <div id="sci12" class="w3-accordion-content w3-animate-left w3-padding">
-                    <a href="#" onclick="w3_close();openCours('sch');myFunc('sci12');myFunc('dou')">SCH4</a>
-                    <a href="#" onclick="w3_close();openCours('sch4u');myFunc('sci12');myFunc('dou')">SCH4U</a>
-                    <a href="#" onclick="w3_close();openCours('sph4');myFunc('sci12');myFunc('dou')">SPH4</a>
-                    <a href="#" onclick="w3_close();openCours('sph4c');myFunc('sci12');myFunc('dou')">SPH4C</a>
-                    <a href="#" onclick="w3_close();openCours('sph4u');myFunc('sci12');myFunc('dou')">SPH4U</a>
-                </div>
+                <a href="#">Sciences</a>
                 <a href="#">Éducation technologique</a>
             </div>
         </div>
         <!--  orintation  -->
         <div class="w3-accordion">
-            <a onclick="myFunc('ori')" href="javascript:void(0)">Orientation<i class="fa fa-caret-down"></i></a>
+            <a onclick="myFunc('ori')" href="#">Orientation</a>
             <div id="ori" class="w3-accordion-content w3-animate-left w3-padding">
                 <a href="#" onclick="w3_close();openCours('bene');myFunc('ori')">Bénévolat</a>
             </div>
         </div>
         <!--  parlement des élèves  -->
         <div class="w3-accordion">
-            <a onclick="myFunc('par')" href="javascript:void(0)">Parlement des élèves<i class="fa fa-caret-down"></i></a>
+            <a onclick="myFunc('par')" href="#">Parlement des élèves</a>
             <div id="par" class="w3-accordion-content w3-animate-left w3-padding">
                 <a href="#" onclick="w3_close();openCours('parinfo');myFunc('par')">info</a>
             </div>
         </div>
         <!--  courriels  -->
         <div class="w3-accordion">
-            <a onclick="myFunc('courriels')" href="javascript:void(0)">Courriels<i class="fa fa-caret-down"></i></a>
+            <a onclick="myFunc('courriels')" href="#">Courriels</a>
             <div id="courriels" class="w3-accordion-content w3-animate-left w3-padding">
                 <a href="#" onclick="w3_close();openCours('cou-ad');myFunc('courriels')">Administration</a>
                 <a href="#" onclick="w3_close();openCours('cou-en');myFunc('courriels')">Enseignant(e)s</a>
@@ -280,2311 +145,292 @@
         <!-- Météo Média -->
         <center>
             <div id="plemx-root"></div>
-            <script type="text/javascript">
-                var _plm = _plm || [];
-                _plm.push(['_btn', 29726]);
-                _plm.push(['_loc', 'caon0664']);
-                _plm.push(['location', document.location.host]);
-                (function(d, e, i) {
-                    if (d.getElementById(i)) return;
-                    var px = d.createElement(e);
-                    px.type = 'text/javascript';
-                    px.async = true;
-                    px.id = i;
-                    px.src = ('https:' == d.location.protocol ? 'https:' : 'http:') + '//widget.twnmm.com/js/btn/pelm.js?orig=fr_ca';
-                    var s = d.getElementsByTagName('script')[0];
-                    var py = d.createElement('link');
-                    py.rel = 'stylesheet'
-                    py.href = ('https:' == d.location.protocol ? 'https:' : 'http:') + '//widget.twnmm.com/styles/btn/styles.css'
-                    s.parentNode.insertBefore(px, s);
-                    s.parentNode.insertBefore(py, s);
-                })(document, 'script', 'plmxbtn');
-            </script>
-
         </center>
-
-
-
     </nav>
     <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer"></div>
-    <div class="w3-main" style="margin-left:250px;">
-        <div class="w3-container">
-            <div id="myTop" class="w3-top w3-container w3-theme w3-large">
-                <i class="fa fa-bars w3-opennav w3-hide-large w3-xlarge w3-margin-left w3-margin-right" onclick="w3_open()"></i>
-                <span id="myIntro" class="w3-hide">InfoCND</span>
-            </div>
-            <div id="cnd" class="cours">
-                <h1 class="w3-text-blue">InfoCND</h1>
-                <h5>La ressource des Alouettes</h5>
-                <ul class="w3-leftbar w3-theme-border" style="list-style-type:none">
-                    <li>Bienvenue au site d'information du Collège Notre-Dame. Le site <b>infocnd.github.io</b> est le centre d'information pour certains cours offert ici au Collège Notre-Dame. Le site est en développement donc le contenu sera mis à jours
-                        au fur et à mesure que l'information peut être numérisée. Le site est créé pour faciliter l'apprentissage, les devoirs et l'étude pour les examens. Le site est séparé en onglets pour que vous puissiez y trouver précisément l'information
-                        que vous avez besoin. Pour trouver le cours que vous cherchez:
-                        <br>
-                        <br>
-                        <ol>
-                            <li>Appuyez sur l'année d'étude.</li>
-                            <li>Appuyez sur le sujet du cours.</li>
-                            <li>Appuyer sur la cote de votre cours.</li>
-                        </ol>
-                        <br> N.B. Une petite flèche est visible à la droite de l'onglet s'il y a de l'information supplémentaire. N'oubliez pas d'ajouter le site à vos favoris pour ne pas perdre le lien. </li>
-                </ul>
-                <br>
-                visiteurs:
-                <a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=infocnd.github.io&digit=style/plain/22/&reloads=0" alt="www.reliablecounter.com" title="www.reliablecounter.com" border="0"></a><br /><a href="http://www.analogmix.com" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: white; text-decoration: none;">Read more</a></div>
-            <!--  courriels  administration-->
-            <div id="cou-ad" class="cours">
-                <h1 class="w3-text-blue">Courriels</h1>
-                <h5>Administration </h5>
-                <ul class="w3-leftbar w3-theme-border" style="list-style-type:none">
-                    <li>
-                        <script language="JavaScript">
-                            var admin = [{
-                                "prenom": "Johanne",
-                                "nom": "Chrétien"
-                            }, {
-                                "prenom": "Lynn",
-                                "nom": "MacLean"
-                            }];
-                            for (i = 0; i < admin.length; i++) {
-                                document.write("<a href='#' onclick='clean(admin[" + i + "])'>" + admin[i].prenom + " " + admin[i].nom + "</a>");
-                                document.write("<br>");
-                            }
-                        </script>
-                    </li>
-                </ul>
-                <br>
-            </div>
-            <!--  courriels  personnel enseignant-->
-            <div id="cou-en" class="cours">
-                <h1 class="w3-text-blue">Courriels</h1>
-                <h5>Personnel enseignant </h5>
-                <ul class="w3-leftbar w3-theme-border" style="list-style-type:none">
-                    <li>
-                        <script language="JavaScript">
-                            var pers = [{
-                                "prenom": "Michèle",
-                                "nom": "Albert"
-                            }, {
-                                "prenom": "Denis",
-                                "nom": "Bidal"
-                            }, {
-                                "prenom": "Marc",
-                                "nom": "Bonin"
-                            }, {
-                                "prenom": "Alain",
-                                "nom": "Boucher"
-                            }, {
-                                "prenom": "Danika",
-                                "nom": "brabant"
-                            }, {
-                                "prenom": "Sylvie",
-                                "nom": "brosseau"
-                            }, {
-                                "prenom": "Natalie",
-                                "nom": "Charbonneau"
-                            }, {
-                                "prenom": "Sylvie",
-                                "nom": "Chenard-Laferrière"
-                            }, {
-                                "prenom": "Julie",
-                                "nom": "Courtemanche"
-                            }, {
-                                "prenom": "Charles",
-                                "nom": "Coutu"
-                            }, {
-                                "prenom": "Lise",
-                                "nom": "Demers"
-                            }, {
-                                "prenom": "Denise",
-                                "nom": "Desrochers"
-                            }, {
-                                "prenom": "Roby",
-                                "nom": "Desrochers"
-                            }, {
-                                "prenom": "Natalie",
-                                "nom": "Dionne"
-                            }, {
-                                "prenom": "Andrée",
-                                "nom": "Duhaime"
-                            }, {
-                                "prenom": "Renée",
-                                "nom": "Dupuis"
-                            }, {
-                                "prenom": "Victoria",
-                                "nom": "Gaudreau"
-                            }, {
-                                "prenom": "Danielle",
-                                "nom": "Gauthier"
-                            }, {
-                                "prenom": "Manon",
-                                "nom": "Gauthier"
-                            }, {
-                                "prenom": "Jennifer",
-                                "nom": "Gibson"
-                            }, {
-                                "prenom": "Luc",
-                                "nom": "Giroux"
-                            }, {
-                                "prenom": "Patrice",
-                                "nom": "Goho"
-                            }, {
-                                "prenom": "Diane",
-                                "nom": "Labelle"
-                            }, {
-                                "prenom": "Sylvie",
-                                "nom": "Lachapelle"
-                            }, {
-                                "prenom": "Lizette",
-                                "nom": "Lacourcière"
-                            }, {
-                                "prenom": "Marc",
-                                "nom": "Laferrière"
-                            }, {
-                                "prenom": "Marc",
-                                "nom": "Langlois"
-                            }, {
-                                "prenom": "Lizette",
-                                "nom": "Langlois-Rheault"
-                            }, {
-                                "prenom": "Stéphan",
-                                "nom": "Lapensée"
-                            }, {
-                                "prenom": "Liane",
-                                "nom": "Laquerre"
-                            }, {
-                                "prenom": "Andrée",
-                                "nom": "Larocque-Reichle"
-                            }, {
-                                "prenom": "Katy",
-                                "nom": "Levesque"
-                            }, {
-                                "prenom": "Renée",
-                                "nom": "Maggiolo"
-                            }, {
-                                "prenom": "Dominique",
-                                "nom": "Maillet"
-                            }, {
-                                "prenom": "Martin",
-                                "nom": "Nadeau"
-                            }, {
-                                "prenom": "Nicole",
-                                "nom": "Pelletier"
-                            }, {
-                                "prenom": "Mélanie",
-                                "nom": "Pharand-Prévost"
-                            }, {
-                                "prenom": "Denis",
-                                "nom": "Piquette"
-                            }, {
-                                "prenom": "brigitte",
-                                "nom": "Prévost"
-                            }, {
-                                "prenom": "Denis",
-                                "nom": "Rochon"
-                            }, {
-                                "prenom": "Jasmine",
-                                "nom": "Rosevear"
-                            }, {
-                                "prenom": "Mélanie",
-                                "nom": "Savoie"
-                            }, {
-                                "prenom": "Renée",
-                                "nom": "Spadafore"
-                            }, {
-                                "prenom": "Pierre",
-                                "nom": "Taillon"
-                            }];
-                            for (i = 0; i < pers.length; i++) {
-                                document.write("<a href='#' onclick='clean(pers[" + i + "])'>" + pers[i].prenom + " " + pers[i].nom + "</a>");
-                                document.write("<br>");
-                            }
-                        </script>
-                    </li>
-                </ul>
-                <br>
-            </div>
-            <!--  courriels  orientation-->
-            <div id="cou-or" class="cours">
-                <h1 class="w3-text-blue">Courriels</h1>
-                <h5>Personnel enseignant </h5>
-                <ul class="w3-leftbar w3-theme-border" style="list-style-type:none">
-                    <li>
-                        <script language="JavaScript">
-                            var host = "nouvelon.ca";
-                            var orient = [{
-                                "prenom": "Julie",
-                                "nom": "Godin"
-                            }, {
-                                "prenom": "Lisa",
-                                "nom": "Labelle"
-                            }, {
-                                "prenom": "Lynn",
-                                "nom": "Roy"
-                            }];
-                            for (i = 0; i < orient.length; i++) {
-                                document.write("<a href='#' onclick='clean(orient[" + i + "])'>" + orient[i].prenom + " " + orient[i].nom + "</a>");
-                                document.write("<br>");
-                            }
-                        </script>
-                    </li>
-                </ul>
-                <br>
-            </div>
-
-            <!-- exa -->
-            <div id="exa9" class="cours">
-                <h2>Examen</h2>
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>
-                                <b>Horaire</b>
-                            </center>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa9-16.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa9-20.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa9-21.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa9-22.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa9-23.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa9-24.jpg"></td>
-                    </tr>
-                </table>
-            </div>
-            <div id="exa10" class="cours">
-                <h2>Examen</h2>
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>
-                                <b>Horaire</b>
-                            </center>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa10-16.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa10-20.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa10-21.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa10-22.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa10-23.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa10-24.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa10-27.jpg"></td>
-                    </tr>
-                </table>
-            </div>
-            <div id="exa11" class="cours">
-                <h2>Examen</h2>
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>
-                                <b>Horaire</b>
-                            </center>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa11-16.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa11-20.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa11-21.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa11-22.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa11-23.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa11-24.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa11-27.jpg"></td>
-                    </tr>
-                </table>
-            </div>
-            <div id="exa12" class="cours">
-                <h2>Examen</h2>
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>
-                                <b>Horaire</b>
-                            </center>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa12-16.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa12-20.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa12-21.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa12-22.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa12-23.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/exa12-24.jpg"></td>
-                    </tr>
-                </table>
-            </div>
-
-            <!--  orientation  -->
-            <div id="bene" class="cours">
-                <h2>Orientation</h2>
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>Bénévolat</center>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <br>
-                            <ol>
-                                <li>À la recherche d’entraîneurs de soccer pour des enfants de 4 à 12 ans du 18 mai au 22 juin en soirée (de 18h à 19h) dans la Vallée (sur la rue Emily). Pour donner ton nom ou obtenir plus de détails, svp communiquer avec
-                                    Jean au <a href="tel:7056622186">705.662.2186</a>.</li>
-                                <br>
-                                <li>À la recherche d’élèves bénévoles pour aider avec des tâches de jardinage pour les Jardins communautaires de Coniston.
-                                    <br>Tâches :
-                                    <ul>
-                                        <li>Construction de carrés</li>
-                                        <li>Remplir les carrés</li>
-                                        <li>Jardinage : aider à planter, désherber, arroser et récolter les produits.</li>
-                                    </ul>
-                                    Pour plus de détails, svp communiquer avec Micheline Rioux-Tellier au <a href="tel:7056945969">705.694.5969</a> ou par courriel :<a href="mailto:micheline.rioux.tellier@gmail.com">micheline.rioux.tellier@gmail.com</a></li>
-                                <br>
-                                <li>À la recherche d’élèves bénévoles pour le Festival Boréal qui aura lieu les 8, 9 et 10 juillet. Tu peux faire demande en ligne : <a href="http://www.nlfbsudbury.com/fr/benevole">www.nlfbsudbury.com/fr/benevole</a> ou tu
-                                    peux appeler le <a href="tel:7056745512">705.674.5512</a>.</li>
-                            </ol>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-            <!-- parlement des élèves  -->
-            <div id="parinfo" class="cours">
-                <h2>Parlement des élèves</h2>
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>Information</center>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-            <div id="paract" class="cours">
-                <h2>Parlement des élèves</h2>
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>Tournoi Ballon Chasseur 2016</center>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="container">
-                                <iframe src="https://www.youtube.com/embed/RBP_74-81pc" frameborder="0" class="v"></iframe>
-                            </div>
-                            <div class="container">
-                                <iframe src="https://www.youtube.com/embed/YY8ZA47tiD4" frameborder="0" class="v"></iframe>
-                            </div>
-                            <br>
-                            <br>
-                            <center>
-                                <button onclick="document.getElementById('id01').style.display='block'" class="w3-btn">Résultats</button>
-                                <div id="id01" class="w3-modal">
-                                    <div class="w3-modal-content" style="width: 90%; height: 90%;">
-                                        <div class="w3-container container">
-                                            <iframe src="http://bracket.azurewebsites.net/" class="v"></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </center>
-                            <script>
-                                // Get the modal
-                                var modal = document.getElementById('id01');
-
-                                // When the user clicks anywhere outside of the modal, close it
-                                window.onclick = function(event) {
-                                    if (event.target == modal) {
-                                        modal.style.display = "none";
-                                    }
-                                }
-                            </script>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-            <!--  cours  -->
-            <div id="ics" class="cours">
-                <h2>ICS</h2>
-                <table border=1>
-                    <tr>
-                        <td bgcolor=lightgray>
-                            <center>Table des 128 caractères ASCII</td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/ics-1.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/ics-2.jpg"></td>
-                    </tr>
-                </table>
-
-
-            </div>
-            <div id="sch" class="cours">
-                <h2>Chimie</h2>
-                <table border="1">
-
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>Tableau périodique des éléments</center>
-                        </td>
-                    </tr>
-                </table>
-                <center>
-                    <img src="img/sch-tab-1.jpg"><img src="img/sch-tab-2.jpg">
-                </center>
-                <br>
-                <br>
-                <table border="1">
-
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>
-                                <h6>Ions complexes (radicaux)</h6>
-                            </center>
-                        </td>
-                    </tr>
-                </table>
-
-                <img src="img/sch-1.jpg"><img src="img/sch-2.jpg"><img src="img/sch-3.jpg">
-
-                <img src="img/sch-4.jpg"><img src="img/sch-5.jpg"><img src="img/sch-6.jpg">
-                <h4>Règles de la nomenclature</h4>
-                <ol>
-                    <li>Composés ioniques</li>
-                    <ul>
-                        <li>Nomme l'élément négatif en premier et ajoute le suffixe "URE" (ex: NaCl = Chlor<b>ure</b> de sodium</li>
-                        <li>Ajoute le suffixe "YDE" pour les composés binaires formés d'oxygène (ex: MgO = Ox<b>yde</b> de magnésium)</li>
-                        <li>Lorsque les composés ioniques sont formés d'atomes à <b>deux valences</b>, nomme l'élément négatif en premier et ensuite nomme l'élément positif suivi de la <b>valence entre les parenthèses</b>. (ex: CuCl<sub>2</sub> = chlorure
-                            de cuivre <b>(II)</b>)</li>
-                    </ul>
-                    <li>Composés formés d'ions polyatomiques</li>
-                    <ul>
-                        <li>Nomme l'<b>ion polyatomique</b> en premier et ensuite nomme l'élément positif (ex: KNO<sub>2</sub> = <b>nitrite</b> de potassium)</li>
-                    </ul>
-                    <li>Composés covalents</li>
-                    <ul>
-                        <li>Ajoute les préfixes grecs (mono, di, tri, tetra, penta, hexa...) pour indiquer le nombre de <b>chaque</b> atome dans la molécule (ex: CO<sub>2</sub> = dioxyde de carbone)</li>
-                    </ul>
-                    <li>Acides</li>
-                    <ul>
-                        <li>Ajoute le suffixe "HYDRIQUE" aux acides binaires (ex: HCl = acide chlor<b>hydrique</b>)</li>
-                        <li>Acides formés d'<b>ions polyatomiques</b>:</li>
-                        <ul>
-                            <li>Quand l'ion polyatomique se termine en "ATE" l'acide prend le suffixe "IQUE"</li>
-                            <li>Quand l'ion polyatomique se termine en "ITE" l'acide prend le suffixe "EUX"</li>
-                        </ul>
-                    </ul>
-                    <li>Bases</li>
-                    <ul>
-                        <li>Le nom d'une base commence par <b>hydroxyde</b> (OH) et se termine par l'<b>élément positif</b> (le premier de la formule) (ex: NaOH = hydroxyde de sodium)</li>
-                    </ul>
-                </ol>
-            </div>
-            <div id="fra1p" class="cours">
-
-                <h2>FRA1P</h2>
-
-                <table border=1>
-                    <tr>
-                        <td bgcolor=lightgray>
-                            <center><b>Revue pour l'examen</b></td>
-                    </tr>
-                </table>
-
-                <br><img src="img/fra1p-revue-01.jpg">
-
-            </div>
-
-            <div id="fra1d" class="cours">
-
-                <h2>FRA1D</h2>
-
-                <table border=1>
-                    <tr>
-                        <td bgcolor=lightgray>
-                            <center><b>Revue pour l'examen</b></td>
-                    </tr>
-                </table>
-
-                <br><img src="img/fra1d-revue-01.jpg">
-
-            </div>
-
-            <div id="eae1d" class="cours">
-                <h2>EAE1D</h2>
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>Exam Review</center>
-                        </td>
-                    </tr>
-                </table>
-                <br><img src="img/eae1d-revue-01.jpg">
-            </div>
-            <div id="cgc1d" class="cours">
-
-                <h2>CGC1D</h2>
-
-
-                <table border=1>
-                    <tr>
-                        <td bgcolor=lightgray>
-                            <center><b>Revue pour l'examen</b></td>
-                    </tr>
-                </table>
-
-                <br><img src="img/cgc1d-revue.jpg">
-
-            </div>
-            <div id="mfm1p" class="cours">
-                <h2>MFM1P</h2>
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>
-                                <b>Formules</b>
-                            </center>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/mfm1p-1.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/mfm1p-2.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/mfm1p-3.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/mfm1p-4.jpg"></td>
-                    </tr>
-                </table>
-            </div>
-
-            <div id="snc1p" class="cours">
-
-                <h2>SNC1P</h2>
-
-
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>
-                                <b>Revue pour l'examen</b>
-                            </center>
-                        </td>
-                    </tr>
-                </table>
-
-                <br><img src="img/snc1p-revue-p1.jpg"><img src="img/snc1p-revue-p2.jpg"><img src="img/snc1p-revue-p3.jpg">
-                <img src="img/snc1p-revue-a1.jpg"><img src="img/snc1p-revue-a2.jpg">
-            </div>
-
-            <div id="bbi2o" class="cours">
-
-                <h2>BBI2O</h2>
-
-
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>
-                                <b>Revue pour l'examen</b>
-                            </center>
-                        </td>
-                    </tr>
-                </table>
-
-                <br><img src="img/bbi2o-revue-01.jpg"><img src="img/bbi2o-revue-02.jpg">
-
-            </div>
-
-            <div id="fra2p" class="cours">
-
-                <h2>FRA2P</h2>
-
-                <table border=1>
-                    <tr>
-                        <td bgcolor=lightgray>
-                            <center><b>Revue pour l'examen</b></td>
-                    </tr>
-                </table>
-
-                <br><img src="img/fra2p-revue-01.jpg">
-
-            </div>
-
-            <div id="fra2d" class="cours">
-
-                <h2>FRA2D</h2>
-
-                <table border=1>
-                    <tr>
-                        <td bgcolor=lightgray>
-                            <center><b>Revue pour l'examen</b></td>
-                    </tr>
-                </table>
-
-                <br><img src="img/fra2d-revue-01.jpg">
-
-            </div>
-            <div id="snc2d" class="cours">
-
-                <h2>SNC2D</h2>
-
-
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>
-                                <b>Revue pour l'examen</b>
-                            </center>
-                        </td>
-                    </tr>
-                </table>
-
-                <br><img src="img/snc2d-revue-01.jpg"><img src="img/snc2d-revue-02.jpg"><img src="img/snc2d-revue-03.jpg">
-                <img src="img/snc2d-revue-04.jpg"><img src="img/snc2d-revue-05.jpg"><img src="img/snc2d-revue-06.jpg">
-                <img src="img/snc2d-revue-07.jpg"><img src="img/snc2d-revue-08.jpg"><img src="img/snc2d-revue-09.jpg">
-                <img src="img/snc2d-revue-10.jpg"><img src="img/snc2d-revue-11.jpg"><br><br>
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>
-                                <b>correction</b>
-                            </center>
-                        </td>
-                    </tr>
-                </table>
-                <br><img src="img/snc2d-revue-c01.jpg"><img src="img/snc2d-revue-c02.jpg"><img src="img/snc2d-revue-c03.jpg">
-                <img src="img/snc2d-revue-c04.jpg"><img src="img/snc2d-revue-c05.jpg"><img src="img/snc2d-revue-c06.jpg">
-                <img src="img/snc2d-revue-c07.jpg"><img src="img/snc2d-revue-c08.jpg"><img src="img/snc2d-revue-c09.jpg">
-                <img src="img/snc2d-revue-c10.jpg">
-            </div>
-
-            <div id="eae2d" class="cours">
-                <h2>EAE2D</h2>
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>Exam Review</center>
-                        </td>
-                    </tr>
-                </table>
-                <br><img src="img/eae2d-revue-01.jpg">
-            </div>
-
-            <div id="eae3u" class="cours">
-                <h2>EAE3U</h2>
-                <a href="https://en.wikipedia.org/wiki/Harlem_Renaissance" target="_blank" style="color: blue">Harlem Renaissance</a>
-                <br>
-                <b>Read</b> <a href="http://www.sparknotes.com/lit/mocking/" target="_blank" style="color: blue">To Kill a MockingBird</a>
-                <br>
-                <b>Watch/Read</b> <a href="http://www.bookrags.com/studyguide-a-time-to-kill/#gsc.tab=0" target="_blank" style="color: blue">A Time to Kill</a>
-                <br>
-                <b>Read</b> <a href="http://www.enotes.com/topics/boys-girls" target="_blank" style="color: blue">Boys and Girls</a>
-                <br>
-                <b>Read</b> <a href="http://www.sparknotes.com/shakespeare/merchant/" target="_blank" style="color: blue">The Merchant of Venice</a>
-                <br>
-                <br>
-                <p>Research Paper &amp; MLA</p>
-                <p class=""><span style="color: rgb(0, 0, 0); font-size: small; font-family: Verdana, Arial, sans-serif; background-color: initial;">MLA Works Cited
-generator:</span><span class="apple-converted-space" style="color: rgb(0, 0, 0); font-size: small; font-family: Verdana, Arial, sans-serif; background-color: initial;">&nbsp;</span>
-                    <font color="#000000" style="font-family: Verdana, Arial, sans-serif; background-color: initial;"><a href="http://www.easybib.com/" target="_blank">http://www.easybib.com/</a></font>
-                </p>
-                <p class="">
-                    <a href="resources/MLA_Citation_Basics-EBook.pdf" target="_blank" style="font-family: Verdana, Arial, sans-serif; background-color: initial;">
-                        <font color="#000000" size="2">MLA Citation BASICS</font>
-                    </a>
-                </p>
-                <p class="">
-                    <a href="resources/MLA_Visual_Guides_Part_1.pdf" target="_blank" style="font-family: Verdana, Arial, sans-serif; background-color: initial;">
-                        <font color="#000000" size="2">MLA Visual GUIDE 1</font>
-                    </a>
-                </p>
-                <p class="">
-                    <a href="resources/MLA_Visual_Guides_Part_2.pdf" target="_blank" style="font-family: Verdana, Arial, sans-serif; background-color: initial;">
-                        <font color="#000000" size="2">MLA Visual GUIDE 2</font>
-                    </a>
-                </p>
-                <p class="">
-                    <font color="#000000" size="2" style="font-family: Verdana, Arial, sans-serif; background-color: initial;"><a href="http://www.sudbury.library.on.ca/wcms/index.cfm?app=w_library&amp;lang=en&amp;currID=2734&amp;parID=0" target="_blank">http://www.sudbury.library.on.ca/wcms/index.cfm?app=w_library&amp;lang=en&amp;currID=2734&amp;parID=0</a></font>
-                </p>
-                <p class="">
-                    <font color="#000000" size="2" style="font-family: Verdana, Arial, sans-serif; background-color: initial;"><a href="http://infotrac.galegroup.com/itweb/ko_pl_gspl?db=HWRC" target="_blank">http://infotrac.galegroup.com/itweb/ko_pl_gspl?db=HWRC</a></font>
-                </p>
-                <p class="">
-                    <font color="#000000" size="2" style="font-family: Verdana, Arial, sans-serif; background-color: initial;"><a href="http://owl.english.purdue.edu/owl/resource/747/01/" target="_blank">http://owl.english.purdue.edu/owl/resource/747/01/</a></font>
-                </p>
-                <p class="">
-                    <font color="#000000" size="2" style="font-family: Verdana, Arial, sans-serif; background-color: initial;"><a href="http://library.concordia.ca/help/howto/mla.php" target="_blank">http://library.concordia.ca/help/howto/mla.php</a></font>
-                </p>
-                <p class=""></p>
-                <p class=""></p>
-                <p style="background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;" class=""><strong style="font-family: Verdana, Arial, sans-serif; background-color: initial;"><u><font color="#000000" size="2">Audiobooks</font></u></strong></p>
-                <p class=""><span style="color: rgb(0, 0, 0); font-size: small; font-family: Verdana, Arial, sans-serif; background-color: initial;">Frankenstein:</span><span class="apple-converted-space" style="color: rgb(0, 0, 0); font-size: small; font-family: Verdana, Arial, sans-serif; background-color: initial;">&nbsp;</span>
-                    <font color="#000000" style="font-family: Verdana, Arial, sans-serif; background-color: initial;"><a href="http://librivox.org/frankenstein-or-modern-prometheus-by-mary-w-shelley/" target="_blank">http://librivox.org/frankenstein-or-modern-prometheus-by-mary-w-shelley/</a></font>
-                </p>
-
-            </div>
-            <div id="chc2p" class="cours">
-
-                <h2>CHC2P</h2>
-
-
-                <table border=1>
-                    <tr>
-                        <td bgcolor=lightgray>
-                            <center><b>Revue pour l'examen</b></td>
-                    </tr>
-                </table>
-
-                <br><img src="img/chc2p-revue-01.jpg">
-
-            </div>
-            <div id="chc2d" class="cours">
-
-                <h2>CHC2D</h2>
-
-
-                <table border=1>
-                    <tr>
-                        <td bgcolor=lightgray>
-                            <center><b>Revue pour l'examen</b></td>
-                    </tr>
-                </table>
-
-                <br><img src="img/chc2d-revue.jpg">
-
-            </div>
-            <div id="mfm2p" class="cours">
-                <h2>MFM2P</h2>
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>
-                                <b>Revue pour l'examen</b>
-                            </center>
-                        </td>
-                    </tr>
-                </table>
-                <br><img src="img/MFM2P_Revue-01.jpg"><img src="img/MFM2P_Revue-02.jpg"><img src="img/MFM2P_Revue-03.jpg">
-                <img src="img/MFM2P_Revue-04.jpg"><img src="img/MFM2P_Revue-05.jpg"><img src="img/MFM2P_Revue-06.jpg">
-                <img src="img/MFM2P_Revue-07.jpg"><img src="img/MFM2P_Revue-08.jpg"><img src="img/MFM2P_Revue-08.jpg">
-                <img src="img/MFM2P_Revue-10.jpg"><img src="img/MFM2P_Revue-11.jpg">
-                <br><br>
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>
-                                <b>correction</b>
-                            </center>
-                        </td>
-                    </tr>
-                </table>
-                <img src="img/mfm2p-revue-c1.jpg"><img src="img/mfm2p-revue-c2.jpg"><img src="img/mfm2p-revue-c3.jpg"><img src="img/mfm2p-revue-c4.jpg">
-
-            </div>
-            <div id="mpm2d" class="cours">
-                <h2>MPM2D</h2>
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>
-                                <b>Formules</b>
-                            </center>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/mpm2d.jpg"></td>
-                    </tr>
-                </table>
-                <br>
-                <br>
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>
-                                <b>Revue A pour l'examen</b>
-                            </center>
-                        </td>
-                    </tr>
-                </table>
-                <img src="img/MPM2D_Revue-01.jpg"><img src="img/MPM2D_Revue-02.jpg"><img src="img/MPM2D_Revue-03.jpg">
-                <img src="img/MPM2D_Revue-04.jpg"><img src="img/MPM2D_Revue-05.jpg"><img src="img/MPM2D_Revue-06.jpg">
-                <img src="img/MPM2D_Revue-07.jpg"><img src="img/MPM2D_Revue-08.jpg">
-                <br>
-                <br>
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>
-                                <b>correction A</b>
-                            </center>
-                        </td>
-                    </tr>
-                </table>
-                <img src="img/mpm2d-revueA-c1.jpg">
-
-                <br>
-                <br>
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>
-                                <b>Revue B pour l'examen</b>
-                            </center>
-                        </td>
-                    </tr>
-                </table>
-                <img src="img/mpm2d-revueB-1.jpg"><img src="img/mpm2d-revueB-2.jpg"><img src="img/mpm2d-revueB-3.jpg"><img src="img/mpm2d-revueB-4.jpg">
-                <img src="img/mpm2d-revueB-5.jpg"><img src="img/mpm2d-revueB-6.jpg"><img src="img/mpm2d-revueB-7.jpg"><img src="img/mpm2d-revueB-8.jpg">
-                <br>
-                <br>
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>
-                                <b>correction B</b>
-                            </center>
-                        </td>
-                    </tr>
-                </table>
-                <img src="img/mpm2d-revueB-c1.jpg">
-            </div>
-
-
-
-            <div id="mbf3c" class="cours">
-                <h2>MBF3C</h2>
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>
-                                <b>Revue pour l'examen</b>
-                            </center>
-                        </td>
-                    </tr>
-                </table>
-                <br><img src="img/mbf3c-revue-01.jpg"><img src="img/mbf3c-revue-02.jpg"><img src="img/mbf3c-revue-03.jpg">
-                <img src="img/mbf3c-revue-04.jpg"><img src="img/mbf3c-revue-05.jpg"><img src="img/mbf3c-revue-06.jpg">
-                <img src="img/mbf3c-revue-07.jpg"><img src="img/mbf3c-revue-08.jpg"><img src="img/mbf3c-revue-09.jpg">
-                <img src="img/mbf3c-revue-10.jpg"><img src="img/mbf3c-revue-11.jpg">
-
-                <br><br>
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>
-                                <b>correction</b>
-                            </center>
-                        </td>
-                    </tr>
-                </table>
-                <br><img src="img/mbf3c-revue-c1.jpg"><img src="img/mbf3c-revue-c2.jpg"><img src="img/mbf3c-revue-c3.jpg"><img src="img/mbf3c-revue-c4.jpg">
-
-            </div>
-
-            <div id="mcf3m" class="cours">
-                <h2>MCF3M</h2>
-                <table border="1">
-                    <tr>
-                        <td colspan="2" bgcolor="lightgray">
-                            <center>Formules</center>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>pythagore</td>
-                        <td><img src="img/mcf3m-1.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td>trigonométrie</td>
-                        <td><img src="img/mcf3m-2.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td>lois des sinus</td>
-                        <td><img src="img/mcf3m-3.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td>lois du cosinus</td>
-                        <td><img src="img/mcf3m-4.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td>intérêt simple</td>
-                        <td><img src="img/mcf3m-5.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td>intérêt composé</td>
-                        <td><img src="img/mcf3m-6.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp</td>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td>Fréquence : Nombre de fois par année</td>
-                    </tr>
-                    <tr>
-                        <td>annuellement : 1</td>
-                    </tr>
-                    <tr>
-                        <td>semi-annuellement : 2</td>
-                    </tr>
-                    <tr>
-                        <td>trimestriellement : 4</td>
-                    </tr>
-                    <tr>
-                        <td>mensuellement : 12</td>
-                    </tr>
-                    <tr>
-                        <td>bi-hebdomadairement : 26</td>
-                    </tr>
-                    <tr>
-                        <td>hebdomadairement : 52</td>
-                    </tr>
-                    <tr>
-                        <td>journalièrement : 365</td>
-                    </tr>
-                </table>
-            </div>
-
-            <div id="mcr3u" class="cours">
-                <br>
-                <h2><u>Les règles des exposants (lois des exposants)</u></h2>
-                <br><u>LOIS GENERALE:</u><b> a<sup>n</sup></b>
-                <br>
-                <br> Où "a" est la base, "n" est l'exposant, et "a<sup>n</sup>" est une puissance.
-                <br>Premiere règle: Multiplication
-                <br> Lorsqu'on multiplie deux puissances de meme base, on additionne les exposants.
-                <br> <b>a
-      <sup>m</sup> * a<sup>n </sup> = a <sup>m+n</sup></b>
-                <br>
-                <br> Deuxieme règle: Division
-                <br> Lorsqu'on divise deux puissances de même base, on soustrait les exposants
-                <br> <b>a
-      <sup>m</sup> / a<sup>n </sup> = a <sup>m-n</sup></b>
-                <br>
-                <br> Troisième Règle: Puissance d'une puissance
-                <br> Lorsqu'on a une puissance d'une puissance, on multiplie les exposants
-                <br> <b>(a
-      <sup>m</sup>)<sup>n</sup> = a<sup>m*n</sup></b>
-                <br>
-                <br> Quatrième Règle: Puissance d'une Produit
-                <br> Lorqu'on a une puissance d'un produit, on multiplie tout les exposants à l'intérieur des paranthèses par l'exposant à l'extérieur
-                <br> <b>(ab
-      <sup>m</sup>)<sup>n</sup> = a<sup>n</sup>b<sup>mn</sup></b>
-                <br>
-                <br> Cinquième Règle: Puissance d'un Quotient
-                <br> Lorsqu'on a une puissance d'un quotient, on multiplie tout les exposants a l'intérieur des paranthèses par l'exposant à l'extérieur
-                <br> <b>(a
-      <sup>m</sup>/b<sup>n</sup>)<sup>y</sup> = a<sup>my</sup>/b<sup>ny</sup></b>
-                <br>
-                <br> Sixième Règle: Exposant 0
-                <br> Lorsqu'on a une puissance muni d'un exposant 0, le résultat est toujours égale à 1.
-                <br> <b>a
-      <sup>0</sup> = 1</b>
-                <br>
-                <br> Septième Règle: Exposant Negatif
-                <br> Lorqu'on a une puissance muni d'un exposant négatif, la base et son exposant ne sont pas à la bonne place dans la fraction. Pour éliminer le négatif, il faut effectuer une division.
-                <br> <b>a
-      <sup>-n</sup> = 1/a<sup>n</sup></b>
-                <br>
-                <br> Huitième Règle: Exposant Rationnel
-                <br> Lorsqu'on a une puissance muni d'un exposant rationnel, le dénominateur de l'exposant représente une racine du même indice.
-                <br> <b>a
-      <sup>m/n</sup> =</b>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <b>( <sup>n</sup>&radic;</b><b>&nbsp;a)<sup>m</sup></b>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td></td>
-                </tr>
-                <tr><b><sup> n</sup>&radic;</b><b>&nbsp;a<sup>m</sup></b>
-                </tr>
-                <br>
-                <br> Si a<sup>x</sup> = a<sup>y</sup> alors x = y. "a" n'egale pas: 1, 0, -1.
-
-                <h2><u> LES POLYNÔMES </u></h2>
-
-                <h3>Développe</h3> (ax+b)
-                <sup>2</sup> = (ax+b)(ax+b)
-                <br>
-                <br> Tout ceci sont seulement des examples
-
-                <br>
-                <br>(4x<sup>2</sup> - 7x - 5) + (2x<sup>2</sup> - x + 3)
-                <br>(4+2)x<sup>2</sup> + (-7-1)x + (-5+3)
-                <br>6x<sup>2</sup>x - 8x - 2
-                <br>
-                <br>(2x+3)(4x-5)
-                <br>(4*2)x<sup>2</sup> + (3*4)x + (2*-5)x - (3*-5)
-                <br>8x<sup>2</sup> + 12x - 10x - 15
-                <br>8x<sup>2</sup> + 2x - 15
-                <br>
-                <br> (x+3y)<sup>2</sup>
-                <br> (x+3y)(x+3y)
-                <br> x<sup>2</sup> + 3xy + 3xy + 9y<sup>2</sup>
-                <br> x<sup>2</sup> + 6xy + 9y<sup>2</sup>
-                <br>
-                <br> (2r - 3s + t)<sup>2</sup>
-                <br> (2r - 3s + t)(2r - 3s + t)
-                <br> 4r<sup>2</sup> - 6rs + 2rt - 6rs + 9s<sup>2</sup> - 3st + 2rt - 3st + t<sup>2</sup>
-                <br> 4r<sup>2</sup> + 9s<sup>2</sup> + t<sup>2</sup> - 12rs - 6st + 4rt
-                <br>
-                <br>
-                <h3>Factorise</h3> 6x
-                <sup>2</sup> - 15x --&gt; 3x(2x - 5)
-                <br>
-                <br>5m(2x+1) - 3(2x+1)
-                <br>(2x+1)(5m-3)
-                <br>
-                <br>
-                <h4>En général:<br></h4> a
-                <sup>2</sup> - b<sup>2</sup> = (a+b)(a-b)
-                <br> a
-                <sup>2</sup> + 2ab + b<sup>2</sup> = (a+b)<sup>2</sup>
-                <br> a
-                <sup>2</sup> - 2ab + b<sup>2</sup> = (a-b)<sup>2</sup>
-
-                <h4>Explication:</h4>
-                <br>Facteur Commun:
-                <br>ax + ay + a = a(x+y+1)
-                <br>
-                <br>Différence de 2 carrés
-                <br>ax+ay+bx+by = (x+y)(a+b)
-                <br>
-                <br>Trinôme 1
-                <br>x<sup>2</sup>+bx+c = (x+m)(x+n), où c=mn et b=m+n
-                <br>
-                <br>Trinôme Carré Parfait
-                <br>a<sup>2</sup>+2ab+b<sup>2</sup> = (a+b)<sup>2</sup>
-                <br>OU
-                <br>a<sup>2</sup>-2ab+b<sup>2</sup> = (a-b)<sup>2</sup>
-                <br>
-                <br>Trinôme Type 2
-                <br>ax<sup>2</sup>+bx+c = (mx + s)(ny+t) où a=mn, c=st, et b=mt+ns
-
-                <h2><u>La résolution d'inéquations du premier degré</u></h2> x+2 &gt; 7
-                <br> x+2-2 &gt; 7-2
-                <br> x &gt; 5
-                <br>
-                <br>5x-2 &#8804; 23
-                <br>5x-2+2 &#8804; 23+2 Isole la variable
-                <br>5x/5 &#8804; 25/5 Divise les deux cotés par le coefficient de x
-                <br>x &#8804; 5
-
-
-                <h2> <u>FONCTIONS</u> </h2>
-                <br>
-                <br>Une fonction consiste en une relation particulière. On appelle fonction un ensemble de couples qui associe à cahque valeur de x une et une seule valeur de y. Une fonction est représentée par f(x). (f de x)
-                <br>
-                <br>
-                <h3>Types de fonctions</h3>
-                <img src="img\mcr3u-1.png">
-                <img src="img\mcr3u-2.png">
-
-
-
-
-                <br>
-                <br>
-                <h3>SODADIM</h3> Sommet: (x,y)
-                <br>Orientation: Haut ou Bas
-                <br>Déplacement: (1, 3, 5, etc...)* a
-                <br>Axe de symmetrie: x (valeur de x au sommet)
-                <br>Domaine: {x&#8712;&#8476;}
-                <br>Image: {y&#8712;&#8476;/sommet &#8804; y (quand Oriention est haut) ou y = &#8805; sommet (quand Orientation est Bas)
-                <br>(Orientation est bas) :Maximum de (sommet)y quand x = x dans le sommet
-                <br>(Orientation est haut) :Minumum de (sommet)y quand x = x dans le sommet
-
-                <h3>
-      Équations exponentielles, croissances, décroisance, et l'intéret
-     </h3> N = D(2)<sup>t/d</sup>
-                <br>R = D(1/2)<sup>t/h</sup>
-                <br>M = C(1+i)<sup>n</sup>
-                <br>
-
-
-
-
-                <h3> Fonctions logarithmique</h3>
-                <p> Si y = a<sup>x</sup>, la réciproque est
-                    <br>log<sub>a</sub>y = x (a&gt;0 et a ≠ 1)
-
-                    <h2> Lois des Radicaux </h2>
-                    <tr> <sup>n</sup>&radic;&nbsp;a *
-                        <tr> <sup>n</sup>&radic;&nbsp;b =
-                            <tr><sup>n</sup>&radic;&nbsp;(a x b)
-                                <br>
-                                <tr> <sup>n</sup>&radic;&nbsp;a /
-                                    <tr> <sup>n</sup>&radic;&nbsp;b =
-                                        <tr> <sup>n</sup>&radic;&nbsp;(a / b)
-                                            <br>
-                                            <tr> a<sup>n</sup>&radic;&nbsp;x +
-                                                <tr> b<sup>n</sup>&radic;&nbsp;x =
-                                                    <tr> (a+b)<sup>n</sup>&radic;&nbsp;x
-                                                        <br>
-                                                        <tr> a<sup>n</sup>&radic;&nbsp;x -
-                                                            <tr> b<sup>n</sup>&radic;&nbsp;x =
-                                                                <tr> (a-b)<sup>n</sup>&radic;&nbsp;x
-                                                                    <br>
-                                                                    <br> Nombre imaginaire (i=&radic;(-1))
-                                                                    <br> Un Nombre Imaginaire Pur: 4i
-                                                                    <br> Un Nombre Complexe: 2-6i
-                                                                    <br>
-                                                                    <br>
-                                                                    <br>
-                                                                    <h2>TRIG</h2>
-                                                                    <br>a<sup>2</sup>+b<sup>2</sup>=c<sup>2</sup>
-
-                                                                    <br>SOH-CAH-TOA
-                                                                    <br>Sinθ = opp/hyp
-                                                                    <br>Cosθ = adj/hyp
-                                                                    <br>Tanθ = opp/adj
-                                                                    <br>Tgθ = opp/adj
-                                                                    <br>
-                                                                    <br>
-                                                                </tr>
-                                                            </tr>
-                                                        </tr>
-                                                    </tr>
-                                                </tr>
-                                            </tr>
-                                        </tr>
-                                    </tr>
-                                </tr>
-                            </tr>
-                        </tr>
-                    </tr>
-                </p>
-            </div>
-
-	<div id="hre4m" class="cours">
-
-                <h2>HRE4M</h2>
-
-                <table border=1>
-                    <tr>
-                        <td bgcolor=lightgray>
-                            <center><b>Revue pour l'examen</b></td>
-                    </tr>
-                </table>
-
-                
-
-            </div>
-
-            <div id="sph3" class="cours">
-                <table border="2">
-                    <td colspan="2" bgcolor="lightblue">
-                        <center>
-                            <h1>Physique</h1>
-                        </center>
-                    </td>
-                </table>
-
-                <h2>Formules</h2>
-
-                <p><b><i>N.B.</i></b></p>
-                <p><i>Tu as droit à une aide-mémoire de 4" par 6" ( environ 10 cm par 15 cm ). Tu peux écrire ce que tu veux sur cette aide mémoire, formules, exemples, définitions etc.</i></p>
-                <p><b><u>Tu as besoin d’une règle, un rapporteur et une calculatrice.</u></b></p>
-                <p>Tu peux écrire ton examen en crayon.</p>
-                <p><b><u>BONNE ÉTUDE ET BON SUCCÈS.</u></b></p>
-
-
-
-                <h3>Mouvement (Dynamique)</h3>
-                <ul>
-                    <li>
-                        <p>v = <sup>d</sup>/<sub>t</sub></p>
-                    </li>
-                    <li>
-                        <p>a = <sup>(vf - vi)</sup>/<sub>t</sub></p>
-                    </li>
-                    <li>
-                        <p>a = <sup>(v2 - v1)</sup>/<sub>(t2 - t1)</sub></p>
-                    </li>
-                    <li>
-                        <p>d = <sup>[(vf + vi) * &#916;;t]</sup>/<sub>2</sub></p>
-                    </li>
-                    <li>
-                        <p>d = vi*t + <sup>(a*t<sup>2</sup>)</sup>/<sub>2</sub></p>
-                    </li>
-                    <li>
-                        <p><sup>km/h</sup>/<sub>3.6</sub> = m/s</p>
-                        <p>m/s * 3.6 = km/h</p>
-                    </li>
-                    <li>
-                        <p>v = <sup>(d2 - d1)</sup>/<sub>(t2 - t1)</sub></p>
-                        <p>a = <sup>(v2 - v1)</sup>/<sub>(t2 - t1)</sub></p>
-                        <p>vf<sup>2</sup> = vi<sup>2</sup> + 2ad</p>
-                    </li>
-                </ul>
-                <h4>Révision</h4>
-                <ul>
-                    <li>Revoir les problèmes de mouvement ( formules v = d/t, etc) et de force ( lois de Newton ).</li>
-                    <li>Revoir les graphiques.</li>
-                    <li>Revoir l’aspect vectoriel du mouvement; vecteur-vitesse, vecteur-accélération, vecteur force.( addition de vecteur )</li>
-                    <li>Revoir les tests de cette unité.</li>
-                </ul>
-
-                <h3>Force</h3>
-                <ul>
-                    <li>
-                        <p>F = m * a</p>
-                    </li>
-                    <li>
-                        <p>Fg = m * g</p>
-                    </li>
-                    <li>
-                        <p>Fg = <sup>(G * m1 * m2)</sup>/<sub>d<sup>2</sup></sub></p>
-                    </li>
-                </ul>
-                <h4>Révision</h4>
-                <ul>
-                    <li>Revoir les problèmes de mouvement ( formules v = d/t, etc) et de force ( lois de Newton ).</li>
-                    <li>Revoir les graphiques.</li>
-                    <li>Revoir l’aspect vectoriel du mouvement; vecteur-vitesse, vecteur-accélération, vecteur force.( addition de vecteur )</li>
-                    <li>Revoir les tests de cette unité.</li>
-                </ul>
-
-                <h3>Travail, Énergie, Puissance</h3>
-                <ul>
-                    <li>
-                        <p>W = F * d</p>
-                    </li>
-                    <li>
-                        <p>Eg = m * g * &#916;h </p>
-                    </li>
-                    <li>
-                        <p>Ec = <sup>1</sup>/<sub>2</sub> * m * v<sup>2</sup></p>
-                    </li>
-                    <li>
-                        <p>P = <sup>E</sup>/<sub>t</sub></p>
-                    </li>
-                    <li>
-                        <p>Rendement = (<sup>Énergie utilisable produite</sup>/<sub>Énergie fournie</sub>) * 100%</p>
-                    </li>
-                </ul>
-
-                <h4>Révision</h4>
-                <ul>
-                    <li>Revoir les problèmes d’énergie ( potentielle gravitationnelle et cinétique ), travail et puissance.</li>
-                    <li>Revoir la loi de conservation d’énergie.</li>
-                    <li>Revoir le rendement.</li>
-                    <li>Revoir l'énergie thermique; capacité thermique spécifique, chaleur latente, transfert de chaleur.</li>
-                </ul>
-
-                <h3>Énergie thermique</h3>
-                <ul>
-                    <li>
-                        <p>m * c * &#916;T = -m * c * &#916;T </p>
-                    </li>
-                    <li>
-                        <p>L = <sup>E<sub>T</sub></sup>/<sub>m</sub></p>
-                    </li>
-                </ul>
-
-                <h4>Révision</h4>
-                <ul>
-                    <li>Revoir les problèmes d’énergie ( potentielle gravitationnelle et cinétique ), travail et puissance.</li>
-                    <li>Revoir la loi de conservation d’énergie.</li>
-                    <li>Revoir le rendement.</li>
-                    <li>Revoir l'énergie thermique; capacité thermique spécifique, chaleur latente, transfert de chaleur.</li>
-                </ul>
-
-                <h3>Électricité</h3>
-                <ul>
-                    <li>
-                        <p><sup>R<sub>1</sub></sup>/<sub>R<sub>2</sub></sub> = <sup>L<sub>1</sub></sup>/<sub>L<sub>2</sub></sub>
-                        </p>
-                    </li>
-                    <li>
-                        <p><sup>R<sub>1</sub></sup>/<sub>R<sub>2</sub></sub> = <sup>A<sub>1</sub></sup>/<sub>A<sub>2</sub></sub>
-                        </p>
-                    </li>
-                    <li>
-                        <p>V = <sup>E</sup>/<sub>Q</sub></p>
-                    </li>
-                    <li>
-                        <p>I = <sup>Q</sup>/<sub>t</sub></p>
-                    </li>
-                    <li>
-                        <p>R = <sup>V</sup>/<sub>I</sub></p>
-                    </li>
-                    <ul>
-                        <li>Série</li>
-                        <ul>
-                            <li>
-                                <p>R<sub>T</sub> = R1 + R2</p>
-                            </li>
-                            <li>
-                                <p>V<sub>T</sub> = V1 + V2</p>
-                            </li>
-                            <li>
-                                <p>I<sub>T</sub> = I1 = I2</p>
-                            </li>
-                        </ul>
-                        <li>Parallèle</li>
-                        <ul>
-                            <li>
-                                <p><sup>1</sup>/<sub>R<sub>T</sub></sub> = <sup>1</sup>/<sub>R<sub>1</sub></sub> + <sup>1</sup>/<sub>R<sub>2</sub></sub>
-                                </p>
-                            </li>
-                            <li>
-                                <p>V<sub>T</sub> = V1 = V2</p>
-                            </li>
-                            <li>
-                                <p>I<sub>T</sub> = I1 + I2</p>
-                            </li>
-                        </ul>
-                    </ul>
-                </ul>
-
-                <h4>Révision</h4>
-                <ul>
-                    <li>Revoir la loi d’Ohm et ses applications à des circuits en parallèle et en série.</li>
-                    <li>Revoir la loi de la main gauche pour les conducteurs rectiligne et les solénoïdes.</li>
-                    <li>Revoir l'induction électromagnétique ( le transformateur, loi de Lenz etc. )</li>
-                    <li>Revoir la distinction et le fonctionnement du moteur électrique et les génératrices.</li>
-                </ul>
-
-                <h3>Les ondes</h3>
-                <ul>
-                    <li>
-                        <p>Fréquence = <sup>Cycle</sup>/<sub>Temps</sub></p>
-                    </li>
-                    <li>
-                        <p>Période = <sup>Temps</sup>/<sub>Cycle</sub></p>
-                    </li>
-                    <li>
-                        <p>f = <sup>1</sup>/<sub>T</sub></p>
-                    </li>
-                    <li>
-                        <p>T = <sup>1</sup>/<sub>f</sub></p>
-                    </li>
-                    <li>
-                        <p>v = f * &#923 </p>
-                    </li>
-                    <li>
-                        <p>v<sub>son</sub> = (332 + 0.6T) m/s</p>
-                    </li>
-                    <li>
-                        <p>f<sub>2</sub>= f<sub>1</sub>(<sup>V</sup>/<sub>V<u>+</u></sub><sub>V</sub><sub>s</sub>)</p>
-                    </li>
-                </ul>
-
-                <h4>Révision</h4>
-                <ul>
-                    <li>Revoir les termes qui s’appliquent au ondes mécaniques. ( longueur d’onde, amplitude, fréquence, etc )</li>
-                    <li>Revoir les caractéristiques des ondes. ( interférence, ondes stationnaires, résonance, battements, harmoniques, etc )</li>
-                    <li>Revoir les caractéristiques des ondes sonores. ( vitesse, nombre de Mach, résonance d’un tube fermé, effet Doppler, etc )</li>
-                </ul>
-            </div>
-            <div id="tdj2o" class="cours">
-                <h2>TDJ2O</h2>
-                <table border="1">
-                    <tr>
-                        <td colspan="2" bgcolor="lightgray">
-                            <center>Technologie du design</center>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <center>Les 9 étapes du processus de design</center>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-                <br>
-                <table>
-                    <tr>
-                        <td width="70">L’étape 1: </td>
-                        <td> La détermination des problèmes et l’exploration des possibilités</td>
-                    </tr>
-                    <tr>
-                        <td>L’étape 2: </td>
-                        <td> La structure d’une esquisse</td>
-                    </tr>
-                    <tr>
-                        <td>L’étape 3: </td>
-                        <td> L’investigation et la recherche</td>
-                    </tr>
-                    <tr>
-                        <td>L’étape 4: </td>
-                        <td> La recherche de solutions de rechange</td>
-                    </tr>
-                    <tr>
-                        <td>L’étape 5: </td>
-                        <td> Le choix de la meilleure solution</td>
-                    </tr>
-                    <tr>
-                        <td>L’étape 6: </td>
-                        <td> Le travail préparatoire</td>
-                    </tr>
-                    <tr>
-                        <td>L’étape 7: </td>
-                        <td> La modélisation ou le prototype</td>
-                    </tr>
-                    <tr>
-                        <td>L’étape 8: </td>
-                        <td> Les essais et l’évaluation</td>
-                    </tr>
-                    <tr>
-                        <td>L’étape 9: </td>
-                        <td> La reprise du design et son amélioration</td>
-                    </tr>
-                </table>
-            </div>
-            <div id="hsp3" class="cours">
-                <table border="1">
-                    <td>
-                        <center>
-                            <h2>Psychologie</h2>
-                        </center>
-                    </td>
-                </table>
-                <h3>Le développement de la psychologie</h3>
-                <h4>Les domaines d'études de la psychologie</h4>
-                <ul>
-                    <li>La psychologie a traversé des périodes dominés par diverses écoles de pensée</li>
-                </ul>
-                <h4>La psychanalyse</h4>
-                <ul>
-                    <li>À la suite des travaux innovateurs de Sigmung Freud, les recherches en psychologie ont surtout été orienté vers la <u>psychanalyse</u></li>
-                    <li>Les psychanalistes ont tenté d'analyser les expériences les plus profondes (pensées, sentiments, émotions, fantasmes et les rêves) de leurs sujets dans le but de traiter les patient qui souffraient d'anxiétés et de tensions graves.</li>
-                    <li>Des exemples de psychanalistes sont Sigmung Freud, Alfred Adler et Carl Gustav Jung</li>
-                </ul>
-            </div>
-            <div id="fra" class="cours">
-                <h2>FRA</h2>
-                <table border="1">
-                    <tr>
-                        <td colspan="2" bgcolor="lightgray">
-                            <center>Grammaire</center>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-                <br>
-                <h4>Marqueurs de relation</h4>
-                <pre>
-         
-Les marqueurs de relation servent à relier des phrases ou des éléments à l’intérieur d’une phrase. En établissant des liens entre les mots et les phrases, ces marqueurs jouent un rôle primordial : construire la cohérence nécessaire au texte.  
- 
-Les marqueurs de relation – coordonnants, subordonnants, prépositions – indiquent de manière explicite le lien entre les unités syntaxiques – mots, groupes de mots, phrases – qu’ils relient.  
- 
-On doit être attentif au choix des marqueurs de relation, car ils ont généralement une valeur sémantique. Ainsi, changer de marqueur modifie le sens des énoncés ou le rapport de sens entre les énoncés. 
-
-    Cette automobile est rapide et économique. (addition) 
-    Cette automobile est rapide, mais économique. (opposition) 
-    Elle n’osait pas exprimer son opinion, ensuite elle l’a regretté. (temps) 
-    Elle n’osait pas exprimer son opinion, cependant elle l’a regretté. (restriction) 
-    Elle n’osait pas exprimer son opinion, de sorte qu’elle l’a regretté. (conséquence)  
-    Elle n’osait pas exprimer son opinion, encore qu’elle l’a regretté. (concession) 
-    Elle n’osait pas exprimer son opinion, au cas où elle l’aurait regretté. (condition) 
-    Elle n’osait pas exprimer son opinion, de crainte qu’elle ne le regrette. (but) 
-    Au lieu de s’enfuir, le héros fait une prière. (alternative) 
-    Avant de s’enfuir, le héros fait une prière. (temps : antériorité) 
-    Florence a un rendez-vous avec le coiffeur. (accompagnement) 
-    Florence a un rendez-vous chez le coiffeur. (lieu) 
-
-1.	Coordonnants  
-Les coordonnants – les conjonctions de coordination et les adverbes coordonnants – servent à relier des unités compatibles sur le plan du sens et de la syntaxe : des mots, des groupes, des phrases, des subordonnées.  
- 
-*Le narrateur de ce conte aime pêcher, les bons repas entre amis et aller à la chasse. (incompatibilité syntaxique) 
-Le narrateur de ce conte aime pêcher, aller à la chasse et partager de bons repas entre amis. (compatibilité syntaxique) 
-*La première année, elle traversa la province et une crise existentielle. (incompatibilité de sens) 
-La première année, elle traversa la province et vécut une crise existentielle. (compatibilité de sens) 
- 
-Il importe de bien connaître le rapport qu’on désire établir entre les unités pour pouvoir choisir le bon coordonnant.  
- 
-ATTENTION  
-Il y aura erreur dans la coordination ou manque de clarté de l’énoncé si le coordonnant n’est pas utilisé selon le sens qu’il exprime. 
- 
-*La métaphore associe l’île à une femme ; ensuite, cette image contribue à personnifier le lieu. (sens : succession) 
-La métaphore associe l’île à une femme ; de plus, cette image contribue à personnifier le lieu. (sens : addition) 
- 
-Les coordonnants servent à indiquer notamment les sens suivants :  
- 
-    •	La cause (car, en effet, en raison de…)  
-La connaissance de l’histoire littéraire est importante, car elle éclaire souvent le sens d’une œuvre.  
- 
-    •	La conséquence (ainsi, aussi, c’est pourquoi, donc, en conséquence, partant, de là, d’où…)  
-Il a lu tout Balzac, donc il devrait pouvoir en parler en connaissance de cause.  Il a lu tout Balzac : de là ses connaissances sur l’auteur. 
- 
-    •	L’addition (ainsi que, bien plus, de plus, ensuite, et, puis…)  
-Le passé lui offre la première impulsion pour qu'il rentre en lui-même et qu’il se réfugie dans le présent. 
- 
-    •	L’opposition ou la restriction (au contraire, cependant, en revanche, mais, par contre, pourtant, toutefois…)  David a obtenu la meilleure note en français ; pourtant, il déteste cette matière.  
- 
-    •	L’explication ou la précision (à savoir, c’est-à-dire, par exemple, soit…)  Flore a rencontré son amoureux à l'époque des vendanges, c'est-à-dire fin septembre. 
- 
-ATTENTION  
-Il y aura erreur dans la coordination ou manque de clarté de l’énoncé si les phrases syntaxiques reliées par des coordonnants sont trop nombreuses dans la phrase graphique . 
- 
-*Le jeune orphelin aime parler à sa vieille voisine, car il la trouve sympathique, mais elle devient aveugle avec le temps et elle perd sa lucidité puis, vers la fin, ne le reconnaît plus.  
- 
-Le jeune orphelin aime parler à sa vieille voisine, car il la trouve sympathique. Or elle devient aveugle avec le temps et perd sa lucidité. Vers la fin, elle ne le reconnaît plus.  
- 
-2.	subordonnants  
-Les subordonnants sont des marqueurs qui introduisent une subordonnée. Nous ne retenons ici que les subordonnants à valeur sémantique, c’est-à-dire les conjonctions de subordination autres que la conjonction que . 
- 
-Les conjonctions de subordination ont une valeur sémantique. Il importe donc de bien connaître le rapport de sens qu’on désire établir entre les phrases pour pouvoir choisir la bonne conjonction : 
-    •	le rapport temporel d’antériorité, de simultanéité ou de postériorité (alors que, après que, aussitôt que, avant que, chaque fois que, depuis que, en attendant que, lorsque, quand, tandis que…) 
-    •	la cause (attendu que, comme, étant donné que, parce que, puisque, vu que …)  
-    •	la conséquence (à tel point que, de façon que, de sorte que, si bien que, tellement que…)  
-    •	le but (afin que, de crainte que, de manière que, de peur que, pour que…)  
-    •	la condition (à condition que, à supposer que, au cas où, dans l’éventualité que, pourvu que, si…)  
-    •	la concession (alors que, bien que, encore que, en dépit du fait que, quoique…)  
- 
-ATTENTION  
-Comme pour les coordonnants, il y aura erreur dans la subordination ou manque de clarté de l’énoncé si les phrases reliées par des subordonnants sont trop nombreuses. La ponctuation (virgule, deux-points, point-virgule, tiret) peut parfois remplacer avantageusement un marqueur de relation. 
- 
-*La dernière strophe laisse entendre que le temps a passé et que la femme oubliera son amour puisqu’elle laisse ses souvenirs derrière elle parce qu’ils ont perdu de leur valeur sentimentale. 
- 
-La dernière strophe laisse entendre que le temps a passé et que la femme oubliera son amour : elle laisse ses souvenirs derrière elle parce qu’ils ont perdu de leur valeur sentimentale. 
- 
-3.	Prépositions  
-Les prépositions servent à marquer les relations entre le complément et le mot complété, ou encore, entre la phrase complétée et le complément de phrase.  
- 
-Le groupe prépositionnel (GPrép) commence toujours par une préposition et peut jouer le rôle de marqueur de relation.  
- 
-On doit veiller au choix de la préposition, qui peut parfois entraîner une erreur. On s’en sert pour marquer notamment :  
-    •	le lieu (à, chez, dans, derrière, en, jusqu’à, sous, vers…)  
-    •	le but (afin de, dans le but de, en vue de, pour…)  
-    •	le temps (à, après, avant, depuis, dès, pendant…)  
-    •	l’opposition (contre, malgré, nonobstant…)  
-    •	la cause (à cause de, attendu, de, étant donné, grâce à…)  
- 
-Remarque 
-Quand les prépositions à et de fusionnent avec les déterminants le / les, elles forment un déterminant contracté au / aux. 
- 
-Pour choisir correctement une préposition ou une locution prépositive : 
-    •	vérifiez le sens de ce que vous voulez exprimer (le temps, le lieu, le moyen, la manière, le but, la provenance, etc.) ;  
-    •	consultez le dictionnaire à l’article concernant la préposition que vous employez ; 
-    •	consultez le dictionnaire à l’article concernant le mot qui est placé avant ou après la préposition. Ainsi, si vous cherchez la préposition qui doit suivre le verbe parler, vous trouverez la réponse à l’article concernant le mot parler dans le dictionnaire : 
-« Parler : discuter avec quelqu'un au sujet de quelque chose ou de quelqu'un, sur un thème : C'est quelqu'un avec qui on peut parler de tout. Parler (de) philosophie. 
-« Parler : dire quelque chose à quelqu'un, lui exprimer sa pensée au sujet de quelque chose ou de quelqu'un, faire un discours portant sur tel point : Le premier ministre a parlé au pays de la situation. » (Encyclopédie Larousse.fr) ; 
-    •	surveillez les énumérations, dans lesquelles il faut répéter les prépositions à, de et en devant chacun des éléments ; 
-    •	surveillez l’emploi fautif de au niveau de, face à, vis-à-vis, sans, avec, etc. Voir ces mots dans le Multidictionnaire. 
-
-    </pre>
-                <br>
-                <br>
-                <h4>Coordination et juxtaposition</h4>
-                <pre>
-La coordination consiste à joindre par un coordonnant des éléments de même niveau
-syntaxique, c’est-à-dire des éléments qui remplissent la même fonction et qui peuvent se
-remplacer l’un l’autre. On appelle « coordonnant » le mot ou la locution qui relie les
-éléments coordonnés ; le terme coordonnant désigne aussi la fonction de ce mot.
-[Renée joue souvent au tennis] et [nage tous les jours].
-&gt; Le coordonnant et relie deux phrases de même niveau syntaxique (le sujet de la
-deuxième phrase (Renée nage…) a été effacé pour éviter la répétition).
-Le faucon pèlerin niche [sur les grands édifices] ou [sous les ponts].
-&gt; Le coordonnant ou relie deux groupes prépositionnels (GPrép) en fonction de
-complément indirect du verbe niche.
-[Daniel] et [Patrick] présenteront leur projet au président cet après-midi.
-&gt; Le coordonnant et relie deux groupes nominaux (GN) qui remplissent la fonction
-de sujet.
-Dans les exemples ci-dessus, les éléments coordonnés sont de même catégorie. Mais il
-arrive que des éléments coordonnés ne soient pas de même catégorie.
-Ce cheval est [rapide] et [d’une grande robustesse].
-&gt; Le coordonnant et relie deux groupes en fonction d’attribut du sujet ; le premier
-est un groupe adjectival (GAdj) et le second, un GPrép.
-En plus de jouer un rôle syntaxique, le coordonnant joue un rôle sémantique, car il exprime
-l’addition (et, de plus), l’alternative (ou), la cause (car, en effet), la conséquence
-(donc, par conséquent), l’opposition (mais, cependant), etc.
-La juxtaposition est une coordination sans l’emploi d’un coordonnant. Le coordonnant
-est remplacé par un signe de ponctuation (une virgule, un deux-points ou un pointvirgule),
-qui sépare graphiquement les éléments de même fonction juxtaposés.
-↓
-[Chaque soir], [au coucher du soleil], ces petites fleurs jaunes s’épanouissent.
-&gt; La virgule sépare deux groupes de mots ayant la fonction de complément de
-phrase.
-↓
-[Chaque soir, au coucher du soleil, ces petites fleurs jaunes s’épanouissent] ; [elles
-dégagent alors une fraîche odeur citronnée].
-&gt; Le point-virgule sépare deux phrases de même niveau syntaxique.
-
-
-
-LA COORDINATION DE GROUPES PRÉPOSITIONNELS (GPRÉP)
-
-Dans la coordination et la juxtaposition de groupes prépositionnels (GPrép), c’est-à-dire
-de groupes débutant par une préposition, il faut respecter une règle particulière : on doit
-répéter les prépositions à, de et en au début de chacun des GPrép désignant des entités
-différentes. Les autres prépositions peuvent être répétées ou non.
-J’ai envie [de me faire couler un bon bain] et [de me détendre au moins une heure].
-J’aime bien me détendre [en lisant un roman] ou [en prenant un bain chaud].
-J’ai confié mon chien [à ma sœur] et [à son mari] le temps de mon voyage.
-Je compte [sur ma sœur] et [(sur) son mari] pour en prendre soin.
-&gt; Ici, la répétition de la préposition sur est facultative.
-La sortie a été reportée [à cause du froid] et [(à cause) de la neige].
-&gt; Ici, la répétition de la première partie de la préposition à cause de est facultative ;
-on doit cependant répéter obligatoirement le de (du, des).
-J’ai confié mon chien à ma [sœur] et [amie].
-&gt; Ici, sœur et amie représentent une seule personne.
-LA COORDINATION DE subORDONNÉES CIRCONSTANCIELLES
-Les subordonnées circonstancielles expriment différentes valeurs de sens, lesquelles sont
-précisées par un mot de relation ayant la fonction de subordonnant. Voici quelques
-exemples de subordonnants de cause ou de justification : parce que, puisque, comme,
-étant donné que, vu que ; de temps : avant que, après que, lorsque, quand, etc. ; de but :
-pour que, afin que, etc.
-Dans la coordination et la juxtaposition de subordonnées circonstancielles, il faut respecter
-une règle particulière : les subordonnants doivent être répétés ou tout simplement
-repris par que devant le deuxième élément coordonné ou juxtaposé.
-Il est venu [parce qu’il avait une affaire à régler] et [(parce) qu’il voulait me parler].
-&gt; Ici, la répétition de la première partie du subordonnant parce que est facultative ;
-on doit cependant répéter obligatoirement le que (qu’).
-Ferme les fenêtres [avant qu’il se mette à pleuvoir] et [(avant) que nos papiers
-s’envolent].
-&gt; Ici, la répétition de la première partie du subordonnant avant que est facultative ;
-on doit cependant répéter obligatoirement le que (qu’).
-Attention ! Lorsque la cause est exprimée par le coordonnant car, ce dernier n’est ni
-répété ni repris par que devant le deuxième élément coordonné.
-[Il est venu], car [il avait une affaire à régler et il voulait me parler].
-
-
-
-LA COORDINATION DE subORDONNÉES RELATIVES
-
-Dans la coordination et la juxtaposition de subordonnées relatives, on doit respecter une
-règle particulière : lorsque le pronom relatif et le sujet de la deuxième subordonnée relative
-sont les mêmes que ceux de la première, on ne les répète pas, mais ils doivent être
-exprimés s’ils sont différents.
-C’était une marchandise [dont tout le monde avait besoin] et [voulait faire provision].
-&gt; Les deux relatives coordonnées sont équivalentes à ces phrases :
-[Tout le monde avait besoin de la marchandise.]
-[Tout le monde voulait faire provision de la marchandise.]
-Le sujet tout le monde est le même dans les deux phrases et le pronom relatif doit
-aussi être le même pour remplacer de la marchandise : on emploie dont parce
-que ce groupe débute par la préposition de (avoir besoin de…, faire provision
-de…).
-Le cola demeurait la marchandise-clé [dont tout le monde avait besoin] et [qu’on
-venait régulièrement se procurer].
-&gt; Les deux relatives coordonnées sont équivalentes à ces phrases :
-[Tout le monde avait besoin de la marchandise.]
-[On venait régulièrement se procurer la marchandise.]
-Le sujet n’est pas le même dans les deux phrases et le pronom relatif ne doit pas
-être le même pour remplacer de la marchandise et la marchandise : le premier
-groupe débute par la préposition de, on doit donc employer le pronom dont ; le
-second groupe est un GN complément direct du verbe se procurer, on doit donc
-employer le pronom relatif que (qu’). 
-    </pre>
-                <br>
-                <br>
-                <h4>Transformation de phrase</h4>
-                <pre>
-Une phrase transformée est une phrase syntaxique construite à partir du modèle de base, mais
-qui n’est plus conforme au modèle de base parce qu’elle a subi l’une des transformations
-suivantes :
-    • Transformation de type et de forme
-La phrase n’est plus à la fois déclarative, positive, active, neutre et personnelle.
-    • Transformation par déplacement d’un constituant obligatoire
-Dans cette phrase, l’ordre sujet–prédicat a été inversé.
-    • Transformation par enchâssement
-La phrase est utilisée comme subordonnée.
-Transformation de type et de forme
-Une phrase répond toujours à un type (déclaratif OU interrogatif OU exclamatif OU impératif)
-et à quatre formes (positive ou négative ET active ou passive ET neutre ou emphatique ET
-personnelle ou impersonnelle1
-). On peut changer le type et les formes d’une phrase en
-appliquant certaines manipulations.
-MODÈLE DE BASE (toujours de type déclaratif et de formes positive, active, neutre et
-personnelle)
-L’écureuil a croqué la noix.
-MANIPULATION D’ADDITION (type interrogatif)
-Est-ce que l’écureuil a croqué la noix ?
-MANIPULATION DE REMPLACEMENT (type interrogatif)
-Qui a croqué la noix ?
-MANIPULATION DE DÉPLACEMENT (forme passive)
-La noix a été croquée par l’écureuil.
-MANIPULATION D’EFFACEMENT (type impératif)
-Ø Croque cette noix.
- 1. La construction impersonnelle est considérée comme une phrase à construction particulière lorsqu’il
-s’agit d’une phrase construite avec un verbe qui ne se conjugue qu’à la forme impersonnelle.
-
-
-MANIPULATION D’ENCADREMENT (forme emphatique)
-C’est l’écureuil qui a croqué la noix.
-MANIPULATION DE DÉTACHEMENT (forme emphatique)
-L’écureuil, il a croqué la noix.
-Ainsi, la phrase : Le chat a chassé habilement les souris, qui est déclarative, positive, active,
-neutre et personnelle, peut, à la suite de certaines manipulations, devenir :
-INTERROGATIVE (positive, active, neutre et personnelle)
-– Interrogation totale (qui porte sur toute la phrase et qui appelle une réponse en oui/non)
-Est-ce que le chat a chassé habilement les souris ? (Addition d’un mot interrogatif)
-Le chat a-t-il chassé habilement les souris ? (Addition d’un pronom)
-– Interrogation partielle (qui porte sur une partie de la phrase)
-Qui a chassé habilement les souris ? (Remplacement d’une partie de la phrase par un
-pronom interrogatif)
-Qu’est-ce que le chat a chassé habilement ? (Remplacement d’une partie de la phrase
-par un pronom interrogatif et déplacement de ce pronom et addition d’un interrogatif)
-EXCLAMATIVE (positive, active, neutre et personnelle)
-Comme le chat a chassé habilement les souris ! (Addition d’un mot exclamatif)
-Que de souris le chat a chassées habilement ! (Déplacement du complément du verbe
-et remplacement du dét. dans ce GN complément)
-IMPÉRATIVE (positive, active, neutre et personnelle)
-Ø Chasse habilement les souris. (Effacement du sujet)
-NÉGATIVE (déclarative, active, neutre et personnelle)
-Le chat n’a pas chassé habilement les souris. (Addition d’adverbes de négation)
-Le chat n’a chassé habilement aucune souris. (Addition d’un adverbe de négation et
-remplacement d’un dét. par un dét. à valeur négative)
-Aucun chat n’a chassé habilement les souris. (Addition d’un adverbe de négation et
-remplacement d’un dét. par un dét. à valeur négative)
-PASSIVE (déclarative, positive, neutre et personnelle)
-Les souris sont chassées habilement par le chat. (Déplacement du sujet et du complé-
-ment du verbe et remplacement du verbe par être suivi d’un participe passé et addition
-de la préposition par)
-EMPHATIQUE (déclarative, positive, active et personnelle)
-C’est le chat qui a chassé habilement les souris. (Encadrement du sujet par les
-marqueurs c’est… qui)
-Ce sont les souris que le chat a chassées. (Déplacement et encadrement du complé-
-ment par les marqueurs ce sont… que)
-
-
-Ce qui a chassé les souris, c’est le chat. (Détachement et encadrement du complément
-par les marqueurs ce qui... c’est)
-Ce que le chat a chassé habilement, ce sont les souris. (Détachement du complément
-par les marqueurs ce que… ce sont)
-Le chat, il a chassé habilement les souris. (Détachement et reprise du groupe détaché,
-par un pronom)
-Il a chassé habilement les souris, le chat. (Détachement et annonce du groupe détaché,
-par un pronom)
-IMPERSONNELLE (déclarative, positive, active et neutre)
-Cette phrase ne peut pas être transformée en phrase impersonnelle.
-Il est à noter cependant que certains verbes comme entrer, venir, arriver et se passer sont
-susceptibles d’être employés à la forme impersonnelle.
-Ainsi, la phrase : Trois chats entrent dans cette cage, qui est déclarative, positive, active, neutre
-et personnelle, peut devenir déclarative, positive, active, neutre et impersonnelle :
-Il entre trois chats dans cette cage. (Déplacement du sujet et addition du pronom
-impersonnel il)
-    </pre>
-                <br>
-                <br>
-                <h4>Guillemets et italique</h4>
-                <pre>
-L’emploi régulier des guillemets est le suivant : ils servent à isoler une citation ou un
-dialogue.
-Richard Séguin chante : « Partir, c’est pas guérir. » (citation)
-La dame lui demanda :
-« Pensez-vous arriver à temps à votre rendez-vous ?
-– Avec toute cette circulation, je ne le crois pas. » (dialogue)
-Toutefois, les guillemets sont aussi employés pour remplacer l’italique quand il est
-impossible d’utiliser celui-ci, comme dans un manuscrit ou un texte dactylographié. On
-les trouve donc autour d’un titre, du mot dont on parle, d’un terme ne faisant pas partie
-de la langue courante (mot étranger, marque de commerce, expression familière, néologisme).
-Dans un texte imprimé, il faut utiliser l’italique pour tous ces cas.
-Texte imprimé :
-As-tu lu La Cérémonie des anges, de Marie Laberge ? (titre)
-Le nom rédacteur est l’attribut du sujet mon jeune frère. (mots dont on parle)
-En fin de semaine, je me suis acheté des pantalons Levi’s. (marque de commerce)
-Texte manuscrit :
-As-tu lu « La Cérémonie des anges », de Marie Laberge ?
-Le nom « rédacteur » est l’attribut du sujet « mon jeune frère ».
-En fin de semaine, je me suis acheté des pantalons « Levi’s ».
-    </pre>
-                <br>
-                <br>
-                <h4>Point-virgule et deux-points</h4>
-                <pre>
-EMPLOI DU POINT-VIRGULE
-Le point-virgule sert à séparer des phrases étroitement liées par le sens, que l’on pourrait
-séparer par un point, mais entre lesquelles on veut montrer qu’il y a un lien de sens plus
-étroit. La deuxième phrase constitue souvent une addition à la première. Elle peut pré-
-senter une explication ou une opposition.
-Pierre ne m’a pas rappelée après cette soirée ; peut-être a-t-il rencontré quelqu’un
-d’autre.
-&gt; La deuxième phrase est une explication de la première.
-Certains enfants jouent calmement avec leurs jouets ; d’autres courent à droite et à
-gauche.
-&gt; La deuxième phrase présente une opposition par rapport à la première.
-Le point-virgule est aussi utilisé pour séparer les éléments d’une énumération présentée
-sous forme de liste.
-Vous devez suivre les étapes suivantes :
-• faire un résumé de ce qui est dit sur le sujet ;
-• donner votre opinion avec précision ;
-• expliquer cette opinion à l’aide d’arguments.
-EMPLOI DU DEUX-POINTS
-Le deux-points sert à introduire une énumération, un discours rapporté direct ou une
-citation.
-Tout était en solde : les livres, les cassettes, les disques et les revues.
-&gt; Le deux-points introduit une énumération.
-Furieux, il s’est écrié : « Ce n’est pas moi qui ai cassé le vase ! »
-&gt; Le deux-points introduit un discours rapporté direct.
-Savez-vous qui a dit : « Je ne suis pas d’accord avec ce que vous dites, mais je me
-battrai jusqu’au bout pour que vous puissiez le dire. » ? C’est Voltaire, bien sûr !
-&gt; Le deux-points introduit une citation, qui est, en fait, une sorte de discours rapporté
-direct.
-Le deux-points sert aussi à introduire une phrase qui présente une cause ou une consé-
-quence de ce qui est énoncé dans la phrase précédente. Dans ces cas, on peut remplacer
-le signe de ponctuation par un marqueur de relation qui exprime le rapport de sens existant
-entre les deux phrases (ex. : cause : parce que, car ; conséquence : donc, par conséquent).
-
-Luc ne pourra pas participer au tournoi : il s’est cassé le bras droit.
-&gt; Le deux-points introduit une phrase qui présente une cause de ce qui est dit
-dans la phrase précédente ; on peut le remplacer par parce que.
-Luc s’est cassé le bras droit : il ne pourra pas participer au tournoi.
-&gt; Le deux-points introduit une phrase qui présente une conséquence de ce qui est
-dit dans la phrase précédente ; on peut le remplacer par par conséquent.
-    </pre>
-            </div>
-            <div id="eae" class="cours">
-                <h2>EAE</h2>
-                <table>
-                    <tr>
-                        <td bgcolor="lightgray"><b>Sentences</b></td>
-                    </tr>
-                </table>
-
-
-                <br>A sentence almost always has three features
-                <br>1. A subject
-                <br>2. A verb
-                <br>3. A complete thought
-                <br>
-                <br> Three types of sentences will be presented here:
-                <br>1. Simple Sentences
-                <br>2. Compound Sentences
-                <br>3. Complex Sentences
-                <br>
-                <br>
-                <strong>Simple Sentences:</strong>
-                <br>A Simple sentence is one independent clause (IC).
-                <br>
-                <br>
-                <u>Examples:</u>
-                <br>
-                <i>Mr. Shipley travelled to Canada last fall.
-<br><br>The old truck was pulled by a team of horses.
-<br><br>bram rarely mowed the lawn.</i>
-                <br>
-                <br><strong>Compound Sentences:</strong>
-                <br> A Compound sentence is composed of two or more independent clauses (ICs).
-                <br>
-                <br>
-                <u>Examples:</u>
-                <br><i>
-Mr. Shipley travelled to Canada last fall but he hadn't the money to do any sightseeing.
-<br><br>
-The old truck was pulled by a team of horses, so that john could save on the cost of fuel.
-<br><br>
-bram rarely mowed the lawn, and he never fixed the fence poles either.
-</i>
-                <br>
-                <br> Problems frequently occur when two simple sentence (ICs) are being joined to make a compound sentence. These problems are called run-on sentences. These may have a period as its only punctuation mark OR it may be inappropriately punctuated
-                with one or more commas (this type of run-on sentence is called a "comma splice").
-                <br>
-                <br>
-                <u>Example:</u>
-                <br>
-                <br><i>
-John can't wait to go to the dance Arlene attends weekly.
-</i>
-                <br>
-                <br>
-                <strong>Comma splices</strong>
-                <br>
-                <br>
-                <u>Examples:</u>
-                <br>
-                <i>John can't wait to go to the dance Arlene attends weekly. </i>
-                <br>
-                <br> 1. Use a period to separate the intendent clause into sentence.
-                <br>2. Use a semicolon to separate the independent clauses within a single sentence.
-                <br>3. Use a coordinating conjunction and a comma to join the two clauses Comma slices.
-                <br>
-                <br>
-                <u>This is a comma splice:</u>
-                <br><i> John is going to the dance, Arlene attends every week.</i>
-                <br>
-                <br>
-
-                <u>This is how to fix it:</u>
-                <br>Use a semicolon, a transitional expression, and a comma.
-                <br>
-                <br>
-                <i>John is going to the dance; likewise, Arlene is also going.
-<br><br>
-Hagar is a very wise woman; However, she is beginning to change her ways in old age.</i>
-                <br>
-                <br>
-                <strong>Complex Sentences:</strong>
-                <br>
-                <br> A Complex sentence is composed of one independent clause with one or more subordinate (dependent) clauses.
-                <br>
-                <br> A subordinate (dependent) clause is of secondary importance in a sentence and depends on an independent clause to make a sentences.
-                <br>
-                <br>
-                <u>Examples:</u>
-                <br>
-                <i>Because he was late for work, he had to work in the evening.
-<br><br>
-If we all pool our money, we ca buy you a university education.
-<br><br>
-Murray befriended Hagar who looked this and forlorn.</i>
-                <br>
-                <br> **Note the placement of a comma after the dependent clause.**
-                <br>
-                <br> When the dependent clause is at the beginning of a sentence, the pattern is the following:
-                <br>DC, IC (DEPENDENT CLAUSE, INDEPENDENT CLAUSE)
-                <br>
-                <br> When the dependent clause is at the end of the sentence, there is no comma needed.
-                <br> ID DC (independent clause dependent clause)
-                <br>
-                <br>
-                <strong>Sentence fragments:</strong>
-                <br>
-                <br> A sentence fragment is a piece of information that is punctuated as a sentence but that lacks some of the characteristics of a complete sentence.
-                <br>
-                <br>
-                <u>Example:</u>
-                <br><i>Tired of having to ask her for help.</i>
-                <br>
-                <br> The statement does not have a subject; we do not know who is tired of having to ask her to help.
-                <br>
-                <br> How to fix it: add a subject.
-                <br><i>Hagar is tired of having to ask her for help.
-<br><br>
-Tombstones in the Manawaka cemetery.</i>
-                <br>
-                <br> The statement does not contain a verb. Looked at by itself, we do not know what is being said about the tombstones in the cemetery.
-                <br>
-                <br> How to fix it: add a verb.
-                <br>
-                <i>There were people laying flowers on tombstones in the Manawaka cemetery.
-<br><br>
-I was late for church. Because bram was drunk again.</i>
-                <br>
-                <br> The phrase is a dependent clause; it provides additional information about the independent clause. By itself, it does not provide a complete thought.
-                <br>
-                <br> How to fix it: change the punctuation.
-
-                <br><i>I was late for church, because bram was drunk again. <br></i>
-                <br> OR
-                <br><i><br> I was late for church. Because bram was drunk again, I missed the reverend's sermon.
-</i>
-            </div>
-
-            <div id="mdm4u" class="cours">
-
-                <h2>MDM4U</h2>
-
-
-                <table border=1>
-                    <tr>
-                        <td bgcolor=lightgray>
-                            <center><b>Revue pour l'examen</b></td>
-                    </tr>
-                </table>
-
-                <br><img src="img/mdm4u-revue.jpg">
-
-            </div>
-
-            <div id="mhf4u" class="cours">
-
-                <h2>MHF4U</h2>
-
-
-                <table border=1>
-                    <tr>
-                        <td bgcolor=lightgray>
-                            <center><b>Revue pour l'examen</b></td>
-                    </tr>
-                </table>
-
-                <br><img src="img/mhf4u-revue.jpg">
-
-            </div>
-
-            <div id="sbi3u" class="cours">
-
-                <h2>SBI3U</h2>
-
-
-                <table border=1>
-                    <tr>
-                        <td bgcolor=lightgray>
-                            <center><b>Revue pour l'examen</b></td>
-                    </tr>
-                </table>
-
-                <br><img src="img/sbi3u-revue-1.jpg">
-
-            </div>
-
-
-            <div id="sch4u" class="cours">
-
-                <h2>SCH4U</h2>
-
-
-                <table border=1>
-                    <tr>
-                        <td bgcolor=lightgray>
-                            <center><b>Revue pour l'examen</b></td>
-                    </tr>
-                </table>
-
-                <br><img src="img/sch4u-revue-01.jpg"><img src="img/sch4u-revue-02.jpg">
-
-            </div>
-            <div id="sph4c" class="cours">
-
-                <h2>SPH4C</h2>
-
-
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>
-                                <b>Revue pour l'examen</b>
-                            </center>
-                        </td>
-                    </tr>
-                </table>
-
-                <br><img src="img/sph4c-revue-01.jpg"><img src="img/sph4c-revue-02.jpg">
-
-            </div>
-
-            <div id="sph4u" class="cours">
-
-                <h2>SPH4U</h2>
-
-
-                <table border="1">
-                    <tr>
-                        <td bgcolor="lightgray">
-                            <center>
-                                <b>Revue pour l'examen</b>
-                            </center>
-                        </td>
-                    </tr>
-                </table>
-
-                <br><img src="img/sph4u-revue-01.jpg"><img src="img/sph4u-revue-02.jpg">
-
-            </div>
-
-            <div id="sph4" class="cours">
-                <table border="2">
-                    <td colspan="2" bgcolor="lightblue">
-                        <center>
-                            <h1>Physique</h1></center>
-                    </td>
-                </table>
-
-                <h2>Formules</h2>
-
-                <h3>Mouvement (Dynamique)</h3>
-                <ul>
-                    <li>
-                        <p>v = <sup>d</sup>/<sub>t</sub></p>
-                    </li>
-                    <li>
-                        <p>a = <sup>(vf - vi)</sup>/<sub>t</sub></p>
-                    </li>
-                    <li>
-                        <p>a = <sup>(v2 - v1)</sup>/<sub>(t2 - t1)</sub></p>
-                    </li>
-                    <li>
-                        <p>d = <sup>[(vf + vi) * &#916;t]</sup>/<sub>2</sub></p>
-                    </li>
-                    <li>
-                        <p>d = vi*t + <sup>(a*t<sup>2</sup>)</sup>/<sub>2</sub></p>
-                    </li>
-                    <li>
-                        <p><sup>km/h</sup>/<sub>3.6</sub> = m/s</p>
-                        <p>m/s * 3.6 = km/h</p>
-                    </li>
-                    <li>
-                        <p>v = <sup>(d2 - d1)</sup>/<sub>(t2 - t1)</sub></p>
-                        <p>a = <sup>(v2 - v1)</sup>/<sub>(t2 - t1)</sub></p>
-                    </li>
-                </ul>
-
-                <h3>Force</h3>
-                <ul>
-                    <li>
-                        <p>F = m * a</p>
-                    </li>
-                    <li>
-                        <p>Fg = m * g</p>
-                    </li>
-                    <li>
-                        <p>Fg = <sup>(G * m1 * m2)</sup>/<sub>d<sup>2</sup></sub></p>
-                    </li>
-                </ul>
-
-                <h3>Travail, Énergie, Puissance</h3>
-                <ul>
-                    <li>
-                        <p>W = F * d</p>
-                    </li>
-                    <li>
-                        <p>Eg = m * g * &#916;h </p>
-                    </li>
-                    <li>
-                        <p>Ec = <sup>1</sup>/<sub>2</sub> * m * v<sup>2</sup></p>
-                    </li>
-                    <li>
-                        <p>P = <sup>E</sup>/<sub>t</sub></p>
-                    </li>
-                    <li>
-                        <p>Rendement = (<sup>Énergie utilisable produite</sup>/<sub>Énergie fournie</sub>) * 100%</p>
-                    </li>
-                </ul>
-
-                <h3>Énergie thermique</h3>
-                <ul>
-                    <li>
-                        <p>m * c * &#916;T = -m * c * &#916;T </p>
-                    </li>
-                    <li>
-                        <p>L = <sup>E<sub>T</sub></sup>/<sub>m</sub></p>
-                    </li>
-                </ul>
-
-                <h3>Électricité</h3>
-                <ul>
-                    <li>
-                        <p><sup>R<sub>1</sub></sup>/<sub>R<sub>2</sub></sub> = <sup>L<sub>1</sub></sup>/<sub>L<sub>2</sub></sub>
-                        </p>
-                    </li>
-                    <li>
-                        <p><sup>R<sub>1</sub></sup>/<sub>R<sub>2</sub></sub> = <sup>A<sub>1</sub></sup>/<sub>A<sub>2</sub></sub>
-                        </p>
-                    </li>
-                    <li>
-                        <p>V = <sup>E</sup>/<sub>Q</sub></p>
-                    </li>
-                    <li>
-                        <p>E = <sup>Q</sup>/<sub>t</sub></p>
-                    </li>
-                    <li>
-                        <p>R = <sup>V</sup>/<sub>I</sub></p>
-                    </li>
-                    <ul>
-                        <li>Série</li>
-                        <ul>
-                            <li>
-                                <p>R<sub>T</sub> = R1 + R2</p>
-                            </li>
-                            <li>
-                                <p>V<sub>T</sub> = V1 + V2</p>
-                            </li>
-                            <li>
-                                <p>I<sub>T</sub> = I1 = I2</p>
-                            </li>
-                        </ul>
-                        <li>Parallèle</li>
-                        <ul>
-                            <li>
-                                <p><sup>1</sup>/<sub>R<sub>T</sub></sub> = <sup>1</sup>/<sub>R<sub>1</sub></sub> + <sup>1</sup>/<sub>R<sub>2</sub></sub>
-                                </p>
-                            </li>
-                            <li>
-                                <p>V<sub>T</sub> = V1 = V2</p>
-                            </li>
-                            <li>
-                                <p>I<sub>T</sub> = I1 + I2</p>
-                            </li>
-                        </ul>
-                    </ul>
-                </ul>
-
-                <h3>Les ondes</h3>
-                <ul>
-                    <li>
-                        <p>Fréquence = <sup>Cycle</sup>/<sub>Temps</sub></p>
-                    </li>
-                    <li>
-                        <p>Période = <sup>Temps</sup>/<sub>Cycle</sub></p>
-                    </li>
-                    <li>
-                        <p>f = <sup>1</sup>/<sub>T</sub></p>
-                    </li>
-                    <li>
-                        <p>T = <sup>1</sup>/<sub>f</sub></p>
-                    </li>
-                </ul>
-            </div>
+    <div class="w3-container">
+        <div id="myTop" class="w3-top w3-container w3-theme w3-large">
+            <i class="fa fa-bars w3-opennav w3-hide-large w3-xlarge w3-margin-left w3-margin-right" onclick="w3_open()"></i>
+            <span id="myIntro" class="w3-hide">InfoCND</span>
         </div>
+        <div id="cnd" class="cours">
+            <h1 class="w3-text-blue">InfoCND</h1>
+            <h5>La ressource des Alouettes</h5>
+            <ul class="w3-leftbar w3-theme-border" style="list-style-type:none">
+                <li>Bienvenue au site d'information du Collège Notre-Dame. Le site <b>infocnd.github.io</b> est le centre d'information pour certains cours offert ici au Collège Notre-Dame. Le site est en développement donc le contenu sera mis à jours au fur et à mesure que l'information peut être numérisée. Le site est créé pour faciliter l'apprentissage, les devoirs et l'étude pour les examens. Le site est séparé en onglets pour que vous puissiez y trouver précisément l'information que vous avez besoin. Pour trouver le cours que vous cherchez:
+                    <br>
+                    <br>
+                    <ol>
+                        <li>Appuyez sur l'année d'étude.</li>
+                        <li>Appuyez sur le sujet du cours.</li>
+                        <li>Appuyer sur la cote de votre cours.</li>
+                    </ol>
+                    <br> N.B. Une petite flèche est visible à la droite de l'onglet s'il y a de l'information supplémentaire. N'oubliez pas d'ajouter le site à vos favoris pour ne pas perdre le lien. </li>
+            </ul>
+            <br> visiteurs:
+            <!--<a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=infocnd.github.io&digit=style/plain/22/&reloads=0" alt="www.reliablecounter.com" title="www.reliablecounter.com" border="0"></a><br /><a href="http://www.analogmix.com" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;">Read more</a>-->
+        </div>
+    </div>
+    <!--  courriels  administration-->
+    <div id="cou-ad" class="cours">
+        <h1 class="w3-text-blue">Courriels</h1>
+        <h5>Administration </h5>
+        <ul class="w3-leftbar w3-theme-border" style="list-style-type:none">
+            <li>
+                <script language="JavaScript">
+                    var admin = [{
+                        "prenom": "Johanne",
+                        "nom": "Chrétien"
+                            }, {
+                        "prenom": "Lynn",
+                        "nom": "MacLean"
+                            }];
+                    for (i = 0; i < admin.length; i++) {
+                        document.write("<a href='#' onclick='clean(admin[" + i + "])'>" + admin[i].prenom + " " + admin[i].nom + "</a>");
+                        document.write("<br>");
+                    }
+                </script>
+            </li>
+        </ul>
+        <br>
+    </div>
+    <!--  courriels  personnel enseignant-->
+    <div id="cou-en" class="cours">
+        <h1 class="w3-text-blue">Courriels</h1>
+        <h5>Personnel enseignant </h5>
+        <ul class="w3-leftbar w3-theme-border" style="list-style-type:none">
+            <li>
+                <script language="JavaScript">
+                    var pers = [{
+                        "prenom": "Michèle",
+                        "nom": "Albert"
+                            }, {
+                        "prenom": "Denis",
+                        "nom": "Bidal"
+                            }, {
+                        "prenom": "Marc",
+                        "nom": "Bonin"
+                            }, {
+                        "prenom": "Alain",
+                        "nom": "Boucher"
+                            }, {
+                        "prenom": "Danika",
+                        "nom": "brabant"
+                            }, {
+                        "prenom": "Sylvie",
+                        "nom": "brosseau"
+                            }, {
+                        "prenom": "Natalie",
+                        "nom": "Charbonneau"
+                            }, {
+                        "prenom": "Sylvie",
+                        "nom": "Chenard-Laferrière"
+                            }, {
+                        "prenom": "Julie",
+                        "nom": "Courtemanche"
+                            }, {
+                        "prenom": "Charles",
+                        "nom": "Coutu"
+                            }, {
+                        "prenom": "Lise",
+                        "nom": "Demers"
+                            }, {
+                        "prenom": "Denise",
+                        "nom": "Desrochers"
+                            }, {
+                        "prenom": "Roby",
+                        "nom": "Desrochers"
+                            }, {
+                        "prenom": "Natalie",
+                        "nom": "Dionne"
+                            }, {
+                        "prenom": "Andrée",
+                        "nom": "Duhaime"
+                            }, {
+                        "prenom": "Renée",
+                        "nom": "Dupuis"
+                            }, {
+                        "prenom": "Victoria",
+                        "nom": "Gaudreau"
+                            }, {
+                        "prenom": "Danielle",
+                        "nom": "Gauthier"
+                            }, {
+                        "prenom": "Manon",
+                        "nom": "Gauthier"
+                            }, {
+                        "prenom": "Jennifer",
+                        "nom": "Gibson"
+                            }, {
+                        "prenom": "Luc",
+                        "nom": "Giroux"
+                            }, {
+                        "prenom": "Patrice",
+                        "nom": "Goho"
+                            }, {
+                        "prenom": "Diane",
+                        "nom": "Labelle"
+                            }, {
+                        "prenom": "Sylvie",
+                        "nom": "Lachapelle"
+                            }, {
+                        "prenom": "Lizette",
+                        "nom": "Lacourcière"
+                            }, {
+                        "prenom": "Marc",
+                        "nom": "Laferrière"
+                            }, {
+                        "prenom": "Marc",
+                        "nom": "Langlois"
+                            }, {
+                        "prenom": "Lizette",
+                        "nom": "Langlois-Rheault"
+                            }, {
+                        "prenom": "Stéphan",
+                        "nom": "Lapensée"
+                            }, {
+                        "prenom": "Liane",
+                        "nom": "Laquerre"
+                            }, {
+                        "prenom": "Andrée",
+                        "nom": "Larocque-Reichle"
+                            }, {
+                        "prenom": "Katy",
+                        "nom": "Levesque"
+                            }, {
+                        "prenom": "Renée",
+                        "nom": "Maggiolo"
+                            }, {
+                        "prenom": "Dominique",
+                        "nom": "Maillet"
+                            }, {
+                        "prenom": "Martin",
+                        "nom": "Nadeau"
+                            }, {
+                        "prenom": "Nicole",
+                        "nom": "Pelletier"
+                            }, {
+                        "prenom": "Mélanie",
+                        "nom": "Pharand-Prévost"
+                            }, {
+                        "prenom": "Denis",
+                        "nom": "Piquette"
+                            }, {
+                        "prenom": "brigitte",
+                        "nom": "Prévost"
+                            }, {
+                        "prenom": "Denis",
+                        "nom": "Rochon"
+                            }, {
+                        "prenom": "Jasmine",
+                        "nom": "Rosevear"
+                            }, {
+                        "prenom": "Mélanie",
+                        "nom": "Savoie"
+                            }, {
+                        "prenom": "Renée",
+                        "nom": "Spadafore"
+                            }, {
+                        "prenom": "Pierre",
+                        "nom": "Taillon"
+                            }];
+                    for (i = 0; i < pers.length; i++) {
+                        document.write("<a href='#' onclick='clean(pers[" + i + "])'>" + pers[i].prenom + " " + pers[i].nom + "</a>");
+                        document.write("<br>");
+                    }
+                </script>
+            </li>
+        </ul>
+        <br>
+    </div>
+    <!--  courriels  orientation-->
+    <div id="cou-or" class="cours">
+        <h1 class="w3-text-blue">Courriels</h1>
+        <h5>Personnel enseignant </h5>
+        <ul class="w3-leftbar w3-theme-border" style="list-style-type:none">
+            <li>
+                <script language="JavaScript">
+                    var host = "nouvelon.ca";
+                    var orient = [{
+                        "prenom": "Julie",
+                        "nom": "Godin"
+                            }, {
+                        "prenom": "Lisa",
+                        "nom": "Labelle"
+                            }, {
+                        "prenom": "Lynn",
+                        "nom": "Roy"
+                            }];
+                    for (i = 0; i < orient.length; i++) {
+                        document.write("<a href='#' onclick='clean(orient[" + i + "])'>" + orient[i].prenom + " " + orient[i].nom + "</a>");
+                        document.write("<br>");
+                    }
+                </script>
+            </li>
+        </ul>
+        <br>
+    </div>
+    <!--  orientation  -->
+    <div id="bene" class="cours">
+        <h2>Orientation</h2>
+        <table border="1">
+            <tr>
+                <td bgcolor="lightgray">
+                    <center>Bénévolat</center>
+                </td>
+            </tr>
+            <tr>
+            </tr>
+        </table>
+    </div>
+
+    <!-- parlement des élèves  -->
+    <div id="parinfo" class="cours">
+        <h2>Parlement des élèves</h2>
+        <table border="1">
+            <tr>
+                <td bgcolor="lightgray">
+                    <center>Information</center>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!--  cours  -->
+    <div id="ics2o" class="cours">
+        <h2>ICS2O</h2>
+        <table border=1>
+            <img src="img/contenu/synopsis/ics2o-synopsis.jpg">
+        </table>
+    </div>
+    <div id="tdj2o" class="cours">
+        <h2>TDJ2O</h2>
+        <table border=1>
+            <img src="img/contenu/synopsis/tdj2o-synopsis.jpg">
+        </table>
+    </div>
+    <div id="ics3uc" class="cours">
+        <h2>ICS3U/C</h2>
+        <table border=1>
+            <img src="img/contenu/synopsis/ics3-synopsis.jpg">
+        </table>
+    </div>
+    <div id="mcf3m" class="cours">
+        <h2>MCF3M</h2>
+        <table border=1>
+            <img src="img/contenu/synopsis/mcf3m-synopsis.jpg">
+        </table>
+    </div>
+    <div id="ics4uc" class="cours">
+        <h2>ICS4U/C</h2>
+        <table border=1>
+            <img src="img/contenu/synopsis/ics4-synopsis.jpg">
+        </table>
     </div>
     <script src="js/index.js"></script>
     <script src="js/email.min.js"></script>
+    <script src="js/meteo.js"></script>
 
 </body>
 
