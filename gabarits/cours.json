@@ -1,5 +1,12 @@
+"site": {
+    "accueil": {
+        "src": "/contenu/accueil.html"
+    }
+}
 "9": {
     "Étude informatique" : {
-      //Array ICS2O > /contenu/ics20.html
+      "ICS2O": {
+          "src": "/contenu/ics2.html"
+      }
     }
 }
