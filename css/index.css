@@ -50,3 +50,9 @@ td,
 th {
     border: 1px;
 }
+
+@media screen and (min-width: 990px) {
+    .cours {
+        margin-left: 250px;
+    }
+}
