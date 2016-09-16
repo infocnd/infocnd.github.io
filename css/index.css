@@ -12,6 +12,16 @@ h5 {
     font-family: "RobotoDraft", "Roboto", sans-serif;
 }
 
+.nuit {
+    color: orange;
+    background-color: black;
+}
+
+.jour {
+    color: black;
+    background-color: white;
+}
+
 .w3-sidenav a {
     padding: 16px;
     font-weight: 500;
