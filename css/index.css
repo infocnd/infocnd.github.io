@@ -66,3 +66,90 @@ th {
         margin-left: 250px;
     }
 }
+
+/*Calendrier*/
+body {
+	font-family: "Helvetica", sans-serif;
+		background-color: #EBEBEB;
+}
+h1 {
+	text-align: center;
+}
+.title a {
+	position: absolute;
+	text-indent: -9999px;
+	width: 0;
+	height: 0;
+	margin-top: 10px;
+}
+.title a.l {
+	left: 10px;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 15px solid black;
+}
+.title a.r {
+	right: 10px;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 15px solid black;
+}
+#cal {
+	width: 100%;
+	font-size: 0.8em;
+	line-height: 1.25em;
+	border-collapse: collapse; 
+	border-spacing: 0;
+	display: table;
+}
+#cal tr {
+	display: table-row;
+}
+#cal th, #cal td {
+	display: table-cell !important; 
+	margin: 0; 
+	width: 14.2857%; 
+	padding: 0.4166em; 
+	border: 1px solid #ebebeb; 
+	vertical-align: top; 
+}
+#cal th {
+	font-weight: bold;
+	padding: 2px 0 2px 0;
+	text-align: center;
+}
+#cal .non {
+	background-color: #EBEBEB;
+}
+#cal td {
+	height: 5em;
+	background-color: white;
+}
+#cal .number {
+	display: block;
+	text-align: right;
+	padding: 2px 3px 0 0;
+}
+#cal .day a {
+	display: block;
+}
+#list {
+	display: none;
+}
+#list .date {
+	font-weight: bold;
+	margin-top: 1em;
+}
+@media only screen and (max-width : 640px) {
+	#cal th span, .title span {
+		display: none;
+	}
+}
+@media only screen and (max-width : 500px) {
+	#list {
+		display: block;
+	}
+	#cal {
+		display: none;
+	}
+}
