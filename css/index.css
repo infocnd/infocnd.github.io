@@ -68,11 +68,11 @@ th {
 }
 
 /*Calendrier*/
-body {
+.calendar {
 	font-family: "Helvetica", sans-serif;
 		background-color: #EBEBEB;
 }
-h1 {
+.calendar h1 {
 	text-align: center;
 }
 .title a {
