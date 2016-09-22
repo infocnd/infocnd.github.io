@@ -1,0 +1,20 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <script>
+            /// write to file
+            var eventsFile = "c:/test.txt";
+            var file = new File(eventsFile);
+            
+            file.open("w"); // open file with write access
+            file.writeln("date:24 Avril/evenement:Rencontre dans le gym/heure:13.30/note:");
+            file.writeln("date:31 Octobre/evenement:Halloween/heure:/note:Dress down! Rien d'innaproprie.);
+            file.close();
+            
+        </script>
+    </head>
+    <body>
+        
+        <div id="events"></div>
+    </body>
+</html>
