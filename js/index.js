@@ -38,11 +38,9 @@ function openCours(nomcours) {
         //x[i].style.visibility = "hidden";
     }
     document.getElementById(nomcours).style.display = "block";
-    //Android 2.3 Fallback
-    //document.getElementById(nomcours).style.visibility = "visible";
 }
 
-function get() {
+/*function get() {
     var l = 0;
     var url = window.location.href;
     l = url.length;
@@ -67,4 +65,4 @@ function set(adresse) {
     }
 }
 
-window.addEventListener("load", get);
+window.addEventListener("load", get);*/
