@@ -1,5 +1,8 @@
 <section id="sidebar">
-    <nav class="w3-sidenav w3-collapse w3-white w3-animate-left w3-card-2" style="z-index:5;width:250px;">
+        <nav class="w3-sidenav w3-collapse w3-white w3-animate-left w3-card-2" style="z-index:5;width:250px;">
+        
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-text-blue w3-hide-large w3-closenav w3-large">&times;</a>
+        
         <a href="#" onclick="openCours('cnd');w3_close()" class="w3-border-bottom w3-large">
             <div style="margin-left: 40px; display: inline-block; vertical-align: middle;">
                 <img src="img/site/logoCND.png" style="width:40px;" alt="InfoCND">
@@ -8,10 +11,11 @@
                 <p>1nf0CND</p>
             </div>
         </a>
-
+        
+        
         <!--  9e  -->
         <div class="w3-accordion">
-            <a onclick="myFunc('neu')" href="#">9e</a>
+            <a onclick="myFunc('neu')" href="#">9e &#x25BC;</a>
             <div id="neu" class="w3-accordion-content w3-animate-left w3-padding">
                 <a href="#">Éducation artistique</a>
                 <a href="#">Études canadiennes et mondiales</a>
@@ -93,7 +97,7 @@
                 <a href="#">Éducation technologique</a>
             </div>
         </div>
-        <!--  orientation  -->
+        <!--  orintation  -->
         <div class="w3-accordion">
             <a onclick="myFunc('ori')" href="#">Orientation</a>
             <div id="ori" class="w3-accordion-content w3-animate-left w3-padding">
@@ -109,7 +113,7 @@
         </div>
         <!--  courriels  -->
         <div class="w3-accordion">
-            <a onclick="myFunc('courriels')" href="#">Courriels</a>
+            <a onclick="myFunc('courriels')" href="#">Courriels &#x25BC;</a>
             <div id="courriels" class="w3-accordion-content w3-animate-left w3-padding">
                 <a href="#" onclick="w3_close();openCours('cou-ad');myFunc('courriels')">Administration</a>
                 <a href="#" onclick="w3_close();openCours('cou-en');myFunc('courriels')">Enseignant(e)s</a>
@@ -117,4 +121,5 @@
             </div>
         </div>
     </nav>
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer"></div>
 </section>
