@@ -27,7 +27,10 @@
                 <a href="#">English</a>
                 <a href="#">Français</a>
                 <a href="#">Enseignement religieux</a>
-                <a href="#">Mathématiques</a>
+                <a onclick="myFunc('lien_mpm1d')" href="javascript:void(0)">Mathématiques &#x25BC;</a>
+                <div id="lien_mpm1d" class="w3-accordion-content w3-animate-left w3-padding">
+                    <a href="#" onclick="w3_close();openCours('mpm1d');myFunc('lien_mpm1d');myFunc('neu')">MPM1D</a>
+                </div>
                 <a href="#">Éducation physique et santé</a>
                 <a href="#">Sciences</a>
             </div>
