@@ -1,15 +1,15 @@
 var admin = [{
-    "prenom": "Johanne",
-    "nom": "Chrétien"
-}, {
+        "prenom": "Johanne",
+        "nom": "Chrétien"
+    }, {
         "prenom": "Jeannette",
         "nom": "Bergeron"
     }];
 
 var pers = [{
-    "prenom": "Michèle",
-    "nom": "Albert"
-}, {
+        "prenom": "Michèle",
+        "nom": "Albert"
+    }, {
         "prenom": "Denis",
         "nom": "Bidal"
     }, {
@@ -20,10 +20,10 @@ var pers = [{
         "nom": "Boucher"
     }, {
         "prenom": "Danika",
-        "nom": "brabant"
+        "nom": "Brabant"
     }, {
         "prenom": "Sylvie",
-        "nom": "brosseau"
+        "nom": "Brosseau"
     }, {
         "prenom": "Natalie",
         "nom": "Charbonneau"
@@ -55,6 +55,9 @@ var pers = [{
         "prenom": "Renée",
         "nom": "Dupuis"
     }, {
+        "prenom": "Micheline",
+        "nom": "Fournier-Thibault"
+    }, {
         "prenom": "Victoria",
         "nom": "Gaudreau"
     }, {
@@ -64,14 +67,8 @@ var pers = [{
         "prenom": "Manon",
         "nom": "Gauthier"
     }, {
-        "prenom": "Jennifer",
-        "nom": "Gibson"
-    }, {
         "prenom": "Luc",
         "nom": "Giroux"
-    }, {
-        "prenom": "Patrice",
-        "nom": "Goho"
     }, {
         "prenom": "Diane",
         "nom": "Labelle"
@@ -100,6 +97,9 @@ var pers = [{
         "prenom": "Andrée",
         "nom": "Larocque-Reichle"
     }, {
+        "prenom": "Julie",
+        "nom": "Léger-DiMaio"
+    }, {
         "prenom": "Katy",
         "nom": "Levesque"
     }, {
@@ -121,17 +121,11 @@ var pers = [{
         "prenom": "Denis",
         "nom": "Piquette"
     }, {
-        "prenom": "brigitte",
+        "prenom": "Brigitte",
         "nom": "Prévost"
     }, {
         "prenom": "Denis",
         "nom": "Rochon"
-    }, {
-        "prenom": "Jasmine",
-        "nom": "Rosevear"
-    }, {
-        "prenom": "Mélanie",
-        "nom": "Savoie"
     }, {
         "prenom": "Renée",
         "nom": "Spadafore"
@@ -139,7 +133,6 @@ var pers = [{
         "prenom": "Pierre",
         "nom": "Taillon"
     }];
-
 var orient = [{
         "prenom": "Julie",
         "nom": "Godin"
