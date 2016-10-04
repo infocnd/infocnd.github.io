@@ -153,3 +153,13 @@ th {
 		display: none;
 	}
 }
+
+/*padding and margin removed to stick <Hx> & <p> together*/
+.stickBottom {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+.stickTop {
+	margin-top: 0px;
+	padding-top: 0px;
+}
