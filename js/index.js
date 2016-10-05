@@ -26,16 +26,3 @@ function myFunc(id) {
     document.getElementById(id).classList.toggle("w3-show");
     document.getElementById(id).previousElementSibling.classList.toggle("w3-theme");
 }
-
-function openCours(nomcours) {
-    var i;
-    var x = document.getElementsByClassName("cours");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    document.getElementById(nomcours).style.display = "block";
-}
-
-window.addEventListener("load", function () {
-    openCours("cnd");
-});
