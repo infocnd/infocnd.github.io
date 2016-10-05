@@ -7,20 +7,31 @@
 }
 */
 
-window.addEventListener("load", page);
+function sleep(time) {
+  return new Promise((resolve) => setTimeout(resolve, time));
+}
+
+window.addEventListener("load", function () {
+  page();
+
+  // Usage!
+  sleep(1000).then(() => {
+  page();
+  });
+});
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/js/serviceWorker.js', { scope: '/js/' }).then(function(reg) {
-    
-    if(reg.installing) {
+  navigator.serviceWorker.register('/js/serviceWorker.js', { scope: '/js/' }).then(function (reg) {
+
+    if (reg.installing) {
       console.log('Service worker installing');
-    } else if(reg.waiting) {
+    } else if (reg.waiting) {
       console.log('Service worker installed');
-    } else if(reg.active) {
+    } else if (reg.active) {
       console.log('Service worker active');
     }
-    
-  }).catch(function(error) {
+
+  }).catch(function (error) {
     // registration failed
     console.log('Registration failed with ' + error);
   });
