@@ -27,42 +27,15 @@ function myFunc(id) {
     document.getElementById(id).previousElementSibling.classList.toggle("w3-theme");
 }
 
-openCours("cnd")
-
 function openCours(nomcours) {
     var i;
     var x = document.getElementsByClassName("cours");
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
-        //Android 2.3 Fallback
-        //x[i].style.visibility = "hidden";
     }
     document.getElementById(nomcours).style.display = "block";
 }
 
-/*function get() {
-    var l = 0;
-    var url = window.location.href;
-    l = url.length;
-    url = url.slice(25, l);
-    set(url);
-}
-
-function set(adresse) {
-    switch (adresse) {
-        //Adresse voulu taper par l'utilisateur
-    
-        
-    case "#ballon":
-        //Commandes pour afficher, à noter, c'est le même code pour ouvrir Activité
-        w3_close();
-        openCours('paract');
-        myFunc('par');
-        break;
-
-    default:
-        break;
-    }
-}
-
-window.addEventListener("load", get);*/
+window.addEventListener("load", function () {
+    openCours("cnd");
+});

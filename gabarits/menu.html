@@ -15,8 +15,6 @@
                 <p>1nf0CND</p>
             </div>
         </a>
-
-
         <!--  9e  -->
         <div class="w3-accordion">
             <a onclick="myFunc('neu')" href="#">9e &#x25BC;</a>
@@ -47,6 +45,7 @@
                 <a onclick="myFunc('ics2')" href="javascript:void(0)">Études informatiques &#x25BC;</a>
                 <div id="ics2" class="w3-accordion-content w3-animate-left w3-padding">
                     <a href="#" onclick="w3_close();openCours('ics2o');myFunc('ics2');myFunc('dix')">ICS2</a>
+                    <a data-link="contenu/cours/ics2o.html">ICS2O</a>
                 </div>
                 <a href="#">Mathématiques</a>
                 <a href="#">Éducation physique et santé</a>
@@ -104,7 +103,7 @@
                 <a href="#">Éducation technologique</a>
             </div>
         </div>
-        <!--  orintation  -->
+        <!--  orientation  -->
         <div class="w3-accordion">
             <a onclick="myFunc('ori')" href="#">Orientation</a>
             <div id="ori" class="w3-accordion-content w3-animate-left w3-padding">
@@ -122,11 +121,23 @@
         <div class="w3-accordion">
             <a onclick="myFunc('courriels')" href="#">Courriels &#x25BC;</a>
             <div id="courriels" class="w3-accordion-content w3-animate-left w3-padding">
-                <a href="#" onclick="w3_close();openCours('cou-ad');myFunc('courriels')">Administration</a>
-                <a href="#" onclick="w3_close();openCours('cou-en');myFunc('courriels')">Enseignant(e)s</a>
-                <a href="#" onclick="w3_close();openCours('cou-or');myFunc('courriels')">Orientation</a>
+                <a data-link="contenu/courriels/admin.html">Administration</a>
+                <a data-link="contenu/courriels/pers.html">Enseignant(e)s</a>
+                <a data-link="contenu/courriels/orient.html">Orientation</a>
             </div>
         </div>
     </nav>
     <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer"></div>
+    <script>
+        $(document).ready(function () {
+        $("a").click(function (e) {
+            if ($.isFunction(this.onclick)) {
+                return;
+            } else {
+                $("#cnd-contenu").attr("data-include", $(this).attr("data-link"));
+                render();
+            }
+            });
+        });
+    </script>
 </section>
