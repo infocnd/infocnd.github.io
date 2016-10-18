@@ -10,6 +10,19 @@
     <link href="https://fonts.googleapis.com/css?family=RobotoDraft" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="icon" href="img/site/logoCND.png" sizes="16x16" type="image/png">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
+    <script>
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(["init", {
+            appId: "eeede2f8-1374-4791-b94c-6584e8671107",
+            autoRegister: false,
+            /* Set to true to automatically prompt visitors */
+            subdomainName: 'infocnd',
+            notifyButton: {
+                enable: true /* Set to false to hide */
+            }
+        }]);
+    </script>
 </head>
 
 <body>
