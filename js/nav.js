@@ -5,6 +5,7 @@ $(document).ready(function () {
         } else {
             $("#cnd-contenu").attr("data-include", $(this).attr("data-link"));
             render();
+            w3_close()
         }
     });
 });
