@@ -39,16 +39,16 @@
                 showCredit: false,
                 /* Hide the OneSignal logo */
                 text: {
-                    'tip.state.unsubscribed': "S'abonner au annonces par notifications",
+                    'tip.state.unsubscribed': 'Abonnez-vous au annonces par notifications',
                     'tip.state.subscribed': "Vous êtes déjà abonnés au annonces",
                     'tip.state.blocked': "Vous avez bloquer les notifications",
-                    'message.prenotify': "Cliquer pour s'abonner au notifications",
+                    'message.prenotify': 'Cliquer pour vous abonnez au notification',
                     'message.action.subscribed': "Vous êtes abonnés! Merci!",
                     'message.action.resubscribed': "Vous êtes abonnés de nouveau!",
-                    'message.action.unsubscribed': "Vous êtes désabonner!",
-                    'dialog.main.title': "Gérer les notifications d'1nf0CND",
-                    'dialog.main.button.subscribe': "S'ABONNER",
-                    'dialog.main.button.unsubscribe': "SE DÉSABONNER",
+                    'message.action.unsubscribed': "Vous êtes désabonnés!",
+                    'dialog.main.title': 'Gérer les notifications du site 1nf0CND',
+                    'dialog.main.button.subscribe': 'ABONNER-VOUS',
+                    'dialog.main.button.unsubscribe': 'SE DÉSABONNER',
                     'dialog.blocked.title': 'Permettre les notifications',
                     'dialog.blocked.message': "Suivre les instructions ci-dessous pour s'abonner:"
                 },
@@ -64,13 +64,6 @@
                     'dialog.button.background': '#2196f3',
                     'dialog.button.foreground': 'white'
                 },
-                displayPredicate: function() {
-                    return OneSignal.isPushNotificationsEnabled()
-                        .then(function(isPushEnabled) {
-                            /* The user is subscribed, so we want to return "false" to hide the notify button */
-                            return !isPushEnabled;
-                        });
-                }
             },
             promptOptions: {
                     /* These prompt options values configure both the HTTP prompt and the HTTP popup. */
