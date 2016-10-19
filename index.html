@@ -20,7 +20,76 @@
             /* Set to true to automatically prompt visitors */
             subdomainName: 'infocnd',
             notifyButton: {
-                enable: true /* Set to false to hide */
+                enable: true,
+                /* Required to use the notify button */
+                size: 'medium',
+                /* One of 'small', 'medium', or 'large' */
+                theme: 'default',
+                /* One of 'default' (red-white) or 'inverse" (white-red) */
+                position: 'bottom-right',
+                /* Either 'bottom-left' or 'bottom-right' */
+                offset: {
+                    bottom: '0px',
+                    left: '0px',
+                    /* Only applied if bottom-left */
+                    right: '0px' /* Only applied if bottom-right */
+                },
+                prenotify: true,
+                /* Show an icon with 1 unread message for first-time site visitors */
+                showCredit: false,
+                /* Hide the OneSignal logo */
+                text: {
+                    'tip.state.unsubscribed': "S'abonner au annonces par notifications",
+                    'tip.state.subscribed': "Vous êtes déjà abonnés au annonces",
+                    'tip.state.blocked': "Vous avez bloquer les notifications",
+                    'message.prenotify': "Cliquer pour s'abonner au notifications",
+                    'message.action.subscribed': "Vous êtes abonnés! Merci!",
+                    'message.action.resubscribed': "Vous êtes abonnés de nouveau!",
+                    'message.action.unsubscribed': "Vous êtes désabonner!",
+                    'dialog.main.title': "Gérer les notifications d'1nf0CND",
+                    'dialog.main.button.subscribe': "S'ABONNER",
+                    'dialog.main.button.unsubscribe': "SE DÉSABONNER",
+                    'dialog.blocked.title': 'Permettre les notifications',
+                    'dialog.blocked.message': "Suivre les instructions ci-dessous pour s'abonner:"
+                },
+
+                colors: { // Customize the colors of the main button and dialog popup button
+                    'circle.background': '#2196f3',
+                    'circle.foreground': 'white',
+                    'badge.background': '#2196f3',
+                    'badge.foreground': 'white',
+                    'badge.bordercolor': 'white',
+                    'pulse.color': 'white',
+                    'dialog.button.background.hovering': '#2196f3',
+                    'dialog.button.background.active': '#2196f3',
+                    'dialog.button.background': '#2196f3',
+                    'dialog.button.foreground': 'white'
+                },
+                displayPredicate: function() {
+                    return OneSignal.isPushNotificationsEnabled()
+                        .then(function(isPushEnabled) {
+                            /* The user is subscribed, so we want to return "false" to hide the notify button */
+                            return !isPushEnabled;
+                        });
+                },
+                promptOptions: {
+                    /* These prompt options values configure both the HTTP prompt and the HTTP popup. */
+                    /* Change bold title, limited to 30 characters */
+                    siteName: '1nf0CND',
+                    /* Example notification title */
+                    exampleNotificationTitle: 'Nouveau contenu!',
+                    /* Example notification message */
+                    exampleNotificationMessage: 'Il y a une nouveauté sur le site Web',
+                    /* Text below example notification, limited to 50 characters */
+                    exampleNotificationCaption: "Vous pouvez vous désabonner en un instant.",
+                    /* Accept button text, limited to 15 characters */
+                    /* actionMessage limited to 90 characters */
+                    actionMessage: "Voulez-vous vous abonner à des annonces pour InfoCND par notifications?",
+                    /* acceptButtonText limited to 15 characters */
+                    acceptButtonText: "OUI",
+                    /* cancelButtonText limited to 15 characters */
+                    cancelButtonText: "NON MERCI"
+                }
             }
         }]);
     </script>
