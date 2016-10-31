@@ -44,10 +44,6 @@ function set(adresse) {
         $("#cnd-contenu").attr("data-include", "autres/concertnoel.html");
         render();
         w3_close();
-        divParentCours = String($(this).parents('div:eq(0)').attr('id'));
-        divParentAnnee = String($(this).parents('div:eq(1)').attr('id'));
-        myFunc(divParentCours);
-        myFunc(divParentAnnee);
         alert("concert2");
         break;
 
