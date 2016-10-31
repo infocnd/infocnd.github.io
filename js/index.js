@@ -43,7 +43,6 @@ function set(adresse) {
         alert("concert1");
         $("#cnd-contenu").attr("data-include", "autres/concertnoel.html");
         render();
-        w3_close();
         alert("concert2");
         break;
 
