@@ -33,13 +33,12 @@ function get() {
     l = url.length;
     url = url.slice(25, l);
     set(url);
-    alert(url);
 }
 
 function set(adresse) {
     switch (adresse) {
         //Adresse voulu taper par l'utilisateur
-    case "#cnoel":
+    case "/#cnoel":
         //Commandes pour afficher, à noter, c'est le même code pour ouvrir Activité
         alert("concert1");
         $("#cnd-contenu").attr("data-include", "autres/concertnoel.html");
