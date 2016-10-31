@@ -41,7 +41,7 @@ function set(adresse) {
     case "/#cnoel":
         //Commandes pour afficher, à noter, c'est le même code pour ouvrir Activité
         alert("concert1");
-        $("#cnd-contenu").attr("data-include", "autres/concertnoel.html");
+        $("#cnd-contenu").attr("data-include", "contenu/autres/concertnoel.html");
         render();
         alert("concert2");
         break;
