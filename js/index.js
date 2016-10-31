@@ -26,3 +26,27 @@ function myFunc(id) {
     document.getElementById(id).classList.toggle("w3-show");
     document.getElementById(id).previousElementSibling.classList.toggle("w3-theme");
 }
+
+function get() {
+    var l = 0;
+    var url = window.location.href;
+    l = url.length;
+    url = url.slice(25, l);
+    set(url);
+}
+
+function set(adresse) {
+    switch (adresse) {
+        //Adresse voulu taper par l'utilisateur
+    case "#cnoel":
+        //Commandes pour afficher, à noter, c'est le même code pour ouvrir Activité
+        $("#cnd-contenu").attr("data-include", "autres/concertnoel.html");
+        render();
+        break;
+
+    default:
+        break;
+    }
+}
+
+window.addEventListener("load", get);
