@@ -33,6 +33,7 @@ function get() {
     l = url.length;
     url = url.slice(25, l);
     set(url);
+    alert(url);
 }
 
 function set(adresse) {
