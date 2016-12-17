@@ -45,6 +45,8 @@ function set(adresse) {
         break;
 
     default:
+        //$("#cnd-contenu").attr("data-include", "contenu/autres/concertnoel.html");
+        render();
         break;
     }
 }
