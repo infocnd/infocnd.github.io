@@ -52,4 +52,4 @@ function set(adresse) {
 }
 
 window.addEventListener("load", get);
-indow.addEventListener("hashchange", get)
+window.addEventListener("hashchange", get);
