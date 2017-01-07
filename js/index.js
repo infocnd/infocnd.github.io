@@ -39,6 +39,7 @@ function set(adresse) {
     switch (adresse) {
         //Adresse voulu taper par l'utilisateur
     default:
+        render();
         break;
     }
 }
