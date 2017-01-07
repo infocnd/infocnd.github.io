@@ -38,15 +38,7 @@ function get() {
 function set(adresse) {
     switch (adresse) {
         //Adresse voulu taper par l'utilisateur
-    case "/#cnoel":
-        //Commandes pour afficher, à noter, c'est le même code pour ouvrir Activité
-        $("#cnd-contenu").attr("data-include", "contenu/autres/concertnoel.html");
-        render();
-        break;
-
     default:
-        //$("#cnd-contenu").attr("data-include", "contenu/autres/concertnoel.html");
-        render();
         break;
     }
 }
