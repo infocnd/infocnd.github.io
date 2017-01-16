@@ -1,0 +1,16 @@
+p{text-align: center;font-family: 'Open Sans Condensed', sans-serif;font-size: 4em; color: white;}
+body {
+    background-color: gold;
+}
+/* WORDS SWAP */
+[data-words]{
+  vertical-align: top;
+  position: static;
+}
+[data-words] > span{
+  position: absolute;
+  color: blue;
+}
+span {
+    width:20px;
+}
