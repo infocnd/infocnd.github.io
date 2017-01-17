@@ -1,95 +1,71 @@
 <style type="text/css">
-
   #stage2 {
     margin: 2em auto 1em 50%;
     height: 240px;
-    -webkit-perspective: 1200px;
-    -webkit-perspective-origin: 0 50%;
-    -moz-perspective: 1200px;
-    -moz-perspective-origin: 0 50%;
-    -ms-perspective: 1200px;
-    -ms-perspective-origin: 0 50%;
+    perspective: 1200px;
+    perspective-origin: 0 50%;
   }
-
+  
   #rotator2 a {
     position: absolute;
     left: -151px;
-    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
   }
+  
   #rotator2 a img {
     padding: 10px;
     border: 1px solid #ccc;
     background: #fff;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
-
+  
   #rotator2 a:nth-child(1) img {
-    -webkit-transform: rotateY(-120deg) translateZ(80px);
-    -moz-transform: rotateY(-120deg) translateZ(80px);
-    -ms-transform: rotateY(-120deg) translateZ(80px);
+    transform: rotateY(-120deg) translateZ(80px);
   }
+  
   #rotator2 a:nth-child(2) img {
-    -webkit-transform: translateZ(80px);
-    -moz-transform: translateZ(80px);
-    -ms-transform: translateZ(80px);
+    transform: translateZ(80px);
   }
+  
   #rotator2 a:nth-child(3) img {
-    -webkit-transform: rotateY(120deg) translateZ(80px);
-    -moz-transform: rotateY(120deg) translateZ(80px);
-    -ms-transform: rotateY(120deg) translateZ(80px);
+    transform: rotateY(120deg) translateZ(80px);
   }
-  #rotator2 a:nth-child(n+4) { display: none; }
-
-  @-webkit-keyframes rotator2 {
-    from { -webkit-transform: rotateY(0deg);  }
-    to   { -webkit-transform: rotateY(-120deg); }
+  
+  #rotator2 a:nth-child(n+6) {
+    display: none;
   }
-  @-moz-keyframes rotator2 {
-    from { -moz-transform: rotateY(0deg);  }
-    to   { -moz-transform: rotateY(-120deg); }
+  
+  @keyframes rotator2 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-120deg);
+    }
   }
-  @-ms-keyframes rotator2 {
-    from { -ms-transform: rotateY(0deg);  }
-    to   { -ms-transform: rotateY(-120deg); }
-  }
-
+  
   #rotator2 {
-    -webkit-transform-origin: 0 0;
-    -webkit-transform-style: preserve-3d;
-    -webkit-animation-timing-function: cubic-bezier(1, 0.2, 0.2, 1);
-    -webkit-animation-duration: 2s;
-    -webkit-animation-delay: 1s;
-    -moz-transform-origin: 0 0;
-    -moz-transform-style: preserve-3d;
-    -moz-animation-timing-function: cubic-bezier(1, 0.2, 0.2, 1);
-    -moz-animation-duration: 2s;
-    -moz-animation-delay: 1s;
-    -ms-transform-origin: 0 0;
-    -ms-transform-style: preserve-3d;
-    -ms-animation-timing-function: cubic-bezier(1, 0.2, 0.2, 1);
-    -ms-animation-duration: 2s;
-    -ms-animation-delay: 1s;
+    transform-origin: 0 0;
+    transform-style: preserve-3d;
+    animation-timing-function: cubic-bezier(1, 0.2, 0.2, 1);
+    animation-duration: 2s;
+    animation-delay: 1s;
   }
+  
   #rotator2:hover {
-    -webkit-animation-play-state: paused;
-    -moz-animation-play-state: paused;
-    -ms-animation-play-state: paused;
+    animation-play-state: paused;
   }
-
 </style>
 
 <div id="stage2">
-<div id="rotator2" style="-webkit-animation-name: rotator2; -moz-animation-name: rotator2; -ms-animation-name: rotator2;">
-<a href="#"><img src="ICS2.jpg" width="280"></a>
-<a href="#"><img src="ICS3.jpg" width="280"></a>
-<a href="#"><img src="ICS4.png" width="280"></a>
-</div>
+  <div id="rotator2" style="animation-name:rotator2;">
+    <a href="#"><img src="ICS4.png" width="280"></a>
+    <a href="#"><img src="ICS2.png" width="280"></a>
+    <a href="#"><img src="ICS3.png" width="280"></a>
+  </div>
 </div>
 
 <script type="text/javascript">
-
   // Original JavaScript code by Chirp Internet: www.chirp.com.au
   // Please acknowledge use of this code by including this header.
 
@@ -97,12 +73,12 @@
 
     var rotateComplete = function() {
       with(target.style) {
-        webkitAnimationName = MozAnimationName = msAnimationName = "";
+        webkitAnimationName = MozAnimationName = msAnimationName = AnimationName = "";
       }
       target.appendChild(arr[0]);
       setTimeout(function(el) {
         with(el.style) {
-          webkitAnimationName = MozAnimationName = msAnimationName = "rotator2";
+          webkitAnimationName = MozAnimationName = msAnimationName = AnimationName = "rotator2";
         }
       }, 0, target);
     };
@@ -110,10 +86,7 @@
     var target = document.getElementById("rotator2");
     var arr = target.getElementsByTagName("a");
 
-    target.addEventListener("webkitAnimationEnd", rotateComplete, false);
     target.addEventListener("animationend", rotateComplete, false);
-    target.addEventListener("MSAnimationEnd", rotateComplete, false);
 
   }, false);
-
 </script>
