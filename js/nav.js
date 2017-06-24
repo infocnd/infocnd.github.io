@@ -8,8 +8,8 @@ $(document).ready(function () {
             w3_close();
             divParentCours = String($(this).parents('div:eq(0)').attr('id'));
             divParentAnnee = String($(this).parents('div:eq(1)').attr('id'));
-            myFunc(divParentCours);
-            myFunc(divParentAnnee);
+            basculerContenu(divParentCours);
+            basculerContenu(divParentAnnee);
         }
     });
 });
