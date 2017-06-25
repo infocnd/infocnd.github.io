@@ -4,25 +4,10 @@
         <h5>Administration</h5>
         <ul class="w3-leftbar w3-theme-border" style="list-style-type:none">
             <li id="noms">
-                <script>
-                    var admin = [{
-                        "prenom": "Johanne",
-                        "nom": "Chrétien"
-                    }, {
-                        "prenom": "Jeannette",
-                        "nom": "Bergeron"
-                    }];
-                    for (i = 0; i < admin.length; i++) {
-                        var a = document.createElement("a");
-                        var br = document.createElement("br");
-                        a.href = "#";
-                        a.setAttribute("onclick", "clean(admin["+ i +"])");
-                        a.innerText = admin[i].prenom + " " + admin[i].nom;
-                        document.getElementById("noms").appendChild(a);
-                        document.getElementById("noms").appendChild(br);
-                    }
-                </script>
                 <script src="js/email.js"></script>
+                <script>
+                    get("contenu/courriels/admin.json");
+                </script>
             </li>
         </ul>
         <br>

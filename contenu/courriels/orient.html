@@ -4,28 +4,10 @@
         <h5>Administration</h5>
         <ul class="w3-leftbar w3-theme-border" style="list-style-type:none">
             <li id="noms">
-                <script>
-                var orient = [{
-                    "prenom": "Julie",
-                    "nom": "Godin"
-                    }, {
-                    "prenom": "Lisa",
-                    "nom": "Labelle"
-                    }, {
-                    "prenom": "Lynn",
-                    "nom": "Roy"
-                    }];
-                    for (i = 0; i < orient.length; i++) {
-                        var a = document.createElement("a");
-                        var br = document.createElement("br");
-                        a.href = "#";
-                        a.setAttribute("onclick", "clean(orient["+ i +"])");
-                        a.innerText = orient[i].prenom + " " + orient[i].nom;
-                        document.getElementById("noms").appendChild(a);
-                        document.getElementById("noms").appendChild(br);
-                    }
-                </script>
                 <script src="js/email.js"></script>
+                <script>
+                    get("contenu/courriels/orient.json");
+                </script>
             </li>
         </ul>
         <br>
