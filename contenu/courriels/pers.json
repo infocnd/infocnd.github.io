@@ -20,6 +20,9 @@
     "prenom": "Natalie",
     "nom": "Charbonneau"
 }, {
+    "prenom": "Mathieu",
+    "nom": "Chartrand"
+}, {
     "prenom": "Sylvie",
     "nom": "Chenard-Laferrière"
 }, {
@@ -59,9 +62,6 @@
     "prenom": "Manon",
     "nom": "Gauthier"
 }, {
-    "prenom": "Luc",
-    "nom": "Giroux"
-}, {
     "prenom": "Diane",
     "nom": "Labelle"
 }, {
@@ -80,7 +80,7 @@
     "prenom": "Lizette",
     "nom": "Langlois-Rheault"
 }, {
-    "prenom": "Stéphan",
+    "prenom": "Stephan",
     "nom": "Lapensée"
 }, {
     "prenom": "Liane",
@@ -104,11 +104,14 @@
     "prenom": "Martin",
     "nom": "Nadeau"
 }, {
+    "prenom": "Shäna",
+    "nom": "Paquette-Smith"
+}, {
     "prenom": "Nicole",
     "nom": "Pelletier"
 }, {
     "prenom": "Mélanie",
-    "nom": "Pharand-Prévost"
+    "nom": "Pharand Prévost"
 }, {
     "prenom": "Denis",
     "nom": "Piquette"
@@ -116,8 +119,8 @@
     "prenom": "Brigitte",
     "nom": "Prévost"
 }, {
-    "prenom": "Denis",
-    "nom": "Rochon"
+    "prenom": "Ginette",
+    "nom": "Rainville"
 }, {
     "prenom": "Renée",
     "nom": "Spadafore"
