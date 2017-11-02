@@ -40,7 +40,7 @@ function set(adresse) {
         //Adresse voulu taper par l'utilisateur
     case "/#cnoel":
         //Commandes pour afficher, à noter, c'est le même code pour ouvrir Activité
-        $("#cnd-contenu").attr("data-include", "contenu/autres/concertnoel.html");
+        $("#cnd-contenu").attr("data-include", "contenu/autres/insconcertnoel.html");
         render();
         break;
     default:
