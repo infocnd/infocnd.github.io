@@ -1,9 +1,9 @@
 [{
-    "prenom": "Michèle",
-    "nom": "Albert"
+    "prenom": "Karlie",
+    "nom": "Armstrong-Patenaude"
 }, {
-    "prenom": "Denis",
-    "nom": "Bidal"
+	"prenom": "Francine",
+    "nom": "Bishop"
 }, {
     "prenom": "Marc",
     "nom": "Bonin"
@@ -17,11 +17,11 @@
     "prenom": "Sylvie",
     "nom": "Brosseau"
 }, {
-    "prenom": "Natalie",
-    "nom": "Charbonneau"
+    "prenom": "Chantal",
+    "nom": "Cayen"
 }, {
-    "prenom": "Mathieu",
-    "nom": "Chartrand"
+    "prenom": "Nicole",
+    "nom": "Charbonneau"
 }, {
     "prenom": "Sylvie",
     "nom": "Chenard-Laferrière"
@@ -41,11 +41,14 @@
     "prenom": "Roby",
     "nom": "Desrochers"
 }, {
+    "prenom": "Joey",
+    "nom": "DiMaio"
+}, {
     "prenom": "Natalie",
     "nom": "Dionne"
 }, {
-    "prenom": "Andrée",
-    "nom": "Duhaime"
+    "prenom": "Geneviève",
+    "nom": "Diotte"
 }, {
     "prenom": "Renée",
     "nom": "Dupuis"
@@ -62,23 +65,23 @@
     "prenom": "Manon",
     "nom": "Gauthier"
 }, {
+    "prenom": "Amanda",
+    "nom": "Gilson-McGirr"
+}, {
     "prenom": "Diane",
     "nom": "Labelle"
 }, {
     "prenom": "Sylvie",
     "nom": "Lachapelle"
 }, {
+    "prenom": "Christine",
+    "nom": "Lacombe"
+}, {
     "prenom": "Lizette",
     "nom": "Lacourcière"
 }, {
     "prenom": "Marc",
     "nom": "Laferrière"
-}, {
-    "prenom": "Marc",
-    "nom": "Langlois"
-}, {
-    "prenom": "Lizette",
-    "nom": "Langlois-Rheault"
 }, {
     "prenom": "Stephan",
     "nom": "Lapensée"
@@ -88,6 +91,9 @@
 }, {
     "prenom": "Andrée",
     "nom": "Larocque-Reichle"
+}, {
+    "prenom": "Sue-Lynn",
+    "nom": "Leblanc-Boudreault"
 }, {
     "prenom": "Julie",
     "nom": "Léger-DiMaio"
@@ -119,12 +125,9 @@
     "prenom": "Brigitte",
     "nom": "Prévost"
 }, {
-    "prenom": "Ginette",
-    "nom": "Rainville"
+    "prenom": "Sabrina",
+    "nom": "Rogerson"
 }, {
     "prenom": "Renée",
     "nom": "Spadafore"
-}, {
-    "prenom": "Pierre",
-    "nom": "Taillon"
 }]
